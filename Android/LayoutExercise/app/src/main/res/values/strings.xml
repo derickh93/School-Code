@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LayoutExercise</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Send</string>
+    <string name="world">Hello World</string>
+    <string name="hello">Hello</string>
+    <string name="bye">Goodbye</string>
+
+</resources>

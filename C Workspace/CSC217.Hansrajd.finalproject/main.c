@@ -1,0 +1,22 @@
+/*
+ * main.c
+ *
+ *  Created on: May 3, 2018
+ *      Author: THE BOSS
+ */
+#include <stdio.h>
+#include <stdbool.h>
+int main()
+{
+    struct node* stack = NULL;
+    init(stack);
+    push(stack,"Derick");
+    push(stack,"Hansraj");
+    push(stack,"NCC");
+    printlist(stack);
+
+
+    return 0;
+}
+
+

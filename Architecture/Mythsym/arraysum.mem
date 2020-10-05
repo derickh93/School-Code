@@ -1,0 +1,84 @@
+// sums an array whose location is in location 200 and whose length is in location 201
+// puts result in 202
+200: 150
+201: 4
+
+// my array
+150: 3
+151: -2
+152: 4
+153: 5
+154: 100
+
+// array sum
+// r0 will hold the sum
+// r1 will hold the location of the number to sum
+// r2 will hold the count of the numbers summed
+// r3 will hold the length
+
+0: 00 00 0000
+1: 000101 00 // put 0 in r0
+
+2: 10 10 0000
+3: 000101 10 // put 0 in r2
+
+4: 200
+5: 000110 01 // put 200 into r1
+
+6: 01 00 0000
+7: 001011 01 // put array location into r1
+
+8: 201
+9: 000110 11 // put 201 into r3
+
+10: 11 00 0000
+11: 001011 11 // put array length into r3
+
+// sum loop
+// if count (r2) = length (r3) exit loop and save sum
+// otherwise add number at location in r1 to r0
+// increment r1
+// increment r2
+// loop
+12: 11 10 0000
+13: 000010 10 // length - count is in r2
+
+14: 10 00 0000
+15: 001101 00 // check if length = count
+
+16: 24 // location of code to add in array member
+17: 001100 00 // jump to summing code
+
+// summed everything store return value
+18: 202
+19: 000110 01
+
+20: 01 00 0000
+21: 001010 00 // store result
+
+22:0
+23: 010001 00 // program done
+
+24: 11 10 0000
+25:000010 10 // put count back in r2
+
+26: 01 00 0000
+27:001001 11 // put the number to sum into r3
+
+28: 11 00 0000
+29: 000001 00 // add r3 into r0
+
+30: 201
+31:000110 11
+
+32: 11 00 0000
+33: 001001 11 // put the length back into r3
+
+34: 10 00 0000
+35: 001111 10 // count++
+
+36: 01 00 0000
+37:001111 01 // next array location
+
+38: 12
+39: 001100 00

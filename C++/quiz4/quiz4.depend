@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1544669399 source:c:\users\the boss\desktop\c++\quiz4\main.cpp
+	<iostream>
+	"Human.h"
+	"Student.h"
+	"Employee.h"
+
+1544669441 c:\users\the boss\desktop\c++\quiz4\human.h
+
+1544667316 c:\users\the boss\desktop\c++\quiz4\student.h
+	<iostream>
+
+1544669370 source:c:\users\the boss\desktop\c++\quiz4\employee.cpp
+	<iostream>
+	"Employee.h"
+
+1544669219 c:\users\the boss\desktop\c++\quiz4\employee.h
+	<iostream>
+	"Human.h"
+

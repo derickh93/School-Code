@@ -1,0 +1,20 @@
+1. What are the Card class’ instance variables?
+private int value;
+private String suit;
+
+2. What discrepancy do you see between your three lines of output and the first three
+lines of the expected output? Note: this discrepancy will exist for a while, and that’s
+ok. You’ll fix it later.
+Instead of getting a Jack of diamonds i get 11 of diamonds.
+
+3. What’s weird about the return values from those three calls to toString? What do
+you think should be changed?
+The return values are numeric. They should be the names of the Suit.
+
+4. What happens when you compare two String reference variables using the ==
+operator?
+You get an error because == is used to compare integers. You have to use .equals to compare a string.
+
+5. Which step of the instructions did you have to complete to remove the discrepancy
+you wrote about in Question #2?
+In the toString method used the card values to give face cards a Name and numeric cards a value.

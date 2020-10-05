@@ -1,0 +1,45 @@
+01:54:42 **** Incremental Build of configuration Debug for project TestTwoReview ****
+make all 
+Building file: ../Main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.o" -o "Main.o" "../Main.c"
+../Main.c: In function 'main':
+../Main.c:351:11: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  int *p = malloc(sizeof(int)*3);
+           ^
+../Main.c:351:11: warning: incompatible implicit declaration of built-in function 'malloc'
+../Main.c:351:11: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+../Main.c:354:9: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
+  printf("\nP: %d",p);
+         ^
+../Main.c:354:9: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
+../Main.c:356:9: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
+  printf("\nP: %d",p);
+         ^
+../Main.c:356:9: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
+../Main.c:360:9: warning: format '%d' expects argument of type 'int', but argument 2 has type 'char *' [-Wformat=]
+  printf("\nS: %d",s);
+         ^
+../Main.c:360:9: warning: format '%d' expects argument of type 'int', but argument 2 has type 'char *' [-Wformat=]
+../Main.c:362:9: warning: format '%d' expects argument of type 'int', but argument 2 has type 'char *' [-Wformat=]
+  printf("\nS: %d",s);
+         ^
+../Main.c:362:9: warning: format '%d' expects argument of type 'int', but argument 2 has type 'char *' [-Wformat=]
+../Main.c:385:30: warning: "/*" within comment [-Wcomment]
+  /*  p = popen("uname","r"); /* Unix */
+                              ^
+../Main.c:408:3: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+   free(ptr_one);
+   ^
+../Main.c:408:3: warning: incompatible implicit declaration of built-in function 'free'
+../Main.c:408:3: note: include '<stdlib.h>' or provide a declaration of 'free'
+Finished building: ../Main.c
+ 
+Building target: TestTwoReview.exe
+Invoking: Cygwin C Linker
+gcc  -o "TestTwoReview.exe"  ./Main.o   
+Finished building target: TestTwoReview.exe
+ 
+
+01:54:42 Build Finished (took 798ms)
+

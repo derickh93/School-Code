@@ -1,0 +1,14 @@
+12:08:25 **** Incremental Build of configuration Debug for project 4-12 ****
+make all 
+Building target: 4-12.exe
+Invoking: Cygwin C Linker
+gcc  -o "4-12.exe"  ./4-12.o   
+/usr/lib/../lib/libcygwin.a(libcmain.o): In function `main':
+/usr/src/debug/cygwin-2.6.1-1/winsup/cygwin/lib/libcmain.c:37: undefined reference to `WinMain'
+/usr/src/debug/cygwin-2.6.1-1/winsup/cygwin/lib/libcmain.c:37:(.text.startup+0x7f): relocation truncated to fit: R_X86_64_PC32 against undefined symbol `WinMain'
+collect2: error: ld returned 1 exit status
+make: *** [4-12.exe] Error 1
+makefile:29: recipe for target '4-12.exe' failed
+
+12:08:26 Build Finished (took 534ms)
+

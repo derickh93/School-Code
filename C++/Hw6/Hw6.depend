@@ -1,0 +1,42 @@
+# depslib dependency file v1.0
+1544180388 source:c:\users\the boss\desktop\c++\hw6\main.cpp
+	<iostream>
+	<string>
+	<sstream>
+	"Student.h"
+	"Roster.h"
+	"Date.h"
+	<fstream>
+	<vector>
+	<algorithm>
+
+1544173272 c:\users\the boss\desktop\c++\hw6\student.h
+	<iostream>
+	<iomanip>
+	"Date.h"
+	<cstdlib>
+
+1544173272 c:\users\the boss\desktop\c++\hw6\date.h
+	<string>
+
+1544173272 c:\users\the boss\desktop\c++\hw6\roster.h
+	<iostream>
+	"Student.h"
+	"Date.h"
+
+1544173272 source:c:\users\the boss\desktop\c++\hw6\date.cpp
+	"Date.h"
+	<iostream>
+	<cstdlib>
+
+1544173272 source:c:\users\the boss\desktop\c++\hw6\roster.cpp
+	<iostream>
+	<cstdlib>
+	"Roster.h"
+
+1544173272 source:c:\users\the boss\desktop\c++\hw6\student.cpp
+	"Student.h"
+	<iostream>
+	<iomanip>
+	<cstdlib>
+

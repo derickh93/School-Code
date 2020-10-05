@@ -1,0 +1,15 @@
+// tests new opcode 18 which puts 2*rj into ri
+0: 11
+1: 000110 01 // put 11 into r1
+
+2: 01 00 0000
+3: 010010 10 // put 22 into r2
+
+4: 120		// load up location 120 into r0
+5: 000110 00
+
+6: 00 10 0000	// store result (in r2) into location 120
+7: 001010 00
+
+8: 0
+9: 010001 00

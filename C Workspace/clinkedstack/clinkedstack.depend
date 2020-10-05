@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1365742231 source:c:\sandbox\c\clinkedstack\linkedstack.c
+	<stdio.h>
+
+1365742121 source:c:\sandbox\c\clinkedstack\main.c
+	<stdio.h>
+	"linkedstack.h"
+
+1365742005 c:\sandbox\c\clinkedstack\linkedstack.h
+

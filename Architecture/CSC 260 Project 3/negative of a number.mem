@@ -1,0 +1,17 @@
+// 01 means I am not using that register
+0: 120
+1: 000110 10// put 120 into reg 2
+2: 10 00 0000
+3: 001011 00 // put the number at location 120 into reg 0
+4: 00 01 0000
+5: 001001 11 // put ~ the number at location 120 into reg 3
+6: 11 01 0000
+7: 001111 11 // put the 2's complement into reg 3
+8: 130
+9: 000110 10// put 130 into reg 2
+10: 10 11 0000
+11: 001010 01 // put the result into location 130
+12: 0
+13: 010001 00 // done!
+120: 17
+130: -5

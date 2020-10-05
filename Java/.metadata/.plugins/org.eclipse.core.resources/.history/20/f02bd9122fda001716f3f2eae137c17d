@@ -1,0 +1,50 @@
+public class Program3App {
+	public static void startSimulation(long time) {
+		Departure departure = new Departure((int) time);
+		Arrival arrival = new Arrival((int) time);
+		Runway runway = new Runway(arrival, departure);
+		long startTime = System.currentTimeMillis();
+		long simulationTime = time * 60000; // time in milliseconds 
+		//TODO: Start each thread
+		departure.run();
+		arrival.run();
+		runway.run();
+		// Loop - run simulation for specified time
+		while(System.currentTimeMillis() < startTime + simulationTime){
+		}
+		//TODO: stop the loop in each thread – call the stopRunning method
+		departure.stopRunning();
+		arrival.stopRunning();
+		runway.stopRunning();
+		//TODO: interrupt each thread – method from Thread class
+		departure.interrupt();
+		arrival.interrupt();
+		runway.interrupt();
+		try {
+			//TODO: wait for each thread to die – method from Thread class
+			while(departure.isAlive() && arrival.isAlive() && runway.isAlive()) {
+				departure.sleep(1000);
+				arrival.sleep(1000);
+				runway.sleep(1000);
+
+			}
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+	public static void main(String[] args) {
+		/* TODO:
+Input the length of time to run the simulation (in minutes)
+Create an instance of Program3
+Call the startSimulation method and pass the time to it
+Loop while the Arrival or Departure threads are alive
+Stop the Runway thread from running
+		 */
+		long minutes = SimulationTime.timeInMinutes(5);
+		Program3App p3 = new Program3App();
+		startSimulation(minutes);
+		while(Arrival.activeCount() > 0 || Departure.activeCount() > 0 ) {
+			
+		}
+	}
+}

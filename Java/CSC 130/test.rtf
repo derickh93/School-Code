@@ -1,0 +1,104 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil Consolas;}{\f1\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red221\green40\blue103;\red217\green232\blue247;\red230\green230\blue250;\red18\green144\blue195;\red249\green250\blue244;\red30\green181\blue64;\red121\green171\blue255;\red215\green131\blue127;\red237\green127\blue72;\red167\green236\blue33;\red104\green151\blue187;\red255\green191\blue38;\red141\green218\blue248;\red102\green225\blue248;\red23\green198\blue163;\red150\green236\blue63;\red98\green98\blue98;}
+{\*\generator Riched20 10.0.15063}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\cf1\b\f0\fs20\lang9 package\cf2\b0  testPractice\cf3 ;\cf0\par
+\par
+\cf1\b import\cf2\b0  java\cf3 .\cf2 util\cf3 .\cf2 Stack\cf3 ;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  \cf4\b TestApp\cf2\b0  \cf5\{\cf0\par
+\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b boolean\cf2\b0  \cf6\b palindrome\cf5\b0 (\cf4\b String\cf2\b0  \cf7 s\cf5 )\cf2  \cf5\{\cf0\par
+\cf2\tab\tab\cf4\b Stack\cf3\b0 <\cf8 Character\cf3 >\cf2  \cf9\b values\cf2\b0  \cf3 =\cf2  \cf1\b new\cf2\b0  \cf10 Stack\cf3 <\cf8 Character\cf3 >\cf5 ()\cf3 ;\cf0\par
+\cf2\tab\tab\cf1\b for\cf5\b0 (\cf1\b int\cf2\b0  \cf9\b i\cf2\b0  \cf3 =\cf2  \cf11 0\cf3 ;\cf2  \cf12 i\cf2  \cf3 <\cf2  \cf7 s\cf3 .\cf10 length\cf5 ()\cf3 /\cf11 2\cf3 ;\cf2  \cf12 i\cf3 ++\cf5 )\cf2  \cf5\{\cf0\par
+\cf2\tab\tab\tab\cf12 values\cf3 .\cf10 push\cf5 (\cf7 s\cf3 .\cf10 charAt\cf5 (\cf12 i\cf5 ))\cf3 ;\cf0\par
+\cf2\tab\tab\tab\cf4\b System\cf3\b0 .\cf13\b\i out\cf3\b0\i0 .\cf10 println\cf5 (\cf12 values\cf3 .\cf10 toString\cf5 ())\cf3 ;\cf0\par
+\cf2\tab\tab\tab\cf4\b System\cf3\b0 .\cf13\b\i out\cf3\b0\i0 .\cf10 println\cf5 (\cf7 s\cf3 .\cf10 charAt\cf5 (\cf7 s\cf3 .\cf10 length\cf5 ()\cf3 -\cf11 1\cf5 ))\cf3 ;\cf0\par
+\cf2\tab\tab\tab\cf4\b System\cf3\b0 .\cf13\b\i out\cf3\b0\i0 .\cf10 println\cf5 (\cf7 s\cf3 .\cf10 charAt\cf5 (\cf7 s\cf3 .\cf10 length\cf5 ()\cf3 -\cf11 2\cf5 ))\cf3 ;\cf0\par
+\cf2\tab\tab\tab\cf4\b System\cf3\b0 .\cf13\b\i out\cf3\b0\i0 .\cf10 println\cf5 (\cf7 s\cf3 .\cf10 charAt\cf5 (\cf7 s\cf3 .\cf10 length\cf5 ()\cf3 -\cf11 3\cf5 ))\cf3 ;\cf0\par
+\par
+\cf2\tab\tab\cf5\}\cf0\par
+\cf2\tab\tab\cf1\b if\cf5\b0 (\cf12 values\cf3 .\cf10 pop\cf5 ()\cf3 .\cf10 equals\cf5 (\cf7 s\cf3 .\cf10 charAt\cf5 (\cf7 s\cf3 .\cf10 length\cf5 ()\cf3 -\cf11 3\cf5 ))\cf2  \cf0\par
+\cf2\tab\tab\tab\tab\cf3 &&\cf2  \cf12 values\cf3 .\cf10 pop\cf5 ()\cf3 .\cf10 equals\cf5 (\cf7 s\cf3 .\cf10 charAt\cf5 (\cf7 s\cf3 .\cf10 length\cf5 ()\cf3 -\cf11 2\cf5 ))\cf2  \cf0\par
+\cf2\tab\tab\tab\tab\cf3 &&\cf2  \cf12 values\cf3 .\cf10 pop\cf5 ()\cf3 .\cf10 equals\cf5 (\cf7 s\cf3 .\cf10 charAt\cf5 (\cf7 s\cf3 .\cf10 length\cf5 ()\cf3 -\cf11 1\cf5 )))\cf0\par
+\cf2\tab\tab\tab\cf1\b return\cf2\b0  \cf1\b true\cf3\b0 ;\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf1\b false\cf3\b0 ;\cf0\par
+\cf2\tab\cf5\}\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b int\cf5\b0 []\cf2  \cf6\b rotateRight\cf5\b0 (\cf1\b int\cf5\b0 []\cf2  \cf7 arr\cf3 ,\cf2  \cf1\b int\cf2\b0  \cf7 k\cf5 )\cf2  \cf5\{\cf0\par
+\cf2\tab\tab\cf1\b int\cf5\b0 []\cf2  \cf9\b nArray\cf2\b0  \cf3 =\cf2  \cf1\b new\cf2\b0  \cf1\b int\cf5\b0 [\cf7 arr\cf3 .\cf14 length\cf5 ]\cf3 ;\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf9\b pos\cf2\b0  \cf3 =\cf2  \cf7 k\cf2  \cf3 %\cf2  \cf7 arr\cf3 .\cf14 length\cf3 ;\cf0\par
+\cf2\tab\tab\cf1\b for\cf2\b0  \cf5 (\cf1\b int\cf2\b0  \cf9\b i\cf2\b0  \cf3 =\cf11 0\cf3 ;\cf12 i\cf2  \cf3 <\cf7 arr\cf3 .\cf14 length\cf3 ;\cf12 i\cf3 ++\cf5 )\cf2  \cf5\{\cf0\par
+\cf2\tab\tab\tab\cf12 nArray\cf5 [\cf12 pos\cf5 ]\cf2  \cf3 =\cf2  \cf7 arr\cf5 [\cf12 i\cf5 ]\cf3 ;\cf0\par
+\cf2\tab\tab\tab\cf12 pos\cf2  \cf3 =\cf2  \cf5 (\cf12 pos\cf3 +\cf11 1\cf5 )\cf2  \cf3 %\cf2  \cf7 arr\cf3 .\cf14 length\cf3 ;\cf0\par
+\cf2\tab\tab\cf5\}\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf12 nArray\cf3 ;\cf0\par
+\cf2\tab\cf5\}\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b int\cf2\b0  \cf6\b largest2dArrInt\cf5\b0 (\cf1\b int\cf2\b0  \cf5 [][]\cf2  \cf7 arr\cf5 )\cf2  \cf5\{\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf9\b largest\cf2\b0  \cf3 =\cf2  \cf11 0\cf3 ;\cf0\par
+\cf2\tab\tab\cf1\b for\cf5\b0 (\cf1\b int\cf2\b0  \cf9\b i\cf2\b0  \cf3 =\cf2  \cf11 0\cf3 ;\cf2  \cf12 i\cf2  \cf3 <\cf2  \cf7 arr\cf3 .\cf14 length\cf3 ;\cf2  \cf12 i\cf3 ++\cf5 )\cf2  \cf5\{\cf0\par
+\cf2\tab\tab\tab\cf1\b for\cf5\b0 (\cf1\b int\cf2\b0  \cf9\b j\cf2\b0  \cf3 =\cf2  \cf11 0\cf3 ;\cf2  \cf12 j\cf2  \cf3 <\cf2  \cf7 arr\cf5 [\cf11 0\cf5 ]\cf3 .\cf14 length\cf3 ;\cf2  \cf12 j\cf3 ++\cf5 )\cf2  \cf5\{\cf0\par
+\cf2\tab\tab\tab\tab\cf1\b if\cf5\b0 (\cf7 arr\cf5 [\cf12 i\cf5 ][\cf12 j\cf5 ]\cf2  \cf3 >\cf2  \cf12 largest\cf5 )\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf12 largest\cf2  \cf3 =\cf2  \cf7 arr\cf5 [\cf12 i\cf5 ][\cf12 j\cf5 ]\cf3 ;\cf0\par
+\cf2\tab\tab\tab\cf5\}\cf0\par
+\cf2\tab\tab\cf5\}\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf12 largest\cf3 ;\cf0\par
+\cf2\tab\cf5\}\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b int\cf2\b0  \cf6\b largestStaInt\cf5\b0 (\cf4\b Stack\cf3\b0 <\cf8 Integer\cf3 >\cf2  \cf7 stack\cf5 )\cf2  \cf5\{\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf9\b largest\cf2\b0  \cf3 =\cf2  \cf7 stack\cf3 .\cf10 peek\cf5 ()\cf3 ;\cf0\par
+\cf2\tab\tab\cf4\b Stack\cf3\b0 <\cf8 Integer\cf3 >\cf2  \cf9\b temp\cf2\b0  \cf3 =\cf2  \cf1\b new\cf2\b0  \cf10 Stack\cf3 <\cf8 Integer\cf3 >\cf5 ()\cf3 ;\cf0\par
+\cf2\tab\tab\cf1\b while\cf5\b0 (\cf3 !\cf7 stack\cf3 .\cf10 isEmpty\cf5 ())\cf2  \cf5\{\cf0\par
+\cf2\tab\tab\tab\cf12 temp\cf3 .\cf10 push\cf5 (\cf7 stack\cf3 .\cf10 pop\cf5 ())\cf3 ;\cf0\par
+\cf2\tab\tab\tab\cf1\b if\cf5\b0 (\cf12 largest\cf2  \cf3 <\cf2  \cf12 temp\cf3 .\cf10 peek\cf5 ())\cf0\par
+\cf2\tab\tab\tab\tab\cf12 largest\cf2  \cf3 =\cf2  \cf12 temp\cf3 .\cf10 peek\cf5 ()\cf3 ;\cf0\par
+\cf2\tab\tab\tab\cf1\b while\cf5\b0 (\cf3 !\cf12 temp\cf3 .\cf10 isEmpty\cf5 ())\cf0\par
+\cf2\tab\tab\tab\tab\cf7 stack\cf3 .\cf10 push\cf5 (\cf12 temp\cf3 .\cf10 pop\cf5 ())\cf3 ;\cf0\par
+\cf2\tab\tab\cf5\}\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf12 largest\cf3 ;\cf0\par
+\cf2\tab\cf5\}\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf4\b Stack\cf3\b0 <\cf8 Character\cf3 >\cf2  \cf6\b reverse\cf5\b0 (\cf4\b String\cf2\b0  \cf7 s\cf5 )\cf2  \cf5\{\cf0\par
+\cf2\tab\tab\cf4\b Stack\cf3\b0 <\cf8 Character\cf3 >\cf2  \cf9\b stack\cf2\b0  \cf3 =\cf2  \cf1\b new\cf2\b0  \cf10 Stack\cf3 <\cf8 Character\cf3 >\cf5 ()\cf3 ;\cf0\par
+\cf2\tab\tab\cf1\b for\cf5\b0 (\cf1\b int\cf2\b0  \cf9\b i\cf2\b0  \cf3 =\cf2  \cf7 s\cf3 .\cf10 length\cf5 ()\cf3 -\cf11 1\cf3 ;\cf2  \cf12 i\cf2  \cf3 >=\cf2  \cf11 0\cf3 ;\cf2  \cf12 i\cf3 --\cf5 )\cf2  \cf5\{\cf0\par
+\cf2\tab\tab\tab\cf12 stack\cf3 .\cf10 push\cf5 (\cf7 s\cf3 .\cf10 charAt\cf5 (\cf12 i\cf5 ))\cf3 ;\cf0\par
+\cf2\tab\tab\cf5\}\cf0\par
+\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf12 stack\cf3 ;\cf0\par
+\cf2\tab\cf5\}\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  \cf6\b main\cf2\b0  \cf5 (\cf4\b String\cf2\b0  \cf5 []\cf2  \cf7 args\cf5 )\cf2  \cf5\{\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf5 [][]\cf2  \cf9\b testLargest\cf2\b0  \cf3 =\cf2  \cf5\{\{\cf11 0\cf3 ,\cf11 1\cf3 ,\cf11 2\cf5\}\cf3 ,\cf2  \cf5\{\cf11 712\cf3 ,\cf11 2\cf3 ,\cf11 8\cf5\}\cf3 ,\cf5\{\cf11 23\cf3 ,\cf11 15\cf3 ,\cf11 20\cf5\}\cf3 ,\cf2  \cf5\{\cf11 71\cf3 ,\cf11 90\cf3 ,\cf11 85\cf5\}\}\cf3 ;\cf0\par
+\cf2\tab\tab\cf4\b System\cf3\b0 .\cf13\b\i out\cf3\b0\i0 .\cf10 println\cf5 (\cf15 "\\n"\cf2  \cf3 +\cf2  \cf15 "Testing Largest 2d array Test Review #1: "\cf2  \cf3 +\cf2  \cf16\i largest2dArrInt\cf5\i0 (\cf12 testLargest\cf5 ))\cf3 ;\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf4\b Stack\cf3\b0 <\cf8 Integer\cf3 >\cf2  \cf9\b tStack\cf2\b0  \cf3 =\cf2  \cf1\b new\cf2\b0  \cf10 Stack\cf3 <\cf8 Integer\cf3 >\cf5 ()\cf3 ;\cf0\par
+\cf2\tab\tab\cf1\b for\cf5\b0 (\cf1\b int\cf2\b0  \cf9\b i\cf2\b0  \cf3 =\cf2  \cf11 0\cf3 ;\cf2  \cf12 i\cf2  \cf3 <\cf2  \cf11 50\cf3 ;\cf2  \cf12 i\cf3 ++\cf5 )\cf2  \cf5\{\cf0\par
+\cf2\tab\tab\tab\cf12 tStack\cf3 .\cf10 push\cf5 (\cf12 i\cf5 )\cf3 ;\cf0\par
+\cf2\tab\tab\tab\cf12 i\cf2  \cf3 +=\cf2  \cf11 5\cf3 ;\cf0\par
+\cf2\tab\tab\cf5\}\cf0\par
+\cf2\tab\tab\cf4\b System\cf3\b0 .\cf13\b\i out\cf3\b0\i0 .\cf10 println\cf5 (\cf16\i largestStaInt\cf5\i0 (\cf12 tStack\cf5 ))\cf3 ;\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf1\b int\cf5\b0 []\cf2  \cf9\b x\cf2\b0  \cf3 =\cf2  \cf5\{\cf11 1\cf3 ,\cf2  \cf11 2\cf3 ,\cf2  \cf11 3\cf3 ,\cf2  \cf11 4\cf3 ,\cf2  \cf11 5\cf3 ,\cf2  \cf11 6\cf3 ,\cf2  \cf11 7\cf5\}\cf3 ;\cf0\par
+\cf2\tab\tab\cf12 x\cf2  \cf3 =\cf2  \cf16\i rotateRight\cf5\i0 (\cf12 x\cf3 ,\cf2  \cf11 6\cf5 )\cf3 ;\cf0\par
+\cf2\tab\tab\cf1\b for\cf5\b0 (\cf1\b int\cf2\b0  \cf9\b i\cf2\b0  \cf3 :\cf2  \cf12 x\cf5 )\cf0\par
+\cf2\tab\tab\tab\cf4\b System\cf3\b0 .\cf13\b\i out\cf3\b0\i0 .\cf10 print\cf5 (\cf12 i\cf2  \cf3 +\cf2  \cf15 " "\cf5 )\cf3 ;\cf0\par
+\cf2\tab\tab\cf17 //System.out.println(1 % 4);\cf0\par
+\par
+\cf2\tab\tab\cf4\b Stack\cf3\b0 <\cf8 Integer\cf3 >\cf2  \cf9\b values\cf2\b0  \cf3 =\cf2  \cf1\b new\cf2\b0  \cf10 Stack\cf3 <\cf8 Integer\cf3 >\cf5 ()\cf3 ;\cf0\par
+\cf2\tab\tab\cf1\b for\cf2\b0  \cf5 (\cf1\b int\cf2\b0  \cf9\b i\cf2\b0  \cf3 =\cf2  \cf11 1\cf3 ;\cf2  \cf12 i\cf2  \cf3 <=\cf2  \cf11 16\cf3 ;\cf2  \cf12 i\cf3 ++\cf5 )\cf2  \cf5\{\cf0\par
+\cf2\tab\tab\tab\cf1\b if\cf2\b0  \cf5 (\cf12 i\cf2  \cf3 %\cf2  \cf11 3\cf2  \cf3 ==\cf2  \cf11 0\cf5 )\cf0\par
+\cf2\tab\tab\tab\tab\cf12 values\cf3 .\cf10 push\cf5 (\cf12 i\cf5 )\cf3 ;\cf0\par
+\cf2\tab\tab\tab\cf1\b else\cf2\b0  \cf1\b if\cf2\b0  \cf5 (\cf12 i\cf2  \cf3 %\cf2  \cf11 4\cf2  \cf3 ==\cf2  \cf11 0\cf5 )\cf0\par
+\cf2\tab\tab\tab\tab\cf12 values\cf3 .\cf10 pop\cf5 ()\cf3 ;\cf0\par
+\cf2\tab\tab\cf5\}\cf0\par
+\cf2\tab\tab\cf4\b System\cf3\b0 .\cf13\b\i out\cf3\b0\i0 .\cf10 println\cf5 (\cf15 "\\n"\cf2  \cf3 +\cf2  \cf15 "Test Review # 7: "\cf2  \cf3 +\cf2  \cf12 values\cf5 )\cf3 ;\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf0\par
+\par
+\cf2\tab\cf5\}\cf0\par
+\cf5\}\cf0\par
+\f1\fs22\par
+}
+ 

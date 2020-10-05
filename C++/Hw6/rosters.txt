@@ -1,0 +1,256 @@
+course1 CSC 211 4 Sands
+student1 Last Name: Hansraj
+First Name: Derick
+Date of Birth: Date: January 1, 2018
+Date of Matriculation: Date: July 12, 1993
+GPA: 4.00
+Credits: 14.00
+Standing: Lower Freshman
+ID Number: 0000
+
+student2 Last Name: Hansraj
+First Name: Derick
+Date of Birth: Date: January 1, 2018
+Date of Matriculation: Date: July 12, 1993
+GPA: 4.00
+Credits: 14.00
+Standing: Lower Freshman
+ID Number: 0001
+
+student3 Last Name: Hansraj
+First Name: Derick
+Date of Birth: Date: January 1, 2018
+Date of Matriculation: Date: July 12, 1993
+GPA: 4.00
+Credits: 14.00
+Standing: Lower Freshman
+ID Number: 0002
+
+student4 Last Name: Hansraj
+First Name: Derick
+Date of Birth: Date: January 1, 2018
+Date of Matriculation: Date: July 12, 1993
+GPA: 4.00
+Credits: 14.00
+Standing: Lower Freshman
+ID Number: 0003
+
+student5 Last Name: Hansraj
+First Name: Derick
+Date of Birth: Date: January 1, 2018
+Date of Matriculation: Date: July 12, 1993
+GPA: 4.00
+Credits: 14.00
+Standing: Lower Freshman
+ID Number: 0004
+
+student6 Last Name: Hansraj
+First Name: Derick
+Date of Birth: Date: January 1, 2018
+Date of Matriculation: Date: July 12, 1993
+GPA: 4.00
+Credits: 14.00
+Standing: Lower Freshman
+ID Number: 0005
+
+student7 Last Name: Hansraj
+First Name: Derick
+Date of Birth: Date: January 1, 2018
+Date of Matriculation: Date: July 12, 1993
+GPA: 4.00
+Credits: 14.00
+Standing: Lower Freshman
+ID Number: 0006
+
+student8 Last Name: Hansraj
+First Name: Derick
+Date of Birth: Date: January 1, 2018
+Date of Matriculation: Date: July 12, 1993
+GPA: 4.00
+Credits: 14.00
+Standing: Lower Freshman
+ID Number: 0007
+
+student9 Last Name: Hansraj
+First Name: Derick
+Date of Birth: Date: January 1, 2018
+Date of Matriculation: Date: July 12, 1993
+GPA: 4.00
+Credits: 14.00
+Standing: Lower Freshman
+ID Number: 0008
+
+student10 Last Name: Hansraj
+First Name: Derick
+Date of Birth: Date: January 1, 2018
+Date of Matriculation: Date: July 12, 1993
+GPA: 4.00
+Credits: 14.00
+Standing: Lower Freshman
+ID Number: 0009
+
+course2 CSC 111 4 Waxman
+student1 Last Name: Hansraj
+First Name: Derick
+Date of Birth: Date: January 1, 2018
+Date of Matriculation: Date: July 12, 1993
+GPA: 4.00
+Credits: 14.00
+Standing: Lower Freshman
+ID Number: 0000
+
+student2 Last Name: Hansraj
+First Name: Derick
+Date of Birth: Date: January 1, 2018
+Date of Matriculation: Date: July 12, 1993
+GPA: 4.00
+Credits: 14.00
+Standing: Lower Freshman
+ID Number: 0001
+
+student3 Last Name: Hansraj
+First Name: Derick
+Date of Birth: Date: January 1, 2018
+Date of Matriculation: Date: July 12, 1993
+GPA: 4.00
+Credits: 14.00
+Standing: Lower Freshman
+ID Number: 0002
+
+student4 Last Name: Hansraj
+First Name: Derick
+Date of Birth: Date: January 1, 2018
+Date of Matriculation: Date: July 12, 1993
+GPA: 4.00
+Credits: 14.00
+Standing: Lower Freshman
+ID Number: 0003
+
+course3 CSC 240 4 Yeh
+student1 Last Name: Hansraj
+First Name: Derick
+Date of Birth: Date: January 1, 2018
+Date of Matriculation: Date: July 12, 1993
+GPA: 4.00
+Credits: 14.00
+Standing: Lower Freshman
+ID Number: 0000
+
+student2 Last Name: Hansraj
+First Name: Derick
+Date of Birth: Date: January 1, 2018
+Date of Matriculation: Date: July 12, 1993
+GPA: 4.00
+Credits: 14.00
+Standing: Lower Freshman
+ID Number: 0001
+
+student3 Last Name: Hansraj
+First Name: Derick
+Date of Birth: Date: January 1, 2018
+Date of Matriculation: Date: July 12, 1993
+GPA: 4.00
+Credits: 14.00
+Standing: Lower Freshman
+ID Number: 0002
+
+student4 Last Name: Hansraj
+First Name: Derick
+Date of Birth: Date: January 1, 2018
+Date of Matriculation: Date: July 12, 1993
+GPA: 4.00
+Credits: 14.00
+Standing: Lower Freshman
+ID Number: 0003
+
+student5 Last Name: Hansraj
+First Name: Derick
+Date of Birth: Date: January 1, 2018
+Date of Matriculation: Date: July 12, 1993
+GPA: 4.00
+Credits: 14.00
+Standing: Lower Freshman
+ID Number: 0004
+
+student6 Last Name: Hansraj
+First Name: Derick
+Date of Birth: Date: January 1, 2018
+Date of Matriculation: Date: July 12, 1993
+GPA: 4.00
+Credits: 14.00
+Standing: Lower Freshman
+ID Number: 0005
+
+student7 Last Name: Hansraj
+First Name: Derick
+Date of Birth: Date: January 1, 2018
+Date of Matriculation: Date: July 12, 1993
+GPA: 4.00
+Credits: 14.00
+Standing: Lower Freshman
+ID Number: 0006
+
+student8 Last Name: Hansraj
+First Name: Derick
+Date of Birth: Date: January 1, 2018
+Date of Matriculation: Date: July 12, 1993
+GPA: 4.00
+Credits: 14.00
+Standing: Lower Freshman
+ID Number: 0007
+
+student9 Last Name: Hansraj
+First Name: Derick
+Date of Birth: Date: January 1, 2018
+Date of Matriculation: Date: July 12, 1993
+GPA: 4.00
+Credits: 14.00
+Standing: Lower Freshman
+ID Number: 0008
+
+student10 Last Name: Hansraj
+First Name: Derick
+Date of Birth: Date: January 1, 2018
+Date of Matriculation: Date: July 12, 1993
+GPA: 4.00
+Credits: 14.00
+Standing: Lower Freshman
+ID Number: 0009
+
+student11 Last Name: Hansraj
+First Name: Derick
+Date of Birth: Date: January 1, 2018
+Date of Matriculation: Date: July 12, 1993
+GPA: 4.00
+Credits: 14.00
+Standing: Lower Freshman
+ID Number: 0234
+
+course4 MAT 231 4 Pastore
+student1 Last Name: Hansraj
+First Name: Derick
+Date of Birth: Date: January 1, 2018
+Date of Matriculation: Date: July 12, 1993
+GPA: 4.00
+Credits: 14.00
+Standing: Lower Freshman
+ID Number: 0000
+
+student2 Last Name: Hansraj
+First Name: Derick
+Date of Birth: Date: January 1, 2018
+Date of Matriculation: Date: July 12, 1993
+GPA: 4.00
+Credits: 14.00
+Standing: Lower Freshman
+ID Number: 0001
+
+student3 Last Name: Hansraj
+First Name: Derick
+Date of Birth: Date: January 1, 2018
+Date of Matriculation: Date: July 12, 1993
+GPA: 4.00
+Credits: 14.00
+Standing: Lower Freshman
+ID Number: 0002
+

@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1540266210 source:c:\users\the boss\desktop\homework#3\student.cpp
+	"Student.h"
+
+1540268236 c:\users\the boss\desktop\homework#3\student.h
+	<iostream>
+	<iomanip>
+
+1540355228 source:c:\users\the boss\desktop\homework#3\roster.cpp
+	<iostream>
+	"Roster.h"
+
+1540354692 c:\users\the boss\desktop\homework#3\roster.h
+	<iostream>
+	"Student.h"
+
+1540355770 source:c:\users\the boss\desktop\homework#3\main.cpp
+	<iostream>
+	"Roster.h"
+

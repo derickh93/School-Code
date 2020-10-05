@@ -1,0 +1,46 @@
+/*
+ * list.c
+ *
+ *  Created on: May 3, 2018
+ *      Author: THE BOSS
+ */
+#include <stdio.h>
+#include <stdbool.h>
+#include <stdlib.h>
+
+
+
+struct Node {
+	char *value;
+	struct Node *next;
+};
+
+void init(struct Node *head)
+{
+	head->next = NULL;
+	head->value = NULL;
+}
+
+void push(struct Node *head,char *data) {
+	   struct Node *newNode;
+	   newNode = (struct Node*)malloc(sizeof(struct Node));
+	   newNode->value = data;
+	   if(head == NULL)
+	      newNode->next = NULL;
+	   else
+	      newNode->next = head;
+	   head = newNode;
+	   printf("\nInsertion is Success!!!\n");
+	}
+
+void printlist(struct Node *head) {
+	    //Fill in the code here
+	    struct Node *temp = head;
+	    if (temp == NULL)
+	        printf(" {}");
+	    printf("LOOPING");
+	        printf(" %s", temp->value);
+	        temp = temp->next;
+	        printf(" %s", temp->value);
+
+	}

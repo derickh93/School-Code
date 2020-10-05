@@ -1,0 +1,36 @@
+course1|CSC|211|4|Sands
+student1|Derick|Hansraj|0000|Lower Freshman|14|4|7/12/1993|1/1/2018
+student2|Derick|Hansraj|0001|Lower Freshman|14|4|7/12/1993|1/1/2018
+student3|Derick|Hansraj|0002|Lower Freshman|14|4|7/12/1993|1/1/2018
+student4|Derick|Hansraj|0003|Lower Freshman|14|4|7/12/1993|1/1/2018
+student5|Derick|Hansraj|0004|Lower Freshman|14|4|7/12/1993|1/1/2018
+student6|Derick|Hansraj|0005|Lower Freshman|14|4|7/12/1993|1/1/2018
+student7|Derick|Hansraj|0006|Lower Freshman|14|4|7/12/1993|1/1/2018
+student8|Derick|Hansraj|0007|Lower Freshman|14|4|7/12/1993|1/1/2018
+student9|Derick|Hansraj|0008|Lower Freshman|14|4|7/12/1993|1/1/2018
+student10|Derick|Hansraj|0009|Lower Freshman|14|4|7/12/1993|1/1/2018
+end_roster|
+course2|CSC|111|4|Waxman
+student1|Derick|Hansraj|0234|Lower Freshman|14|4|7/12/1993|1/1/2018
+student2|Derick|Hansraj|1209|Lower Freshman|14|4|7/12/1993|1/1/2018
+student3|Derick|Hansraj|1245|Lower Freshman|14|4|7/12/1993|1/1/2018
+student4|Derick|Hansraj|3422|Lower Freshman|14|4|7/12/1993|1/1/2018
+end_roster|
+course3|CSC|240|4|Yeh
+student1|Derick|Hansraj|1223|Lower Freshman|14|4|7/12/1993|1/1/2018
+student2|Derick|Hansraj|1235|Lower Freshman|14|4|7/12/1993|1/1/2018
+student3|Derick|Hansraj|1236|Lower Freshman|14|4|7/12/1993|1/1/2018
+student4|Derick|Hansraj|1254|Lower Freshman|14|4|7/12/1993|1/1/2018
+student5|Derick|Hansraj|3452|Lower Freshman|14|4|7/12/1993|1/1/2018
+student6|Derick|Hansraj|4297|Lower Freshman|14|4|7/12/1993|1/1/2018
+student7|Derick|Hansraj|5453|Lower Freshman|14|4|7/12/1993|1/1/2018
+student8|Derick|Hansraj|9475|Lower Freshman|14|4|7/12/1993|1/1/2018
+student9|Derick|Hansraj|9847|Lower Freshman|14|4|7/12/1993|1/1/2018
+student10|Derick|Hansraj|9857|Lower Freshman|14|4|7/12/1993|1/1/2018
+student11|Derick|Hansraj|9876|Lower Freshman|14|4|7/12/1993|1/1/2018
+end_roster|
+course4|MAT|231|4|Pastore
+student1|Derick|Hansraj|1000|Lower Freshman|14|4|7/12/1993|1/1/2018
+student2|Derick|Hansraj|2000|Lower Freshman|14|4|7/12/1993|1/1/2018
+student3|Derick|Hansraj|3000|Lower Freshman|14|4|7/12/1993|1/1/2018
+end_roster|

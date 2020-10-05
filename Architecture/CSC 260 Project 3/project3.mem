@@ -1,0 +1,137 @@
+0: 0
+1: 0			// do nothing
+
+2: 100
+3: 000110 00 //put 100 into R0 (location of array)
+
+4: 00 00 0000
+5: 001011 00 //put first number in array in r0
+
+6: 200
+7: 000110 01 //put 200 into R1
+
+8: 01 00 0000
+9: 001011 01 //put first number in arrayName in r1
+
+10: 104
+11: 000110 10 //put 104 into R2
+
+12: 10 00 0000
+13: 001011 10 //put number at 104 into r2
+
+14: 01 00 0000
+15: 000010 11 // r1 -= r3 (0 if it is a match)
+
+16: 11 00 0000
+17: 001101 00  //if match skip
+
+18: 22
+19: 001100 00 // skip to line 22
+
+20: 10 00 0000
+21: 001111 10 // index++
+
+22: 101
+23: 000110 00 //put 101 into R0 (location of array)
+
+24: 00 00 0000
+25: 001011 00 //put first number in array in r0
+
+26: 201
+27: 000110 01 //put 201 into R1
+
+28: 01 00 0000
+29: 001011 01 //put number in arrayName in r1
+
+30: 01 00 0000
+31: 000010 11 // r1 -= r3 (0 if it is a match)
+
+32: 11 00 0000
+33: 001101 00  //if match skip
+
+34: 38
+35: 001100 00 // skip to line 38
+
+36: 10 00 0000
+37: 001111 10 // index++
+
+38: 102
+39: 000110 00 //put 102 into R0 (location of array)
+
+40: 00 00 0000
+41: 001011 00 //put number in array in r0
+
+42: 202
+43: 000110 01 //put 202 into R1
+
+44: 01 00 0000
+45: 001011 01 //put number in arrayName in r1
+
+46: 01 00 0000
+47: 000010 11 // r1 -= r3 (0 if it is a match)
+
+48: 11 00 0000
+49: 001101 00  //if match skip
+
+50: 54
+51: 001100 00 // skip to line 54
+
+52: 10 00 0000
+53: 001111 10 // index++
+
+54: 103
+55: 000110 00 //put 103 into R0 (location of array)
+
+56: 00 00 0000
+57: 001011 00 //put number in array in r0
+
+58: 203
+59: 000110 01 //put 203 into R1
+
+60: 01 00 0000
+61: 001011 01 //put number in arrayName in r1
+
+62: 01 00 0000
+63: 000010 11 // r1 -= r3 (0 if it is a match)
+
+64: 11 00 0000
+65: 001101 00  //if match skip
+
+66: 70
+67: 001100 00 // skip to line 70
+
+68: 10 00 0000
+69: 001111 10 // index++
+
+70: 104
+71: 000110 11 // put 104 into reg 2
+
+72: 11 10 0000
+73: 001010 01 // put the result into location 104
+
+74: 105
+75: 000110 11 // put 105 into reg 3
+
+76: 11 10 0000
+77: 001010 01 // put the result into location 105
+
+78: 0			// end of program
+79: 010001 00
+
+
+
+100: 0
+101: 3
+102: 5
+103: 2
+
+104: 0
+105: 0
+
+106: 100
+107: 200
+
+200: 3
+201: 0
+202: 5
+203: 2

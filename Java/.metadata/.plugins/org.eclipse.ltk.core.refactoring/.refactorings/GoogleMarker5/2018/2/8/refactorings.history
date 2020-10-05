@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Marker.java&apos; to &apos;230Proj1Testing/src/(default package)&apos;&#x0D;&#x0A;- Original project: &apos;GoogleMarker5&apos;&#x0D;&#x0A;- Destination element: &apos;230Proj1Testing/src/(default package)&apos;&#x0D;&#x0A;- Original element: &apos;gm.Marker.java&apos;" description="Copy compilation unit" destination="=230Proj1Testing/src&lt;" element1="/src&lt;gm{Marker.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1518932937083" units="1" version="1.0"/>
+</session>

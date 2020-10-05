@@ -1,0 +1,33 @@
+15:01:17 **** Build of configuration Debug for project Test1 ****
+make all 
+Building file: ../test1.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test1.d" -MT"test1.o" -o "test1.o" "../test1.c"
+../test1.c: In function 'main':
+../test1.c:11:20: warning: implicit declaration of function 'krGetLine' [-Wimplicit-function-declaration]
+    int charsRead = krGetLine(s, 81);
+                    ^
+../test1.c:11:30: error: 's' undeclared (first use in this function)
+    int charsRead = krGetLine(s, 81);
+                              ^
+../test1.c:11:30: note: each undeclared identifier is reported only once for each function it appears in
+../test1.c:16:8: error: static declaration of 'krGetLine' follows non-static declaration
+    int krGetLine(char s[], int lim) {
+        ^
+../test1.c:11:20: note: previous implicit declaration of 'krGetLine' was here
+    int charsRead = krGetLine(s, 81);
+                    ^
+../test1.c: In function 'krGetLine':
+../test1.c:27:12: warning: multi-character character constant [-Wmultichar]
+     s[i] = 'NULL';
+            ^
+../test1.c:27:12: warning: overflow in implicit constant conversion [-Woverflow]
+../test1.c: In function 'main':
+../test1.c:11:8: warning: unused variable 'charsRead' [-Wunused-variable]
+    int charsRead = krGetLine(s, 81);
+        ^
+make: *** [test1.o] Error 1
+subdir.mk:18: recipe for target 'test1.o' failed
+
+15:01:17 Build Finished (took 727ms)
+

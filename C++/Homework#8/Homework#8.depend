@@ -1,0 +1,76 @@
+# depslib dependency file v1.0
+1514140574 source:c:\users\the boss\desktop\c++\homework#8\main.cpp
+	<iostream>
+
+1544504062 source:c:\users\the boss\desktop\c++\homework#8\file.cpp
+	<iostream>
+	"File.h"
+
+1544505825 c:\users\the boss\desktop\c++\homework#8\file.h
+	<string>
+
+1544504211 source:c:\users\the boss\desktop\c++\homework#8\image.cpp
+	<iostream>
+	"Image.h"
+
+1544505825 c:\users\the boss\desktop\c++\homework#8\image.h
+	<string>
+	"File.h"
+
+1544505310 source:c:\users\the boss\desktop\c++\homework#8\text.cpp
+	<iostream>
+	"Text.h"
+
+1544505310 c:\users\the boss\desktop\c++\homework#8\text.h
+	<string>
+	"File.h"
+
+1545107267 source:c:\users\cooli\desktop\homework#8\file.cpp
+	<string>
+	<iostream>
+	"File.h"
+
+1545107267 c:\users\cooli\desktop\homework#8\file.h
+	<string>
+
+1544635236 source:c:\users\cooli\desktop\homework#8\image.cpp
+	<iostream>
+	"Image.h"
+
+1544634156 c:\users\cooli\desktop\homework#8\image.h
+	<string>
+	"File.h"
+
+1545114073 source:c:\users\cooli\desktop\homework#8\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<vector>
+	"File.h"
+	"Image.h"
+	"Text.h"
+
+1544634156 c:\users\cooli\desktop\homework#8\text.h
+	<string>
+	"File.h"
+
+1544635192 source:c:\users\cooli\desktop\homework#8\text.cpp
+	<iostream>
+	"Text.h"
+	<fstream>
+
+1544590939 c:\users\cooli\desktop\homework#8\safematrix.h
+	"SafeArray.h"
+	<iosfwd>
+	<iostream>
+
+1544588558 c:\users\cooli\desktop\homework#8\safearray.h
+	<iostream>
+	<cstdlib>
+
+1544405445 source:c:\users\cooli\desktop\homework#8\safearray.cpp
+	"SafeArray.h"
+
+1544405627 source:c:\users\cooli\desktop\homework#8\safematrix.cpp
+	"SafeMatrix.h"
+

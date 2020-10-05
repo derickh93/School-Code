@@ -1,0 +1,69 @@
+import javax.swing.JOptionPane;
+
+public class Program3App {
+	private static long startTime;
+	private static long simulationTime;
+	private static Arrival at = new Arrival(5000);
+	private static Departure dt =  new Departure(4000);
+	private static Runway rt;
+
+
+
+	public static long getStartTime(){
+		return startTime;
+	}
+
+
+	public static void startSimulation(long time) {
+		startTime = System.currentTimeMillis();
+		simulationTime = time * 1000;
+		//TODO: Start each thread
+		at.start();
+		dt.start();
+		rt =  new Runway(at, dt);
+		rt.start();
+		// Loop - run simulation for specified time
+		while(System.currentTimeMillis() < startTime + simulationTime){
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		//TODO: stop the loop in each thread ¨C call the stopRunning method
+		at.stopRunning();
+		dt.stopRunning();
+		rt.stopRunning();
+		//TODO: interrupt each thread ¨C method from Thread class
+		try {
+			at.join();
+			dt.join();
+			rt.join();
+
+			//TODO: wait for each thread to die ¨C method from Thread class
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+	public static void main(String[] args) {
+		//Input the length of time to run the simulation (in minutes)
+		long st = Long.parseLong(JOptionPane.showInputDialog("Input Simulation Time(mins): "));
+		//Create an instance of Program3
+		Program3App instanceOfproj3 = new Program3App();	
+		//Call the startSimulation method and pass the time to it
+		startSimulation(st);
+		//Loop while the Arrival or Departure threads are alive
+		while(at.isAlive()||dt.isAlive()){
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		//Stop the Runway thread from running
+		rt.stopRunning();
+
+	}
+}

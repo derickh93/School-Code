@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\THE BOSS\Desktop\HTLab"/>
+		<item value="D:\Downloads\Sets"/>
+		<item value="C:\Users\THE BOSS\eclipse-workspace\SerialDemo"/>
+		<item value="D:\Downloads\DoublyLinkedListLab"/>
+		<item value="C:\Users\THE BOSS\eclipse-workspace\CSC130.hansrajd.lab8"/>
+		<item value="C:\Users\THE BOSS\Desktop\CSC130.hansrajd.lab8"/>
+		<item value="C:\Users\THE BOSS\eclipse-workspace\CSC130.HansrajD.Program3"/>
+		<item value="C:\Users\THE BOSS\eclipse-workspace\CSC130.hansrajd.lab7"/>
+		<item value="C:\Users\THE BOSS\eclipse-workspace\project5"/>
+		<item value="C:\Users\THE BOSS\eclipse-workspace\lab7"/>
+		<item value="C:\Users\THE BOSS\eclipse-workspace\CSC130.hansrajd.lab6b"/>
+		<item value="C:\Users\THE BOSS\Desktop\CSC130.HansrajD.lab5b"/>
+		<item value="C:\Users\THE BOSS\eclipse-workspace\week9"/>
+		<item value="C:\Users\THE BOSS\eclipse-workspace\week6"/>
+		<item value="C:\Users\THE BOSS\eclipse-workspace\queue"/>
+		<item value="C:\Users\THE BOSS\Desktop\week9"/>
+		<item value="C:\Users\THE BOSS\eclipse-workspace\CSC130.HansrajD.lab5b"/>
+		<item value="C:\Users\THE BOSS\eclipse-workspace\CSC130.HansrajD.program2"/>
+		<item value="C:\Users\THE BOSS\eclipse-workspace\CSC130.hansrajd.lab5b"/>
+		<item value="C:\Users\THE BOSS\eclipse-workspace\CSC130.HansrajD.lab4"/>
+		<item value="C:\Users\THE BOSS\eclipse-workspace\Csc130.HansrajD.lab3a"/>
+		<item value="C:\Users\THE BOSS\eclipse-workspace\CSC130.HansrajD.lab2"/>
+		<item value="C:\Users\THE BOSS\eclipse-workspace\CSC130.HansrajD.lab1"/>
+		<item value="C:\Users\THE BOSS\eclipse-workspace\CSC130.HansrajD.Lab0"/>
+		<item value="C:\Users\THE BOSS\eclipse-workspace\CSC130.hansrajd.lab5a"/>
+		<item value="C:\Users\THE BOSS\eclipse-workspace\CSC130.HansrajD.program1"/>
+	</list>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item value="653" key="DIALOG_X_ORIGIN"/>
+		<item value="341" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

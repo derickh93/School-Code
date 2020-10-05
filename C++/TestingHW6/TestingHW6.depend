@@ -1,0 +1,42 @@
+# depslib dependency file v1.0
+1543624670 source:c:\users\cooli\desktop\testinghw6\date.cpp
+	"Date.h"
+	<iostream>
+	<cstdlib>
+
+1543605688 c:\users\cooli\desktop\testinghw6\date.h
+	<string>
+
+1543605688 source:c:\users\cooli\desktop\testinghw6\roster.cpp
+	<iostream>
+	<cstdlib>
+	"Roster.h"
+
+1543605688 c:\users\cooli\desktop\testinghw6\roster.h
+	<iostream>
+	"Student.h"
+	"Date.h"
+
+1543624740 c:\users\cooli\desktop\testinghw6\student.h
+	<iostream>
+	<iomanip>
+	"Date.h"
+	<cstdlib>
+
+1543634167 source:c:\users\cooli\desktop\testinghw6\student.cpp
+	"Student.h"
+	<iostream>
+	<iomanip>
+	<cstdlib>
+
+1543971773 source:c:\users\cooli\desktop\testinghw6\main.cpp
+	<iostream>
+	<string>
+	<sstream>
+	"Student.h"
+	"Roster.h"
+	"Date.h"
+	<fstream>
+	<vector>
+	<cstdlib>
+

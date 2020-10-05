@@ -1,0 +1,25 @@
+15:17:20 **** Incremental Build of configuration Debug for project CSC 217 Test Review ****
+make all 
+Building file: ../main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:32:0: warning: "YEARS_OLD" redefined
+  #define YEARS_OLD 10
+ ^
+../main.c:30:0: note: this is the location of the previous definition
+  #define YEARS_OLD 12
+ ^
+../main.c:38:14: warning: implicit declaration of function 'myatoi' [-Wimplicit-function-declaration]
+    int num = myatoi(s);
+              ^
+Finished building: ../main.c
+ 
+Building target: CSC 217 Test Review.exe
+Invoking: Cygwin C Linker
+gcc  -o "CSC 217 Test Review.exe"  ./main.o ./test1.o   
+Finished building target: CSC 217 Test Review.exe
+ 
+
+15:17:21 Build Finished (took 908ms)
+

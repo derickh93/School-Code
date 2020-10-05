@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;SortingLab.Lab3App&apos; to &apos;Lab5App&apos;&#x0D;&#x0A;- Original project: &apos;CSC230.HansrajD.lab3&apos;&#x0D;&#x0A;- Original element: &apos;SortingLab.Lab3App&apos;&#x0D;&#x0A;- Renamed element: &apos;SortingLab.Lab5App&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Lab3App&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;SortingLab{Lab3App.java[Lab3App" matchStrategy="1" name="Lab5App" qualified="false" references="true" similarDeclarations="false" stamp="1523544025011" textual="false" version="1.0"/>
+</session>

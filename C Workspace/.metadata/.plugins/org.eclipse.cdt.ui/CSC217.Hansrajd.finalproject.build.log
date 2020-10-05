@@ -1,0 +1,20 @@
+22:59:32 **** Incremental Build of configuration Debug for project CSC217.Hansrajd.finalproject ****
+make all 
+Building file: ../queue.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"queue.d" -MT"queue.o" -o "queue.o" "../queue.c"
+Finished building: ../queue.c
+ 
+Building file: ../stack.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"stack.d" -MT"stack.o" -o "stack.o" "../stack.c"
+Finished building: ../stack.c
+ 
+Building target: CSC217.Hansrajd.finalproject.exe
+Invoking: Cygwin C Linker
+gcc  -o "CSC217.Hansrajd.finalproject.exe"  ./main.o ./queue.o ./stack.o   
+Finished building target: CSC217.Hansrajd.finalproject.exe
+ 
+
+22:59:33 Build Finished (took 862ms)
+

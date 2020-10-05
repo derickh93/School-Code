@@ -1,0 +1,17 @@
+package ht;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+
+public class Lab4App {
+	public static void main (String [] args) throws FileNotFoundException {
+		 Scanner scanner = new Scanner(new File("Mock_Data.csv"));
+	        scanner.useDelimiter(",");
+	        while(scanner.hasNext()){
+	            System.out.print(scanner.next()+"|");
+	        }
+	        scanner.close();
+	}
+}

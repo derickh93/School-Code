@@ -1,0 +1,16 @@
+/*
+ * main.c
+ *
+ *  Created on: May 3, 2018
+ *      Author: THE BOSS
+ */
+#include <stdio.h>
+#include <stdbool.h>
+#include "list.h"
+
+int main() {
+	struct Node *head;
+	init(head);
+	push(head,"Derick");
+	printlist(head);
+}

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Accelerometer</string>
+    <string name="str_XAxis">X Axis: </string>
+    <string name="str_YAxis">Y Axis: </string>
+    <string name="str_ZAxis">Z Axis: </string>
+    <string name="str_Sensors">Amount of Sensors:</string>
+</resources>

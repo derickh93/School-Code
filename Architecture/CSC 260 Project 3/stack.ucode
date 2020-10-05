@@ -1,0 +1,117 @@
+// the first byte of a stack program is the location of the stack
+stackini0:     a_sel=7, b_sel=7, alu_sel=AND, r6_write, mar_sel=LOAD;			// put the stack address into r4
+stackini1:     a_sel=6, alu_sel=ADDA, c_in, r7_write, read, mdr_sel=LOAD_MEM,	// read stack address
+               if wait then goto stackini1 else goto stackini2 endif;			// write it to r4
+stackini2:     result_sel=MDR, r4_write;
+// the second byte is the initial value of the top of stack
+tosini0:     a_sel=7, b_sel=7, alu_sel=AND, r6_write, mar_sel=LOAD;				// put the top of stack  into r5
+tosini1:     a_sel=6, alu_sel=ADDA, c_in, r7_write, read, mdr_sel=LOAD_MEM,		// read top of stack
+               if wait then goto tosini1 else goto tosini2 endif;				// write it to r5
+tosini2:     result_sel=MDR, r5_write;
+// fetch a 1 byte instruction
+fetch0:    a_sel=7, b_sel=7, alu_sel=AND, r6_write, mar_sel=LOAD;
+fetch1:    a_sel=6, alu_sel=ADDA, c_in, r7_write, read, ir1_sel=LOAD, 
+               if wait then goto fetch1 else goto fetch2 endif;
+fetch2:    goto opcode[IR_OPCODE];
+opcode[0]: goto fetch0;                  										// no-op
+// unary instructions
+opcode[1]: r5_write, a_sel=5, b_sel=5, alu_sel=XOR, goto fetch0;                // 0 tos
+opcode[2]: r5_write, a_sel=5, c_in,  alu_sel=ADDA, goto fetch0;                 // increment tos
+opcode[3]: r5_write, a_sel=5, alu_sel=SUBA, goto fetch0;						// decrement tos
+opcode[4]: r5_write, a_sel=5, alu_sel=NOT, goto fetch0;							// tos = not tos
+opcode[5]: r5_write, a_sel=5, alu_sel=NOT, goto negate;							// tos = -tos
+opcode[6]: a_sel=4, alu_sel=ADDA, mar_sel=LOAD, r4_write, goto dupA;			// duplicate top of stack
+// register instructions (for temp storage)
+opcode[7]: a_sel=4,  alu_sel=ADDA, mar_sel=LOAD, r4_write, goto push1a;			// push r1 starts by incrementing stack ptr
+opcode[8]: a_sel=4,  alu_sel=ADDA, mar_sel=LOAD, r4_write, goto push2a;			// push r2 starts by incrementing stack ptr
+opcode[9]: a_sel=4,  alu_sel=ADDA, mar_sel=LOAD, r4_write, goto push3a;			// push r3 starts by incrementing stack ptr
+opcode[10]: ri_sel, a_sel=5, alu_sel=ADDA, goto popa;							// pop starts by putting tos into ri
+// binary instructions (replaces top 2 items on stack with result  uses r0 for scratch calculations)
+opcode[11]: r0_write, a_sel=5, b_sel=0, alu_sel=ADDA, goto add1;				// add 2 top items on stack
+opcode[12]: r5_write, a_sel=5, b_sel=0, alu_sel=SUB, c_in, goto sub1;			// sub 2 top items on stack
+opcode[13]: r5_write, b_sel=5, a_sel=0, alu_sel=SUB, c_in, goto bus1;			// sub 2 top items on stack in reverse order
+opcode[14]: r5_write, a_sel=0, b_sel=5, alu_sel=AND, goto and1;					// and 2 top items on stack
+opcode[15]: r5_write, a_sel=0, b_sel=5, alu_sel=OR, goto or1;					// or 2 top items on stack
+opcode[16]: r5_write, a_sel=0, b_sel=5, alu_sel=XOR, goto xor1;					// xor 2 top items on stack
+// memory instructions  
+opcode[17]: a_sel=7, b_sel=7, alu_sel=AND, r6_write, mar_sel=LOAD, goto consta;	// push const to tos
+opcode[18]:	a_sel=5, alu_sel=ADDA, r0_write, goto storea;  						// store: mem[tos-1]<- top of stack (stack popped)
+opcode[19]: a_sel=5, alu_sel=ADDA, mar_sel=LOAD, goto loada;  					// load: tos<-mem[tos]  (stack size unchanged)
+// jump instructions
+opcode[20]: a_sel=7, b_sel=7, alu_sel=AND, r7_write, mar_sel=LOAD, goto jumpa;	// jump to const8
+opcode[21]: a_sel=5, b_sel=5, alu_sel=SUBA, result_sel=IR_CONST8,
+           if c_out then goto skip else goto opcode[20] endif;					// jump if tos is 0
+opcode[22]:	a_sel=5, b_sel=5, alu_sel=ADDA, 
+           if m_7 then goto opcode[20] else goto skip endif;					// jump if tos is negative
+opcode[23]: goto opcode[23];													// halt
+// instruction support
+push0: 		a_sel=4,  alu_sel=ADDA, mar_sel=LOAD, r4_write, goto push0a;		// push r0 starts by incrementing stack ptr
+push0a: 	a_sel=5, alu_sel=ADDA, mdr_sel=LOAD_ALU, ;							// write top of stack
+push0b:		a_sel=0, alu_sel=ADDA, r5_write, write, goto pushc;					// put r0 on top of stack and 
+pushc:		r4_write, a_sel=4, c_in, alu_sel=ADDA, goto fetch0;					// increment stack ptr
+push1a: 		a_sel=5, alu_sel=ADDA, mdr_sel=LOAD_ALU, ;						// write top of stack
+push1b:		a_sel=1, alu_sel=ADDA, r5_write, write, goto pushc;					// put r1 on top of stack and 
+push2a: 		a_sel=5, alu_sel=ADDA, mdr_sel=LOAD_ALU, ;						// write top of stack
+push2b:		a_sel=2, alu_sel=ADDA, r5_write, write, goto pushc;					// put r2 on top of stack and 
+push3a: 		a_sel=5, alu_sel=ADDA, mdr_sel=LOAD_ALU, ;						// write top of stack
+push3b:		a_sel=3, alu_sel=ADDA, r5_write, write, goto pushc;					// put r3 on top of stack and 
+
+dupA: 		a_sel=5, alu_sel=ADDA, mdr_sel=LOAD_ALU, ;							// write top of stack
+dupB:		write, goto pushc;													// write duplicate to stack
+
+popa:		a_sel=4, alu_sel=SUBA, mar_sel=LOAD, r4_write;						// decrement stack ptr
+popb:		read, mdr_sel=LOAD_MEM, if wait then goto popb else goto popc endif;
+popc:		result_sel=MDR, r5_write, goto fetch0;								// put popped tos into r5
+
+add1:		a_sel=4, alu_sel=SUBA, mar_sel=LOAD, r4_write;						// decrement stack ptr
+add2:		read, mdr_sel=LOAD_MEM, if wait then goto add2 else goto add3 endif;
+add3:		result_sel=MDR, r5_write, goto add4;								// put popped tos into r5
+add4:		a_sel=0, b_sel=5, r5_write, alu_sel=ADD, goto fetch0;				// put sum on tos and done
+
+and1:		a_sel=4, alu_sel=SUBA, mar_sel=LOAD, r4_write;						// decrement stack ptr
+and2:		read, mdr_sel=LOAD_MEM, if wait then goto and2 else goto and3 endif;
+and3:		result_sel=MDR, r5_write, goto and4;								// put popped tos into r5
+and4:		a_sel=0, b_sel=5, r5_write, alu_sel=AND, goto fetch0;				// put sum on tos and done
+
+or1:		a_sel=4, alu_sel=SUBA, mar_sel=LOAD, r4_write;						// decrement stack ptr
+or2:		read, mdr_sel=LOAD_MEM, if wait then goto or2 else goto or3 endif;
+or3:		result_sel=MDR, r5_write, goto or4;									// put popped tos into r5
+or4:		a_sel=0, b_sel=5, r5_write, alu_sel=OR, goto fetch0;				// put sum on tos and done
+
+xor1:		a_sel=4, alu_sel=SUBA, mar_sel=LOAD, r4_write;						// decrement stack ptr
+xor2:		read, mdr_sel=LOAD_MEM, if wait then goto xor2 else goto xor3 endif;
+xor3:		result_sel=MDR, r5_write, goto xor4;								// put popped tos into r5
+xor4:		a_sel=0, b_sel=5, r5_write, alu_sel=XOR, goto fetch0;				// put sum on tos and done
+
+sub1:		a_sel=4, alu_sel=SUBA, mar_sel=LOAD, r4_write;						// decrement stack ptr
+sub2:		read, mdr_sel=LOAD_MEM, if wait then goto sub2 else goto sub3 endif;
+sub3:		result_sel=MDR, r5_write, goto sub4;								// put popped tos into r5
+sub4:		a_sel=0, b_sel=5, r5_write, alu_sel=SUB, goto fetch0;				// put difference on tos and done
+
+bus1:		a_sel=4, alu_sel=SUBA, mar_sel=LOAD, r4_write;						// decrement stack ptr
+bus2:		read, mdr_sel=LOAD_MEM, if wait then goto bus2 else goto bus3 endif;
+bus3:		result_sel=MDR, r5_write, goto bus4;								// put popped tos into r5
+bus4:		a_sel=5, b_sel=0, r5_write, alu_sel=SUB, goto fetch0;				// put difference on tos and done
+
+consta:    a_sel=6, alu_sel=ADDA, c_in, r7_write, read, ir0_sel=LOAD, 
+               if wait then goto consta else goto constb endif;					// read the const
+constb:	   r0_write, result_sel=IR_CONST8, goto push0;        					// r0<-const8
+
+storea:		a_sel=4, alu_sel=SUBA, mar_sel=LOAD, r4_write;						// decrement stack ptr
+storeb:		read, mdr_sel=LOAD_MEM, if wait then goto storeb else goto storec endif;
+storec:		result_sel=MDR, r5_write, goto stored;								// put popped tos into r5
+stored:		a_sel=5, alu_sel=ADDA, mar_sel=LOAD, goto storee;					// put number to store into MDR
+storee:		a_sel=0, alu_sel=ADDA, mdr_sel=LOAD_ALU, goto memwrite;				// put tos into MAR			
+memwrite:   write, if wait then goto memwrite else goto fetch0 endif;
+
+loada:  	read, mdr_sel=LOAD_MEM, 
+               if wait then goto loada else goto loadb endif;					// read memory 
+loadb:  	result_sel=MDR, r5_write, goto fetch0;								// puts mem into tos
+
+negate:		r0_write, a_sel=0, c_in, alu_sel=ADDA, goto fetch0;					// finishes negation
+
+skip:		r7_write, a_sel=7, c_in, alu_sel=ADDA, goto fetch0;					// add 1 to r7 to skip next instruction
+
+jumpa:  	read, mdr_sel=LOAD_MEM, 
+               if wait then goto jumpa else goto jumpb endif;					// read memory 
+jumpb:  	result_sel=MDR, r7_write, goto fetch0;								// puts mem into r7 for jump

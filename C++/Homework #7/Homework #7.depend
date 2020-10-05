@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1544405445 source:c:\users\cooli\desktop\homework #7\safearray.cpp
+	"SafeArray.h"
+
+1544469282 c:\users\cooli\desktop\homework #7\safearray.h
+	<iostream>
+	<cstdlib>
+
+1544405627 source:c:\users\cooli\desktop\homework #7\safematrix.cpp
+	"SafeMatrix.h"
+
+1544469185 c:\users\cooli\desktop\homework #7\safematrix.h
+	"SafeArray.h"
+	<iostream>
+
+1544469228 source:c:\users\cooli\desktop\homework #7\main.cpp
+	<iostream>
+	"SafeArray.h"
+	"SafeMatrix.h"
+

@@ -1,0 +1,10 @@
+A1111,Ford,Taurus
+A2222,Nissan,Maxima
+A3333,Honda,Accord
+A4444,Toyota,Camry
+A5555,Chevrolet,Malibu
+B1111,Cobalt,200s
+B2222,Cobalt,CS22
+B3333,Boston Whaler,230 Outrage
+B4444,Stingray,182SC Deck Boat
+B5555,Sea Ray,SDX 220

@@ -1,0 +1,707 @@
+07:16:44 **** Build of configuration Debug for project CSC217.Hansrajd.finalproject ****
+make all 
+Building file: ../list.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"list.d" -MT"list.o" -o "list.o" "../list.c"
+Finished building: ../list.c
+ 
+Building file: ../main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:12:2: warning: implicit declaration of function 'push' [-Wimplicit-function-declaration]
+  push(head,"Derick");
+  ^
+../main.c:14:2: warning: implicit declaration of function 'printlist' [-Wimplicit-function-declaration]
+  printlist(head);
+  ^
+Finished building: ../main.c
+ 
+Building target: CSC217.Hansrajd.finalproject.exe
+Invoking: Cygwin C Linker
+gcc  -o "CSC217.Hansrajd.finalproject.exe"  ./list.o ./main.o   
+Finished building target: CSC217.Hansrajd.finalproject.exe
+ 
+07:16:45 **** Incremental Build of configuration Debug for project CSC217.Hansrajd.finalproject ****
+make all 
+make: Nothing to be done for 'all'.
+07:23:08 **** Incremental Build of configuration Debug for project CSC217.Hansrajd.finalproject ****
+make all 
+Building file: ../list.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"list.d" -MT"list.o" -o "list.o" "../list.c"
+../list.c: In function 'display':
+../list.c:41:14: warning: format '%d' expects argument of type 'int', but argument 2 has type 'char *' [-Wformat=]
+       printf("%d--->NULL",temp->value);
+              ^
+../list.c:41:14: warning: format '%d' expects argument of type 'int', but argument 2 has type 'char *' [-Wformat=]
+Finished building: ../list.c
+ 
+Building file: ../main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:12:2: warning: implicit declaration of function 'push' [-Wimplicit-function-declaration]
+  push(head,"Derick");
+  ^
+../main.c:14:2: warning: implicit declaration of function 'printlist' [-Wimplicit-function-declaration]
+  printlist(head);
+  ^
+../main.c:12:2: warning: 'head' is used uninitialized in this function [-Wuninitialized]
+  push(head,"Derick");
+  ^
+Finished building: ../main.c
+ 
+Building target: CSC217.Hansrajd.finalproject.exe
+Invoking: Cygwin C Linker
+gcc  -o "CSC217.Hansrajd.finalproject.exe"  ./list.o ./main.o   
+./main.o: In function `main':
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../main.c:14: undefined reference to `printlist'
+makefile:29: recipe for target 'CSC217.Hansrajd.finalproject.exe' failed
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../main.c:14:(.text+0x3b): relocation truncated to fit: R_X86_64_PC32 against undefined symbol `printlist'
+collect2: error: ld returned 1 exit status
+make: *** [CSC217.Hansrajd.finalproject.exe] Error 1
+07:23:32 **** Incremental Build of configuration Debug for project CSC217.Hansrajd.finalproject ****
+make all 
+Building file: ../main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:11:2: warning: implicit declaration of function 'push' [-Wimplicit-function-declaration]
+  push("Derick");
+  ^
+../main.c:13:2: warning: implicit declaration of function 'printlist' [-Wimplicit-function-declaration]
+  printlist();
+  ^
+Finished building: ../main.c
+ 
+Building target: CSC217.Hansrajd.finalproject.exe
+Invoking: Cygwin C Linker
+gcc  -o "CSC217.Hansrajd.finalproject.exe"  ./list.o ./main.o   
+./main.o: In function `main':
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../main.c:13: undefined reference to `printlist'
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../main.c:13:(.text+0x26): relocation truncated to fit: R_X86_64_PC32 against undefined symbol `printlist'
+collect2: error: ld returned 1 exit status
+makefile:29: recipe for target 'CSC217.Hansrajd.finalproject.exe' failed
+make: *** [CSC217.Hansrajd.finalproject.exe] Error 1
+07:23:47 **** Incremental Build of configuration Debug for project CSC217.Hansrajd.finalproject ****
+make all 
+Building file: ../main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:11:2: warning: implicit declaration of function 'push' [-Wimplicit-function-declaration]
+  push("Derick");
+  ^
+../main.c:13:2: warning: implicit declaration of function 'display' [-Wimplicit-function-declaration]
+  display();
+  ^
+Finished building: ../main.c
+ 
+Building target: CSC217.Hansrajd.finalproject.exe
+Invoking: Cygwin C Linker
+gcc  -o "CSC217.Hansrajd.finalproject.exe"  ./list.o ./main.o   
+Finished building target: CSC217.Hansrajd.finalproject.exe
+ 
+07:24:17 **** Incremental Build of configuration Debug for project CSC217.Hansrajd.finalproject ****
+make all 
+Building file: ../list.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"list.d" -MT"list.o" -o "list.o" "../list.c"
+Finished building: ../list.c
+ 
+Building target: CSC217.Hansrajd.finalproject.exe
+Invoking: Cygwin C Linker
+gcc  -o "CSC217.Hansrajd.finalproject.exe"  ./list.o ./main.o   
+Finished building target: CSC217.Hansrajd.finalproject.exe
+ 
+07:24:27 **** Incremental Build of configuration Debug for project CSC217.Hansrajd.finalproject ****
+make all 
+Building file: ../list.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"list.d" -MT"list.o" -o "list.o" "../list.c"
+Finished building: ../list.c
+ 
+Building target: CSC217.Hansrajd.finalproject.exe
+Invoking: Cygwin C Linker
+gcc  -o "CSC217.Hansrajd.finalproject.exe"  ./list.o ./main.o   
+Finished building target: CSC217.Hansrajd.finalproject.exe
+ 
+07:26:12 **** Incremental Build of configuration Debug for project CSC217.Hansrajd.finalproject ****
+make all 
+Building file: ../list.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"list.d" -MT"list.o" -o "list.o" "../list.c"
+Finished building: ../list.c
+ 
+Building file: ../main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:11:2: warning: implicit declaration of function 'init' [-Wimplicit-function-declaration]
+  init(top);
+  ^
+../main.c:11:7: error: 'top' undeclared (first use in this function)
+  init(top);
+       ^
+../main.c:11:7: note: each undeclared identifier is reported only once for each function it appears in
+../main.c:12:2: warning: implicit declaration of function 'push' [-Wimplicit-function-declaration]
+  push("Derick");
+  ^
+../main.c:14:2: warning: implicit declaration of function 'display' [-Wimplicit-function-declaration]
+  display();
+  ^
+subdir.mk:21: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+07:26:34 **** Incremental Build of configuration Debug for project CSC217.Hansrajd.finalproject ****
+make all 
+Building file: ../list.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"list.d" -MT"list.o" -o "list.o" "../list.c"
+Finished building: ../list.c
+ 
+Building file: ../main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:11:2: warning: implicit declaration of function 'push' [-Wimplicit-function-declaration]
+  push("Derick");
+  ^
+../main.c:13:2: warning: implicit declaration of function 'display' [-Wimplicit-function-declaration]
+  display();
+  ^
+Finished building: ../main.c
+ 
+Building target: CSC217.Hansrajd.finalproject.exe
+Invoking: Cygwin C Linker
+gcc  -o "CSC217.Hansrajd.finalproject.exe"  ./list.o ./main.o   
+Finished building target: CSC217.Hansrajd.finalproject.exe
+ 
+22:45:24 **** Incremental Build of configuration Debug for project CSC217.Hansrajd.finalproject ****
+make all 
+Building file: ../main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:16:18: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'char (*)[10]' [-Wformat=]
+  while(fscanf(fp,"%s %s %s", file, &file2, &file3)>0) {
+                  ^
+../main.c:16:18: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'char (*)[10]' [-Wformat=]
+../main.c:16:18: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'char (*)[10]' [-Wformat=]
+../main.c:16:18: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'char (*)[10]' [-Wformat=]
+../main.c:17:3: warning: implicit declaration of function 'Enqueue' [-Wimplicit-function-declaration]
+   Enqueue(file);
+   ^
+../main.c:18:3: warning: implicit declaration of function 'push' [-Wimplicit-function-declaration]
+   push(file);
+   ^
+../main.c:26:2: warning: implicit declaration of function 'qprintlist' [-Wimplicit-function-declaration]
+  qprintlist();
+  ^
+../main.c:29:2: warning: implicit declaration of function 'sprintlist' [-Wimplicit-function-declaration]
+  sprintlist();
+  ^
+../main.c:31:10: warning: implicit declaration of function 'queueTotal' [-Wimplicit-function-declaration]
+  int i = queueTotal();
+          ^
+../main.c:35:3: warning: implicit declaration of function 'pop' [-Wimplicit-function-declaration]
+   pop();
+   ^
+../main.c:38:10: warning: implicit declaration of function 'stackTotal' [-Wimplicit-function-declaration]
+  int j = stackTotal();
+          ^
+../main.c:42:3: warning: implicit declaration of function 'dequeue' [-Wimplicit-function-declaration]
+   dequeue();
+   ^
+Finished building: ../main.c
+ 
+Building file: ../queue.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"queue.d" -MT"queue.o" -o "queue.o" "../queue.c"
+../queue.c: In function 'Enqueue':
+../queue.c:31:2: warning: implicit declaration of function 'strCpy' [-Wimplicit-function-declaration]
+  strCpy(temp -> data, s);
+  ^
+Finished building: ../queue.c
+ 
+Building file: ../stack.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"stack.d" -MT"stack.o" -o "stack.o" "../stack.c"
+../stack.c: In function 'push':
+../stack.c:30:2: warning: implicit declaration of function 'strCpy' [-Wimplicit-function-declaration]
+  strCpy(temp -> data, s);
+  ^
+Finished building: ../stack.c
+ 
+Building target: CSC217.Hansrajd.finalproject.exe
+Invoking: Cygwin C Linker
+gcc  -o "CSC217.Hansrajd.finalproject.exe"  ./main.o ./queue.o ./stack.o   
+./stack.o:stack.c:(.bss+0x8): multiple definition of `count'
+./queue.o:queue.c:(.bss+0x0): first defined here
+./main.o: In function `main':
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../main.c:26: undefined reference to `qprintlist'
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../main.c:26:(.text+0xa9): relocation truncated to fit: R_X86_64_PC32 against undefined symbol `qprintlist'
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../main.c:29: undefined reference to `sprintlist'
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../main.c:29:(.text+0xba): relocation truncated to fit: R_X86_64_PC32 against undefined symbol `sprintlist'
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../main.c:42: undefined reference to `dequeue'
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../main.c:42:(.text+0xde): relocation truncated to fit: R_X86_64_PC32 against undefined symbol `dequeue'
+./queue.o: In function `Enqueue':
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../queue.c:31: undefined reference to `strCpy'
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../queue.c:31:(.text+0x48): relocation truncated to fit: R_X86_64_PC32 against undefined symbol `strCpy'
+./stack.o: In function `push':
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../stack.c:30: undefined reference to `strCpy'
+makefile:29: recipe for target 'CSC217.Hansrajd.finalproject.exe' failed
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../stack.c:30:(.text+0x45): relocation truncated to fit: R_X86_64_PC32 against undefined symbol `strCpy'
+collect2: error: ld returned 1 exit status
+make: *** [CSC217.Hansrajd.finalproject.exe] Error 1
+22:45:43 **** Incremental Build of configuration Debug for project CSC217.Hansrajd.finalproject ****
+make all 
+Building file: ../queue.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"queue.d" -MT"queue.o" -o "queue.o" "../queue.c"
+../queue.c: In function 'Enqueue':
+../queue.c:31:2: warning: implicit declaration of function 'strCpy' [-Wimplicit-function-declaration]
+  strCpy(temp -> data, s);
+  ^
+Finished building: ../queue.c
+ 
+Building target: CSC217.Hansrajd.finalproject.exe
+Invoking: Cygwin C Linker
+gcc  -o "CSC217.Hansrajd.finalproject.exe"  ./main.o ./queue.o ./stack.o   
+./stack.o:stack.c:(.bss+0x8): multiple definition of `count'
+./queue.o:queue.c:(.bss+0x0): first defined here
+./main.o: In function `main':
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../main.c:26: undefined reference to `qprintlist'
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../main.c:26:(.text+0xa9): relocation truncated to fit: R_X86_64_PC32 against undefined symbol `qprintlist'
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../main.c:29: undefined reference to `sprintlist'
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../main.c:29:(.text+0xba): relocation truncated to fit: R_X86_64_PC32 against undefined symbol `sprintlist'
+./queue.o: In function `Enqueue':
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../queue.c:31: undefined reference to `strCpy'
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../queue.c:31:(.text+0x48): relocation truncated to fit: R_X86_64_PC32 against undefined symbol `strCpy'
+./stack.o: In function `push':
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../stack.c:30: undefined reference to `strCpy'
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../stack.c:30:(.text+0x45): relocation truncated to fit: R_X86_64_PC32 against undefined symbol `strCpy'
+collect2: error: ld returned 1 exit status
+makefile:29: recipe for target 'CSC217.Hansrajd.finalproject.exe' failed
+make: *** [CSC217.Hansrajd.finalproject.exe] Error 1
+22:46:00 **** Incremental Build of configuration Debug for project CSC217.Hansrajd.finalproject ****
+make all 
+Building file: ../main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:16:18: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'char (*)[10]' [-Wformat=]
+  while(fscanf(fp,"%s %s %s", file, &file2, &file3)>0) {
+                  ^
+../main.c:16:18: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'char (*)[10]' [-Wformat=]
+../main.c:16:18: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'char (*)[10]' [-Wformat=]
+../main.c:16:18: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'char (*)[10]' [-Wformat=]
+../main.c:17:3: warning: implicit declaration of function 'Enqueue' [-Wimplicit-function-declaration]
+   Enqueue(file);
+   ^
+../main.c:18:3: warning: implicit declaration of function 'push' [-Wimplicit-function-declaration]
+   push(file);
+   ^
+../main.c:26:2: warning: implicit declaration of function 'queueprintlist' [-Wimplicit-function-declaration]
+  queueprintlist();
+  ^
+../main.c:29:2: warning: implicit declaration of function 'stackprintlist' [-Wimplicit-function-declaration]
+  stackprintlist();
+  ^
+../main.c:31:10: warning: implicit declaration of function 'queueTotal' [-Wimplicit-function-declaration]
+  int i = queueTotal();
+          ^
+../main.c:35:3: warning: implicit declaration of function 'pop' [-Wimplicit-function-declaration]
+   pop();
+   ^
+../main.c:38:10: warning: implicit declaration of function 'stackTotal' [-Wimplicit-function-declaration]
+  int j = stackTotal();
+          ^
+../main.c:42:3: warning: implicit declaration of function 'dequeue' [-Wimplicit-function-declaration]
+   dequeue();
+   ^
+Finished building: ../main.c
+ 
+Building target: CSC217.Hansrajd.finalproject.exe
+Invoking: Cygwin C Linker
+gcc  -o "CSC217.Hansrajd.finalproject.exe"  ./main.o ./queue.o ./stack.o   
+./stack.o:stack.c:(.bss+0x8): multiple definition of `count'
+./queue.o:queue.c:(.bss+0x0): first defined here
+./queue.o: In function `Enqueue':
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../queue.c:31: undefined reference to `strCpy'
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../queue.c:31:(.text+0x48): relocation truncated to fit: R_X86_64_PC32 against undefined symbol `strCpy'
+./stack.o: In function `push':
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../stack.c:30: undefined reference to `strCpy'
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../stack.c:30:(.text+0x45): relocation truncated to fit: R_X86_64_PC32 against undefined symbol `strCpy'
+collect2: error: ld returned 1 exit status
+make: *** [CSC217.Hansrajd.finalproject.exe] Error 1
+makefile:29: recipe for target 'CSC217.Hansrajd.finalproject.exe' failed
+22:46:23 **** Incremental Build of configuration Debug for project CSC217.Hansrajd.finalproject ****
+make all 
+Building file: ../queue.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"queue.d" -MT"queue.o" -o "queue.o" "../queue.c"
+Finished building: ../queue.c
+ 
+Building target: CSC217.Hansrajd.finalproject.exe
+Invoking: Cygwin C Linker
+gcc  -o "CSC217.Hansrajd.finalproject.exe"  ./main.o ./queue.o ./stack.o   
+./stack.o:stack.c:(.bss+0x8): multiple definition of `count'
+./queue.o:queue.c:(.bss+0x0): first defined here
+./stack.o: In function `push':
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../stack.c:30: undefined reference to `strCpy'
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../stack.c:30:(.text+0x45): relocation truncated to fit: R_X86_64_PC32 against undefined symbol `strCpy'
+collect2: error: ld returned 1 exit status
+make: *** [CSC217.Hansrajd.finalproject.exe] Error 1
+makefile:29: recipe for target 'CSC217.Hansrajd.finalproject.exe' failed
+22:46:35 **** Incremental Build of configuration Debug for project CSC217.Hansrajd.finalproject ****
+make all 
+Building file: ../stack.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"stack.d" -MT"stack.o" -o "stack.o" "../stack.c"
+Finished building: ../stack.c
+ 
+Building target: CSC217.Hansrajd.finalproject.exe
+Invoking: Cygwin C Linker
+gcc  -o "CSC217.Hansrajd.finalproject.exe"  ./main.o ./queue.o ./stack.o   
+./stack.o:stack.c:(.bss+0x8): multiple definition of `count'
+./queue.o:queue.c:(.bss+0x0): first defined here
+collect2: error: ld returned 1 exit status
+make: *** [CSC217.Hansrajd.finalproject.exe] Error 1
+makefile:29: recipe for target 'CSC217.Hansrajd.finalproject.exe' failed
+22:51:21 **** Incremental Build of configuration Debug for project CSC217.Hansrajd.finalproject ****
+make all 
+Building file: ../main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:6:24: fatal error: finalproj1.h: No such file or directory
+ #include "finalproj1.h"
+                        ^
+compilation terminated.
+make: *** [main.o] Error 1
+subdir.mk:24: recipe for target 'main.o' failed
+22:51:31 **** Incremental Build of configuration Debug for project CSC217.Hansrajd.finalproject ****
+make all 
+Building file: ../main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:17:18: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'char (*)[10]' [-Wformat=]
+  while(fscanf(fp,"%s %s %s", file, &file2, &file3)>0) {
+                  ^
+../main.c:17:18: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'char (*)[10]' [-Wformat=]
+../main.c:17:18: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'char (*)[10]' [-Wformat=]
+../main.c:17:18: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'char (*)[10]' [-Wformat=]
+../main.c:18:3: warning: implicit declaration of function 'Enqueue' [-Wimplicit-function-declaration]
+   Enqueue(file);
+   ^
+../main.c:19:3: warning: implicit declaration of function 'push' [-Wimplicit-function-declaration]
+   push(file);
+   ^
+../main.c:27:2: warning: implicit declaration of function 'queueprintlist' [-Wimplicit-function-declaration]
+  queueprintlist();
+  ^
+../main.c:30:2: warning: implicit declaration of function 'stackprintlist' [-Wimplicit-function-declaration]
+  stackprintlist();
+  ^
+../main.c:32:10: warning: implicit declaration of function 'queueTotal' [-Wimplicit-function-declaration]
+  int i = queueTotal();
+          ^
+../main.c:36:3: warning: implicit declaration of function 'pop' [-Wimplicit-function-declaration]
+   pop();
+   ^
+../main.c:39:10: warning: implicit declaration of function 'stackTotal' [-Wimplicit-function-declaration]
+  int j = stackTotal();
+          ^
+../main.c:43:3: warning: implicit declaration of function 'dequeue' [-Wimplicit-function-declaration]
+   dequeue();
+   ^
+Finished building: ../main.c
+ 
+Building file: ../queue.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"queue.d" -MT"queue.o" -o "queue.o" "../queue.c"
+../queue.c:6:24: fatal error: finalproj1.h: No such file or directory
+ #include "finalproj1.h"
+                        ^
+compilation terminated.
+make: *** [queue.o] Error 1
+subdir.mk:24: recipe for target 'queue.o' failed
+22:51:49 **** Incremental Build of configuration Debug for project CSC217.Hansrajd.finalproject ****
+make all 
+Building file: ../main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:18:18: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'char (*)[10]' [-Wformat=]
+  while(fscanf(fp,"%s %s %s", file, &file2, &file3)>0) {
+                  ^
+../main.c:18:18: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'char (*)[10]' [-Wformat=]
+../main.c:18:18: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'char (*)[10]' [-Wformat=]
+../main.c:18:18: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'char (*)[10]' [-Wformat=]
+../main.c:19:3: warning: implicit declaration of function 'Enqueue' [-Wimplicit-function-declaration]
+   Enqueue(file);
+   ^
+../main.c:28:2: warning: implicit declaration of function 'queueprintlist' [-Wimplicit-function-declaration]
+  queueprintlist();
+  ^
+../main.c:31:2: warning: implicit declaration of function 'stackprintlist' [-Wimplicit-function-declaration]
+  stackprintlist();
+  ^
+../main.c:44:3: warning: implicit declaration of function 'dequeue' [-Wimplicit-function-declaration]
+   dequeue();
+   ^
+Finished building: ../main.c
+ 
+Building file: ../queue.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"queue.d" -MT"queue.o" -o "queue.o" "../queue.c"
+Finished building: ../queue.c
+ 
+Building file: ../stack.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"stack.d" -MT"stack.o" -o "stack.o" "../stack.c"
+Finished building: ../stack.c
+ 
+Building target: CSC217.Hansrajd.finalproject.exe
+Invoking: Cygwin C Linker
+gcc  -o "CSC217.Hansrajd.finalproject.exe"  ./main.o ./queue.o ./stack.o   
+./stack.o:stack.c:(.bss+0x8): multiple definition of `count'
+./queue.o:queue.c:(.bss+0x0): first defined here
+./main.o: In function `main':
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../main.c:19: undefined reference to `Enqueue'
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../main.c:19:(.text+0x2e): relocation truncated to fit: R_X86_64_PC32 against undefined symbol `Enqueue'
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../main.c:21: undefined reference to `Enqueue'
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../main.c:21:(.text+0x46): relocation truncated to fit: R_X86_64_PC32 against undefined symbol `Enqueue'
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../main.c:23: undefined reference to `Enqueue'
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../main.c:23:(.text+0x5e): relocation truncated to fit: R_X86_64_PC32 against undefined symbol `Enqueue'
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../main.c:28: undefined reference to `queueprintlist'
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../main.c:28:(.text+0xa9): relocation truncated to fit: R_X86_64_PC32 against undefined symbol `queueprintlist'
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../main.c:31: undefined reference to `stackprintlist'
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../main.c:31:(.text+0xba): relocation truncated to fit: R_X86_64_PC32 against undefined symbol `stackprintlist'
+collect2: error: ld returned 1 exit status
+makefile:29: recipe for target 'CSC217.Hansrajd.finalproject.exe' failed
+make: *** [CSC217.Hansrajd.finalproject.exe] Error 1
+22:52:11 **** Incremental Build of configuration Debug for project CSC217.Hansrajd.finalproject ****
+make all 
+Building file: ../main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:18:18: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'char (*)[10]' [-Wformat=]
+  while(fscanf(fp,"%s %s %s", file, &file2, &file3)>0) {
+                  ^
+../main.c:18:18: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'char (*)[10]' [-Wformat=]
+../main.c:18:18: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'char (*)[10]' [-Wformat=]
+../main.c:18:18: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'char (*)[10]' [-Wformat=]
+../main.c:28:2: warning: implicit declaration of function 'queueprintlist' [-Wimplicit-function-declaration]
+  queueprintlist();
+  ^
+../main.c:31:2: warning: implicit declaration of function 'stackprintlist' [-Wimplicit-function-declaration]
+  stackprintlist();
+  ^
+../main.c:44:3: warning: implicit declaration of function 'dequeue' [-Wimplicit-function-declaration]
+   dequeue();
+   ^
+Finished building: ../main.c
+ 
+Building target: CSC217.Hansrajd.finalproject.exe
+Invoking: Cygwin C Linker
+gcc  -o "CSC217.Hansrajd.finalproject.exe"  ./main.o ./queue.o ./stack.o   
+./stack.o:stack.c:(.bss+0x8): multiple definition of `count'
+./queue.o:queue.c:(.bss+0x0): first defined here
+./main.o: In function `main':
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../main.c:28: undefined reference to `queueprintlist'
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../main.c:28:(.text+0xa9): relocation truncated to fit: R_X86_64_PC32 against undefined symbol `queueprintlist'
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../main.c:31: undefined reference to `stackprintlist'
+/cygdrive/c/Users/cooli/Desktop/CSC217.Hansrajd.finalproject/Debug/../main.c:31:(.text+0xba): relocation truncated to fit: R_X86_64_PC32 against undefined symbol `stackprintlist'
+collect2: error: ld returned 1 exit status
+makefile:29: recipe for target 'CSC217.Hansrajd.finalproject.exe' failed
+make: *** [CSC217.Hansrajd.finalproject.exe] Error 1
+22:52:31 **** Incremental Build of configuration Debug for project CSC217.Hansrajd.finalproject ****
+make all 
+Building file: ../main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:18:18: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'char (*)[10]' [-Wformat=]
+  while(fscanf(fp,"%s %s %s", file, &file2, &file3)>0) {
+                  ^
+../main.c:18:18: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'char (*)[10]' [-Wformat=]
+../main.c:18:18: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'char (*)[10]' [-Wformat=]
+../main.c:18:18: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'char (*)[10]' [-Wformat=]
+../main.c:44:3: warning: implicit declaration of function 'dequeue' [-Wimplicit-function-declaration]
+   dequeue();
+   ^
+Finished building: ../main.c
+ 
+Building target: CSC217.Hansrajd.finalproject.exe
+Invoking: Cygwin C Linker
+gcc  -o "CSC217.Hansrajd.finalproject.exe"  ./main.o ./queue.o ./stack.o   
+./stack.o:stack.c:(.bss+0x8): multiple definition of `count'
+./queue.o:queue.c:(.bss+0x0): first defined here
+collect2: error: ld returned 1 exit status
+makefile:29: recipe for target 'CSC217.Hansrajd.finalproject.exe' failed
+make: *** [CSC217.Hansrajd.finalproject.exe] Error 1
+22:53:48 **** Incremental Build of configuration Debug for project CSC217.Hansrajd.finalproject ****
+make all 
+Building file: ../stack.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"stack.d" -MT"stack.o" -o "stack.o" "../stack.c"
+../stack.c: In function 'push':
+../stack.c:36:2: error: 'count' undeclared (first use in this function)
+  count++;
+  ^
+../stack.c:36:2: note: each undeclared identifier is reported only once for each function it appears in
+subdir.mk:24: recipe for target 'stack.o' failed
+make: *** [stack.o] Error 1
+22:54:14 **** Incremental Build of configuration Debug for project CSC217.Hansrajd.finalproject ****
+make all 
+Building file: ../stack.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"stack.d" -MT"stack.o" -o "stack.o" "../stack.c"
+Finished building: ../stack.c
+ 
+Building target: CSC217.Hansrajd.finalproject.exe
+Invoking: Cygwin C Linker
+gcc  -o "CSC217.Hansrajd.finalproject.exe"  ./main.o ./queue.o ./stack.o   
+Finished building target: CSC217.Hansrajd.finalproject.exe
+ 
+22:54:43 **** Incremental Build of configuration Debug for project CSC217.Hansrajd.finalproject ****
+make all 
+Building file: ../main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:18:18: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'char (*)[10]' [-Wformat=]
+  while(fscanf(fp,"%s %s %s", file, &file2, &file3)>0) {
+                  ^
+../main.c:18:18: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'char (*)[10]' [-Wformat=]
+../main.c:18:18: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'char (*)[10]' [-Wformat=]
+../main.c:18:18: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'char (*)[10]' [-Wformat=]
+../main.c:44:3: warning: implicit declaration of function 'dequeue' [-Wimplicit-function-declaration]
+   dequeue();
+   ^
+Finished building: ../main.c
+ 
+Building target: CSC217.Hansrajd.finalproject.exe
+Invoking: Cygwin C Linker
+gcc  -o "CSC217.Hansrajd.finalproject.exe"  ./main.o ./queue.o ./stack.o   
+Finished building target: CSC217.Hansrajd.finalproject.exe
+ 
+22:56:30 **** Incremental Build of configuration Debug for project CSC217.Hansrajd.finalproject ****
+make all 
+Building file: ../main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:25:18: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'char (*)[10]' [-Wformat=]
+  while(fscanf(fp,"%s %s %s", file, &file2, &file3)>0) {
+                  ^
+../main.c:25:18: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'char (*)[10]' [-Wformat=]
+../main.c:25:18: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'char (*)[10]' [-Wformat=]
+../main.c:25:18: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'char (*)[10]' [-Wformat=]
+../main.c:51:3: warning: implicit declaration of function 'dequeue' [-Wimplicit-function-declaration]
+   dequeue();
+   ^
+Finished building: ../main.c
+ 
+Building file: ../queue.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"queue.d" -MT"queue.o" -o "queue.o" "../queue.c"
+Finished building: ../queue.c
+ 
+Building file: ../stack.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"stack.d" -MT"stack.o" -o "stack.o" "../stack.c"
+Finished building: ../stack.c
+ 
+Building target: CSC217.Hansrajd.finalproject.exe
+Invoking: Cygwin C Linker
+gcc  -o "CSC217.Hansrajd.finalproject.exe"  ./main.o ./queue.o ./stack.o   
+Finished building target: CSC217.Hansrajd.finalproject.exe
+ 
+22:56:53 **** Incremental Build of configuration Debug for project CSC217.Hansrajd.finalproject ****
+make all 
+Building file: ../main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:24:18: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'char (*)[5]' [-Wformat=]
+  while(fscanf(fp,"%s %s %s", file, &file2, &file3)>0) {
+                  ^
+../main.c:24:18: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'char (*)[5]' [-Wformat=]
+../main.c:24:18: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'char (*)[5]' [-Wformat=]
+../main.c:24:18: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'char (*)[5]' [-Wformat=]
+../main.c:50:3: warning: implicit declaration of function 'dequeue' [-Wimplicit-function-declaration]
+   dequeue();
+   ^
+Finished building: ../main.c
+ 
+Building target: CSC217.Hansrajd.finalproject.exe
+Invoking: Cygwin C Linker
+gcc  -o "CSC217.Hansrajd.finalproject.exe"  ./main.o ./queue.o ./stack.o   
+Finished building target: CSC217.Hansrajd.finalproject.exe
+ 
+22:57:42 **** Incremental Build of configuration Debug for project CSC217.Hansrajd.finalproject ****
+make all 
+Building file: ../main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:24:18: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'char (*)[5]' [-Wformat=]
+  while(fscanf(fp,"%s %s %s", file, &file2, &file3)>0) {
+                  ^
+../main.c:24:18: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'char (*)[5]' [-Wformat=]
+../main.c:24:18: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'char (*)[5]' [-Wformat=]
+../main.c:24:18: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'char (*)[5]' [-Wformat=]
+../main.c:33:23: error: void value not ignored as it ought to be
+  printf("Queue: \n" + queueString());
+                       ^
+../main.c:35:23: error: void value not ignored as it ought to be
+  printf("Stack: \n" + stackString());
+                       ^
+../main.c:46:3: warning: implicit declaration of function 'dequeue' [-Wimplicit-function-declaration]
+   dequeue();
+   ^
+subdir.mk:24: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+22:58:05 **** Incremental Build of configuration Debug for project CSC217.Hansrajd.finalproject ****
+make all 
+Building file: ../main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:24:18: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'char (*)[5]' [-Wformat=]
+  while(fscanf(fp,"%s %s %s", file, &file2, &file3)>0) {
+                  ^
+../main.c:24:18: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'char (*)[5]' [-Wformat=]
+../main.c:24:18: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'char (*)[5]' [-Wformat=]
+../main.c:24:18: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'char (*)[5]' [-Wformat=]
+../main.c:48:3: warning: implicit declaration of function 'dequeue' [-Wimplicit-function-declaration]
+   dequeue();
+   ^
+Finished building: ../main.c
+ 
+Building target: CSC217.Hansrajd.finalproject.exe
+Invoking: Cygwin C Linker
+gcc  -o "CSC217.Hansrajd.finalproject.exe"  ./main.o ./queue.o ./stack.o   
+Finished building target: CSC217.Hansrajd.finalproject.exe
+ 
+22:59:32 **** Incremental Build of configuration Debug for project CSC217.Hansrajd.finalproject ****
+make all 
+Building file: ../queue.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"queue.d" -MT"queue.o" -o "queue.o" "../queue.c"
+Finished building: ../queue.c
+ 
+Building file: ../stack.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"stack.d" -MT"stack.o" -o "stack.o" "../stack.c"
+Finished building: ../stack.c
+ 
+Building target: CSC217.Hansrajd.finalproject.exe
+Invoking: Cygwin C Linker
+gcc  -o "CSC217.Hansrajd.finalproject.exe"  ./main.o ./queue.o ./stack.o   
+Finished building target: CSC217.Hansrajd.finalproject.exe
+ 

@@ -1,0 +1,11 @@
+package ht;
+
+public class Lab4App {
+	public static void main (String [] args) {
+		Person person = new Person("DOG","DOG", "DOG");
+		person.hashcode();
+
+	}
+	
+
+}

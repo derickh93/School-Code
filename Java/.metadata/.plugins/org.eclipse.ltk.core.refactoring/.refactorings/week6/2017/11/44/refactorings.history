@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 elements to &apos;CSC130library/src/CSC130lib&apos;&#x0D;&#x0A;- Original project: &apos;week6&apos;&#x0D;&#x0A;- Destination element: &apos;CSC130library/src/CSC130lib&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     week6.LinkedStack.java&#x0D;&#x0A;     week6.LinkedStackADT.java&#x0D;&#x0A;     week6.StackEmptyException.java" description="Copy compilation units" destination="=CSC130library/src&lt;CSC130lib" element1="/src&lt;week6{LinkedStack.java" element2="/src&lt;week6{LinkedStackADT.java" element3="/src&lt;week6{StackEmptyException.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1509506940177" units="3" version="1.0"/>
+</session>

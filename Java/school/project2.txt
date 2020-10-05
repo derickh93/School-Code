@@ -1,0 +1,82 @@
+RUN1
+Card 1 is: 1 of clubs
+Card 2 is: 5 of hearts
+Not a pair
+
+RUN2
+Card 1 is: 3 of spades
+Card 2 is: 3 of diamonds
+Pair
+
+RUN3
+Card 1 is: 7 of hearts
+Card 2 is: 7 of spades
+Pair
+
+RUN4
+Card 1 is: 10 of clubs
+Card 2 is: 13 of clubs
+Not a pair
+
+RUN5
+Card 1 is: 7 of spades
+Card 2 is: 1 of clubs
+Not a pair
+
+I tested the parameters 5,18, and 31 resulting in:
+Card 1 is: 5 of clubs
+Card 2 is: 5 of diamonds
+Card 3 is: 5 of hearts
+Pair
+The highest value is 5
+The sum is 15
+The computer wins!
+
+I tested the parameters 5,11, and 18 resulting in:
+Card 1 is: 5 of clubs
+Card 2 is: 11 of clubs
+Card 3 is: 5 of diamonds
+Pair
+The highest value is 11
+The sum is 20
+The computer wins!
+
+I tested the parameters 11,44, and 50 resulting in:
+Card 1 is: 11 of clubs
+Card 2 is: 5 of spades
+Card 3 is: 11 of spades
+Pair
+The highest value is 11
+The sum is 25
+You win!
+
+I tested the parameters 18,24, and 37 resulting in:
+Card 1 is: 5 of diamonds
+Card 2 is: 11 of diamonds
+Card 3 is: 11 of hearts
+Pair
+The highest value is 11
+The sum is 25
+You win!
+
+
+I tested the parameters 5,18, and 24 resulting in:
+Card 1 is: 5 of clubs
+Card 2 is: 5 of diamonds
+Card 3 is: 11 of diamonds
+Pair
+The highest value is 11
+The sum is 20
+The computer wins!
+
+1.How long did it take you to complete this project?
+I worked on this project for about 2 hours Thursday night.
+2.What kind of help did you receive on this project, and from whom?
+I did not receive any help.
+3.What was the most difficult challenge you faced in this project?
+The most difficult challenge i faced was to write code to determine a pair.
+4.Are you sure your program works? Why or why not?
+I am sure this program works because i tested it against multiple parameters and got the desired results.
+
+
+

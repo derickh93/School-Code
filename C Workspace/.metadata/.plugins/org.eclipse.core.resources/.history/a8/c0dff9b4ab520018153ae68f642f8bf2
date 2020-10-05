@@ -1,0 +1,53 @@
+/*
+ * list.c
+ *
+ *  Created on: May 3, 2018
+ *      Author: THE BOSS
+ */
+#include <stdio.h>
+#include <stdbool.h>
+#include <stdlib.h>
+
+
+
+struct Node {
+	char *value;
+	struct Node *next;
+};
+
+void init(struct Node *head)
+{
+    head->next = NULL;
+    head->value = NULL;
+}
+
+void push(struct Node *head,char *data) {
+    struct Node *tmp = (struct Node*)malloc(sizeof(struct Node));
+    if(tmp->value == NULL) {
+        tmp->value = data;
+        tmp->next = head;
+        head = tmp;
+    }
+}
+
+void printlist(struct Node *head)
+{
+    struct Node *current;
+    current = head;
+    if(current!= NULL)
+    {
+        printf("Stack: ");
+        do
+        {
+            printf("%s ",current->value);
+            current = current->next;
+        }
+        while (current!= NULL);
+        printf("\n");
+    }
+    else
+    {
+        printf("The Stack is empty\n");
+    }
+
+}

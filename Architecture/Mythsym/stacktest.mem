@@ -1,0 +1,32 @@
+0:128			// location of stack
+1: 100			// initial top of stack
+2:000000 00		// do nothing
+3:010011 00		// tos = mem[100]
+4:000110 00		// duplicate top of stack
+5:001010 01		// pop duplicate to r1
+6:001010 10		// pop to r2
+7:000111 00		// push r1  (loop start)
+8:000011 00		// decrement
+9:010101 00		// end loop if decremented r1 is 0
+10: 18
+11:000110 00	// duplicate top of stack
+12:001010 01	// pop duplicate to r1
+13:001000 00	// push r2
+14:001011 00	// add number into sum
+15:001010 10	// sum to r2
+16:010100 00	// jump to loop
+17: 7
+18:010001 00	// push 101
+19: 101
+20:001000 00	// push sum
+21:010010 00	// store sum to mem[101]
+22:010111 00	// end
+
+
+
+100: 5
+101: -1
+
+
+
+

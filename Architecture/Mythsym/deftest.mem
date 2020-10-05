@@ -1,0 +1,37 @@
+0: 0
+1: 0			// do nothing
+
+2: 100			// load up location 100 into r0
+3: 000110 00
+
+4: 00 00 0000     // move byte at 100 into r1
+5: 001011 01
+
+6: 10 10 0000 	// put 0 into r2
+7: 000101 10	// use xor of self to make a 0
+
+8: 10 01 0000	// add r1 into r2 (start of loop
+9: 000001 10
+
+10: 01 00 0000 // decrement r1
+11: 010000 01
+
+12: 01 00 0000 // loop until r1 is 0
+13: 001101 00
+
+14: 8			// begining of loop
+15: 001100 00
+
+16: 101			// load up location 101 into r0
+17: 000110 00
+
+18: 00 10 0000	// store result (in r2) into location 101
+19: 001010 00	
+
+20: 0			// end of program
+21: 010001 00
+
+
+
+100: 5
+101: -1

@@ -1,0 +1,8 @@
+rent,A,C0010
+rent,A,D0055
+rent,B,B0029
+return,C0010,1,340
+return,Error,99,99
+return,B0029,4
+return,D0055,2,450
+error,Error,44,55

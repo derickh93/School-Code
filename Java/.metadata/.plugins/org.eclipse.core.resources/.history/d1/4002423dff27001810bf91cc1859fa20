@@ -1,0 +1,8 @@
+package ht;
+
+public class Lab4App {
+	public static void main (String [] args) {
+		lastPerson person = new lastPerson("GOD");
+		person.hashcode();
+	}
+}

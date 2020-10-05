@@ -1,0 +1,19 @@
+/*
+ * list.h
+ *
+ *  Created on: May 3, 2018
+ *      Author: THE BOSS
+ */
+
+#ifndef LIST_H_
+#define LIST_H_
+
+enqueue(struct Node *head, char *s);
+push(struct Node *head, char *s);
+printlist(struct Node *head);
+deletelist(struct Node *head);
+void init(struct Node* head);
+
+
+
+#endif /* LIST_H_ */

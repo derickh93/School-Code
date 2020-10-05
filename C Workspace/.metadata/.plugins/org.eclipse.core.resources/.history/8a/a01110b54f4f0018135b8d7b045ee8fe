@@ -1,0 +1,41 @@
+/*
+ * list.c
+ *
+ *  Created on: May 3, 2018
+ *      Author: THE BOSS
+ */
+#include <stdio.h>
+#include <stdbool.h>
+
+typedef struct Node {
+    int data;
+    struct Node* next;
+};
+
+struct Node* head = NULL;
+
+
+
+void printlist(struct Node *head) {
+    struct Node* temp = head;
+    while(temp != '\0'){
+        printf("%d", temp->data);
+        temp = temp->next;
+    }
+    printf("\n");
+}
+
+
+void push(struct Node *head, char *s) {
+    struct Node* temp = (struct Node*)malloc(sizeof(struct Node*));
+    temp->data = s;
+    temp->next = head;
+    head = temp;
+    printlist(head);
+}
+
+void deletelist(struct node *head) {
+
+}
+
+

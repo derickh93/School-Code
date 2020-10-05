@@ -1,0 +1,14 @@
+1. How long did it take you to complete this project?
+It took me roughly 4 hours to complete this project.
+I started on class Friday and finished Saturday afternoon.
+
+2. What kind of help did you receive on this project, and from whom?
+I did not receive help from anyone with this project.
+
+3. What was the most difficult challenge you faced in this project?
+The most difficult challenge i faced was to create the default constructor.
+I had a hard time figuring out how to set the instructed parameters.
+
+4. Are you sure your program works? Why or why not?
+I am sure my program works because i get the desired output and it follows
+all the desired parameters.

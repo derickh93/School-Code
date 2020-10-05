@@ -1,0 +1,43 @@
+/*
+ * list.c
+ *
+ *  Created on: May 3, 2018
+ *      Author: THE BOSS
+ */
+#include <stdio.h>
+#include <stdbool.h>
+#include <stdlib.h>
+
+
+
+struct Node {
+	char *value;
+	struct Node *next;
+};
+struct Node *top = NULL;
+
+
+void push(char *value) {
+   struct Node *newNode;
+   newNode = (struct Node*)malloc(sizeof(struct Node));
+   newNode->value = value;
+   if(top == NULL)
+      newNode->next = NULL;
+   else
+      newNode->next = top;
+   top = newNode;
+   printf("\nInsertion is Success!!!\n");
+}
+
+void display() {
+   if(top == NULL)
+      printf("\nStack is Empty!!!\n");
+   else{
+      struct Node *temp = top;
+      while(temp->next != NULL){
+	 printf("%s--->",temp->value);
+	 temp = temp -> next;
+      }
+      printf("%s--->NULL",temp->value);
+   }
+}

@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1543027195 source:c:\users\cooli\desktop\hw#5 current\student.cpp
+	"Student.h"
+
+1542912770 c:\users\cooli\desktop\hw#5 current\student.h
+	<iostream>
+	<iomanip>
+	"Date.h"
+
+1543336053 source:c:\users\cooli\desktop\hw#5 current\main.cpp
+	<iostream>
+	<string>
+	<sstream>
+	"Student.h"
+	"Roster.h"
+	"Date.h"
+
+1543336312 c:\users\cooli\desktop\hw#5 current\roster.h
+	<iostream>
+	"Student.h"
+	"Date.h"
+
+1543345802 source:c:\users\cooli\desktop\hw#5 current\roster.cpp
+	<iostream>
+	"Roster.h"
+
+1542687614 c:\users\cooli\desktop\hw#5 current\date.h
+	<string>
+
+1542687901 source:c:\users\cooli\desktop\hw#5 current\date.cpp
+	"Date.h"
+	<iostream>
+
+1543345802 source:c:\users\cooli\desktop\hw#5 current\main2.cpp
+	<iostream>
+	<string>
+	<sstream>
+	"Student.h"
+	"Roster.h"
+	"Date.h"
+

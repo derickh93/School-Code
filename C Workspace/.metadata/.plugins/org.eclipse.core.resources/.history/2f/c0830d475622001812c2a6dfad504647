@@ -1,0 +1,20 @@
+/*
+ * main.c
+ *
+ *  Created on: Mar 6, 2018
+ *      Author: Derick Hansraj
+ *      OS: Windows
+ */
+
+#include <stdio.h>
+#include <stdbool.h>
+
+int main(int argc, char *argv[]) {
+	char s[] = "1123";
+
+	int num = parseint(s);
+	bool num2 = isnumeric(s);
+	printf("%i\n%i",num,argc);
+	puts(argv[0]);
+	return 0;
+}

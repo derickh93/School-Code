@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1535993027 source:c:\users\cooli\desktop\c++\exercise #2\main.cpp
+	<iostream>
+	<bits/stdc++.h>
+

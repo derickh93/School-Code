@@ -1,0 +1,54 @@
+1. What is the syntax error message?
+Type mismatch: cannot convert from Deck to GUI
+
+2. What do you think this error means?
+You cannot store a new deck in the reference variable theWindow because it is of type GUI.
+
+3. What is the syntax error message?
+The method shuffleDeck() is undefined for the type GUI
+
+4. What do you think this error means?
+The method shuffleDeck() exist for another type but does not exist in GUI.
+
+5. In which class is the shuffleDeck method defined? What is the header for this method?
+It is defined for the class Deck. The header for this method is Deck().
+
+6. Are there any parameters specified for this method? If so, what is/are
+the data type(s) of the parameter(s)?
+No there are no parameters.
+
+7. What is the data type of the return value?
+The return value would be of type Card.
+
+8. Are there any parameter specified for this method? Is fo, what is/are the data type(s) of the parameter(s)?
+No there are no parameters.
+
+9. What is the data type of the retunr value?
+This returns a data type of String.
+
+10. Run the program. What is displayed in the message pane at the bottom of the screen?
+When i run the program i get "1 of hearts".
+
+11. What is the syntax error message?
+The method showCard(GUI) is undefined for the type Card
+
+12. What do you think this error means?
+This error means that the method showCard does not exist for type Card.
+
+13. Are there any paramters specified for this method? If so, what is/are the data type(s) of the parameter(s)?
+There are no parameters for this method.
+
+14. What is the data type of the return value?
+The return type is int.
+
+15. Why do we need both a toString method and a getValue method for this class? Dont both of them tell us what value the card has?
+The toString method gives you both the suit and the value while the getValue gives you only the numeric value. They both do tell us he numeric value.
+
+16. Are there any paramters specified for this method? If so, what is/are the data type(s) of the parameter(s)?
+There are no parameters for this method.
+
+17. What is the data type of the return value?
+The data type for the return value is int.
+
+18. Why do we need both a getValue method and a getPointValue for this class? What is the difference between the values that get returned? 
+The getValue method gives a assigned number for the cards. The getPointValue method gives a different point value for each card. For examples getPointValue has different values for face cards while getValue has the same values.

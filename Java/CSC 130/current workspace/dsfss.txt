@@ -1,0 +1,21 @@
+public String infixToPostfix(){	
+		String expression = jtfInfix.getText();
+		String delims = "*/-+() ";
+		String token;
+		String outCome = new String();
+		StringTokenizer strToken = new StringTokenizer(expression, delims, true);
+		while(strToken.hasMoreTokens()){
+			token = strToken.nextToken();
+			if (token.matches("[0-9]"))			
+				outCome += token;
+			else if(token.equals('('))
+				l1.push(token);
+			else if(token.equals(')')) {
+				while(!l1.peek().equals('(')) {
+					outCome += l1.pop();
+				}
+				l1.pop();
+			}
+		}
+		return outCome + "hi";
+	}

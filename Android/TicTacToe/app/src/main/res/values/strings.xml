@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn_reset">Reset</string>
+    <string name="strX">X</string>
+    <string name="strO">O</string>
+    <string name="empty_Str"></string>
+
+</resources>

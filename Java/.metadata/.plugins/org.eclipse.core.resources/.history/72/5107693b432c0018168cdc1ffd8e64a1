@@ -1,0 +1,34 @@
+
+public class LastName {
+	
+	private String last;
+	
+	public LastName(String l) {
+		last = l;
+	}
+
+	
+	public int hashcode() {
+		int hashCode = 0;
+		int result = 0;
+		int c;
+		int power = 2;
+		
+		for(int i = 0 ; i < last.length(); i++) {
+			c = last.charAt(i);
+			hashCode = (int) (c * (Math.pow(31, power--)));
+			result += hashCode;
+		}
+		
+		hashCode += result;
+
+		System.out.println(hashCode);
+		return hashCode;
+	}
+	
+	public String toString() {
+		StringBuilder str = new StringBuilder();
+		str.append(last);
+		return str.toString();
+	}
+}

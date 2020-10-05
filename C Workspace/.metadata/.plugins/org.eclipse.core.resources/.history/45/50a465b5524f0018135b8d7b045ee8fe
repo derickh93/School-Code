@@ -1,0 +1,47 @@
+/*
+ * list.c
+ *
+ *  Created on: May 3, 2018
+ *      Author: THE BOSS
+ */
+#include <stdio.h>
+#include <stdbool.h>
+
+struct node{
+		int data;
+		struct node *next;
+	};
+
+	struct node *head = NULL;
+
+
+
+void printlist(struct Node *head) {
+	struct node *temp;  //Declare temp
+	temp = head;       //Assign Starting Address to temp
+	while(temp!=NULL)
+	    {
+	    printf("%s",temp->data);
+	    temp=temp->next;
+	    }
+}
+
+
+void push(struct node* head,char *s)
+{
+    struct node* tmp = (struct node*)malloc(sizeof(struct node));
+    if(tmp == NULL)
+    {
+        exit(0);
+    }
+    tmp->data = s;
+    tmp->next = head;
+    head = tmp;
+    printlist(head);
+}
+
+void deletelist(struct node *head) {
+
+}
+
+

@@ -1,0 +1,46 @@
+// instruction fetch sequence
+// gets the next instruction from pc (register 7)
+fetch0:    a_sel=7, b_sel=7, alu_sel=AND, r6_write, mar_sel=LOAD;			// get first byte of instruction 
+fetch1:    a_sel=6, alu_sel=ADDA, c_in, r7_write, read, ir0_sel=LOAD, 
+               if wait then goto fetch1 else goto fetch2 endif;
+fetch2:    a_sel=7, b_sel=7, alu_sel=AND, r6_write, mar_sel=LOAD;           // get second byte of instruction
+fetch3:    a_sel=6, alu_sel=ADDA, c_in, r7_write, read, ir1_sel=LOAD, 
+               if wait then goto fetch3 else goto fetch4 endif;
+fetch4:    goto opcode[IR_OPCODE];											// execute opcode
+opcode[0]: goto fetch0;                  								// no-op
+// binary operators
+opcode[1]: ri_sel, rj_sel, rk_sel, alu_sel=ADD, goto fetch0;			// ri<- rj+rk
+opcode[2]: ri_sel, rj_sel, rk_sel, c_in, alu_sel=SUB, goto fetch0;			// ri<- rj-rk
+opcode[3]: ri_sel, rj_sel, rk_sel, alu_sel=AND, goto fetch0;			// ri<- rj&rk
+opcode[4]: ri_sel, rj_sel, rk_sel, alu_sel=OR, goto fetch0;				// ri<- rj v rk
+opcode[5]: ri_sel, rj_sel, rk_sel, alu_sel=XOR, goto fetch0; 			// ri<- rj xor rk
+// unary operators
+opcode[6]: ri_sel, result_sel=IR_CONST8, goto fetch0;        			// ri<-const8
+opcode[7]: ri_sel, rj_sel, alu_sel=ADDA, goto fetch0;        			// ri <- rj
+opcode[8]: a_sel=5, b_sel=5, r5_write, alu_sel=xor, goto negate;        		// ri <- -rk  (needs to be rk because only way in 1 inst)
+opcode[9]: ri_sel, rj_sel, alu_sel=NOT, goto fetch0;        			// ri <- ~rj
+// memory load and store
+opcode[10]: rj_sel, alu_sel=ADDA, mar_sel=LOAD, goto storeA;  			// store: mem[rj]<- rk  ( doesn't use ri)
+opcode[11]: rj_sel, alu_sel=ADDA, mar_sel=LOAD, goto loadA;  			// load: ri<-mem[rj]
+// jump and skip instructions
+opcode[12]: r7_write, result_sel=IR_CONST8, goto fetch0;        		// jump to const8
+opcode[13]: rj_sel, alu_sel=SUBA, result_sel=IR_CONST8,
+           if c_out then goto fetch0 else goto skip endif;				// skip if rj is 0
+opcode[14]:	rj_sel, alu_sel=ADDA, 
+           if m_7 then goto skip else goto fetch0 endif;				// skip if rj is negative 
+// increment and decrement (++ and -- if ri is rj)
+opcode[15]: ri_sel, rj_sel, alu_sel=ADDA, c_in, goto fetch0;			// ri <- rj+1
+opcode[16]: ri_sel, rj_sel, alu_sel=SUBA, goto fetch0;					// ri <- rj-1
+opcode[17]: goto opcode[17];											// halt
+
+skip:		r7_write, a_sel=7, c_in, alu_sel=ADDA;   
+skip2:		r7_write, a_sel=7, c_in, alu_sel=ADDA, goto fetch0;			// add 2 to r7 to skip next instruction
+
+storeA:  a_sel=5, b_sel=5, alu_sel=SUB, c_in, r5_write, goto storeB;
+storeB:  rk_sel, a_sel=5, alu_sel=OR, mdr_sel=LOAD_ALU, goto memwrite;
+memwrite:  write, if wait then goto memwrite else goto fetch0 endif;	// write rk into mem[rj]
+
+loadA:  read, mdr_sel=LOAD_MEM, if wait then goto loadA else goto loadB endif;					// load up mem[rj]
+loadB:  result_sel=MDR, ri_sel, goto fetch0;							// put it in ri
+
+negate: ri_sel, rk_sel, a_sel=5, c_in, alu_sel=sub goto fetch0;			// put 0 - rk into ri

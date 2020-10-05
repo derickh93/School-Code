@@ -1,0 +1,62 @@
+
+public class OrderedArrayList<T extends Comparable<T>>extends ArrayList<T>{
+
+	public OrderedArrayList() {
+		super();
+	}
+
+	public OrderedArrayList(int size) {
+		super(size);
+	}
+
+	public void insert(T insertItem) {
+		if(isFull())
+			doubleCapacity();
+		int loc = 0;
+		boolean found = false;
+		for(int i = 0; i < size && !found; i++) {
+			System.out.println(insertItem + "\t" + data[i]);
+			if(((Comparable<T>) data[i]).compareTo(insertItem) > 0) {
+				for(int j = size; j > i; j--)
+					data[j] = data[j-1];
+				loc = i;
+				found = true;
+			}
+			else 
+				loc++;
+		}
+		data[loc] = insertItem;
+		size++;
+	}
+
+	public int search(T searchItem) {
+		int loc = -1;
+		boolean found = false;
+		int left = 0, right = size;
+		while(left <= right && !found) {
+			int mid = (left+right) / 2;
+			int value = searchItem.compareTo((T) data[mid]);
+			if(value == 0) {
+				loc = mid;
+				found = true;
+			}
+			else if(value > 0)
+				left = mid+1;
+			else 
+				right = mid-1;
+		}
+		return loc;
+	}
+
+	public T remove(T removeItem) {
+		T info = null;
+		int loc = search(removeItem);
+		if(loc >= 0) {
+			info = (T) data[loc];
+			for(int i = loc; i < size-1; i++ ) 
+				data[i] = data[i+1];
+		}
+		data[size-1] = null;
+		return info;
+	}
+}

@@ -1,0 +1,15 @@
+01:53:04 **** Incremental Build of configuration Debug for project CSC217.HansrajD.lab4 ****
+make all 
+Building file: ../lab4.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"lab4.d" -MT"lab4.o" -o "lab4.o" "../lab4.c"
+Finished building: ../lab4.c
+ 
+Building target: CSC217.HansrajD.lab4.exe
+Invoking: Cygwin C Linker
+gcc  -o "CSC217.HansrajD.lab4.exe"  ./lab4.o   
+Finished building target: CSC217.HansrajD.lab4.exe
+ 
+
+01:53:05 Build Finished (took 796ms)
+

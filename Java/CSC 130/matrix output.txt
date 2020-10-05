@@ -1,0 +1,80 @@
+Example of Matrix addition using the following matrices:
+1 2 
+5 3 
+
+3 2 
+4 5 
+
+SUM:
+4 4 
+9 8 
+
+Example of Matrix subtraction using the following matrices:
+1 2 
+5 3 
+
+3 2 
+4 5 
+
+DIFFERENCE:
+-2 0 
+1 -2 
+
+Example of Matrix multiplication using the following matrices:
+1 2 
+4 3 
+
+3 2 
+4 5 
+
+PRODUCT:
+11 12 
+24 23 
+
+Example of scalar multiplication using the following matrices with a scalar value of 2:
+1 2 
+4 3 
+
+SCALAR PRODUCT:
+2 4 
+8 6 
+
+Example of transpose using the following matrix:
+1 2 
+5 3 
+
+TRANSPOSE:
+1 5 
+2 3 
+
+Example of transpose using the following matrix:
+1 2 3 
+4 5 6 
+
+TRANSPOSE:
+1 4 
+2 5 
+3 6 
+
+Example of equality using the following matrices:
+1 2 
+5 3 
+
+1 2 
+5 3 
+
+EQUALITY:
+true
+
+Example of equality using the following matrices:
+1 2 3 
+4 5 6 
+
+1 4 
+2 5 
+3 6 
+
+EQUALITY:
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
+	at CSC130.hansrajd.lab1.Matrix.equality(Matrix.java:155)
+	at CSC130.hansrajd.lab1.Lab1App.main(Lab1App.java:76)

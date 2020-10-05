@@ -1,0 +1,136 @@
+Testing fourOfAKind method:
+2 of clubs
+2 of diamonds
+2 of hearts
+2 of spades
+Four of a kind
+
+Replaced the 2 of diamonds with the 3 of clubs:
+2 of clubs
+3 of clubs
+2 of hearts
+2 of spades
+Not four of a kind
+
+Testing flush method:
+
+2 of clubs
+3 of clubs
+2 of hearts
+2 of spades
+Not a flush
+
+Replaced the 2 of hearts with the 4 of clubs and the 2 of spades with the 5 of clubs:
+2 of clubs
+3 of clubs
+4 of clubs
+5 of clubs
+Flush
+
+Testing threeOfAKind method:
+
+2 of clubs
+3 of clubs
+4 of clubs
+5 of clubs
+Not three of a kind
+
+2 of clubs
+2 of diamonds
+2 of hearts
+5 of clubs
+Three of a kind
+
+2 of clubs
+2 of diamonds
+3 of clubs
+2 of hearts
+Three of a kind
+
+2 of clubs
+3 of clubs
+2 of diamonds
+2 of hearts
+Three of a kind
+
+3 of clubs
+2 of clubs
+2 of diamonds
+2 of hearts
+Three of a kind
+
+Testing pair method:
+
+2 of clubs
+3 of clubs
+4 of clubs
+5 of clubs
+Not a pair
+
+2 of clubs
+2 of diamonds
+4 of clubs
+5 of clubs
+Pair
+
+2 of clubs
+4 of clubs
+2 of diamonds
+5 of clubs
+Pair
+
+2 of clubs
+4 of clubs
+5 of clubs
+2 of diamonds
+Pair
+
+5 of clubs
+2 of clubs
+2 of diamonds
+4 of clubs
+Pair
+
+5 of clubs
+2 of clubs
+4 of clubs
+2 of diamonds
+Pair
+
+5 of clubs
+4 of clubs
+2 of clubs
+2 of diamonds
+Pair
+
+Testing lowCard method:
+
+2 of clubs
+3 of clubs
+4 of clubs
+5 of clubs
+The low card is 2 of clubs
+
+3 of clubs
+2 of clubs
+4 of clubs
+5 of clubs
+The low card is 2 of clubs
+
+3 of clubs
+4 of clubs
+2 of clubs
+5 of clubs
+The low card is 2 of clubs
+
+3 of clubs
+4 of clubs
+5 of clubs
+2 of clubs
+The low card is 2 of clubs
+
+3 of clubs
+2 of diamonds
+5 of clubs
+2 of clubs
+The low card is 2 of diamonds

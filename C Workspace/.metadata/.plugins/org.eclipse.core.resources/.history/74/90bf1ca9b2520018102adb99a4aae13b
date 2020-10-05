@@ -1,0 +1,16 @@
+/*
+ * main.c
+ *
+ *  Created on: May 3, 2018
+ *      Author: THE BOSS
+ */
+#include <stdio.h>
+#include <stdbool.h>
+
+int main() {
+	init(top);
+	push("Derick");
+	push("Hansraj");
+	display();
+	return 0;
+}

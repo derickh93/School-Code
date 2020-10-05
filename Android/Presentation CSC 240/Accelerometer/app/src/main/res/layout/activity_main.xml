@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/text_X"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1"
+        android:ems="10"
+        android:text="@string/str_XAxis"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <EditText
+        android:id="@+id/text_Y"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:editable="false"
+        android:layout_below="@+id/text_X"
+        android:layout_weight="1"
+        android:ems="10"
+        android:text="@string/str_YAxis"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="46dp" />
+
+    <EditText
+        android:id="@+id/text_Z"
+        android:editable="false"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/text_Y"
+        android:layout_weight="1"
+        android:ems="10"
+        android:text="@string/str_ZAxis"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="97dp" />
+
+    <EditText
+        android:id="@+id/text_Sensors"
+        android:layout_width="169dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:editable="false"
+        android:layout_below="@+id/text_Z"
+        android:layout_weight="1"
+        android:ems="10"
+        android:text="@string/str_Sensors"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="143dp" />
+
+    <TextView
+        android:id="@+id/x_View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/text_X"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="113dp"
+        android:layout_weight="1"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/y_View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/text_Y"
+        android:layout_alignStart="@+id/x_View"
+        android:layout_weight="1"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="66dp" />
+
+    <TextView
+        android:id="@+id/z_View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/text_Z"
+        android:layout_alignStart="@+id/x_View"
+        android:layout_weight="1"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="114dp" />
+
+    <TextView
+        android:id="@+id/num_View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/text_Sensors"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1"
+        tools:layout_editor_absoluteX="177dp"
+        tools:layout_editor_absoluteY="161dp" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/text_Sensors" />
+
+</android.widget.RelativeLayout>

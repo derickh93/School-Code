@@ -1,0 +1,12 @@
+"Please enter the full name"
+posofPeriod is 2
+"Position of period 2"
+someString is r. Odel
+"r. Ode"
+numChars is 21
+anotherString is "Odell Beckham J"
+"Odell Beckham J"
+posofSpace is 5
+"Position of space 5"
+"l Beckh"
+

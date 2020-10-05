@@ -1,0 +1,62 @@
+import javax.swing.JOptionPane;
+
+public class Program3App {
+	public static long startTime;
+	public static long simulationTime;
+	private static Arrival arrival;
+	private static Departure departure;
+	private static Runway runway;
+
+	public static void startSimulation(long time) {
+		startTime = System.currentTimeMillis();
+		simulationTime = time * 60000;
+		arrival = new Arrival(5000);
+		departure = new Departure(4000);
+
+		//Start all 3 Threads
+		arrival.start();
+		departure.start();
+		runway =  new Runway(arrival,departure);
+		runway.start();
+
+		//loop for the specified length of time to run the simulation
+
+		while(System.currentTimeMillis() < startTime + simulationTime){
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		arrival.stopRunning();
+		departure.stopRunning();
+		runway.stopRunning();
+		try {
+			arrival.join();
+			departure.join();
+			runway.join();
+
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+	public static void main(String[] args) throws InterruptedException {
+
+		//input the time in minutes for the simulation to run
+		long simulationTime = Integer.parseInt(JOptionPane.showInputDialog("Enter Simulation Time: " ));
+
+		//Create an instance of Program3App
+		Program3App p3 = new Program3App();	
+
+		//Start the simulation with the desired time
+		startSimulation(simulationTime);
+
+		//loop while arrival or departure thread is alive
+		while(arrival.isAlive() || departure.isAlive()) {
+			Thread.sleep(1000);
+		}
+
+		//Stop the runway thread
+		runway.stopRunning();
+	}
+}

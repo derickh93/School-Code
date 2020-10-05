@@ -1,0 +1,75 @@
+# File
+	#Checking to see if file is empty or not because we cannot use the method on a empty file
+	Size:
+		Empty.					[single][property emptyfile] 
+		Not empty.
+		
+# String
+	#Checking to see if a valid OPT Flag exist, if not method call is invalid.
+	OPT Flag:
+		Valid.					[if !emptyfile][property optFlag]
+		Invalid.				[error]
+		
+	#Checking to see if a valid To value exist, if not method call is invalid.
+	To value:
+		Valid.					[if !emptyfile][property toVal]
+		Invalid.				[error]
+	
+	#Checking to see if a valid From value exist, if not method call is invalid.
+	From value:
+		Valid.					[if !emptyfile][property fromVal]
+		Invalid.				[error]
+		
+	#Checking to see if there are multiple files that method is called on.
+	Multiple Files:
+		True.					[if !emptyfile][property multiFile]	
+		False.			
+
+	#Checking to see what king of OPT Flag is used so that appropriate test case can be used.		
+	Valid OPT Flag option:
+		-b.						[if optFlag][property bFlag]
+		-f.						[if optFlag][property fFlag]
+		-l.						[if optFlag][property lFlag]
+		-i.						[if optFlag][property iFlag]
+		multiple flags.			[if optFlag][property multFlag]
+		no flags.				[if optFlag][property noFlag]
+		
+	#Checking to see if there is space to backup file(s) if necessary
+	Available space to write file(s):
+		True.					[if bFlag || multFlag]
+		False.					[if bFlag || multFlag][error]
+		
+	#Checking to see if an occurence was replaced on each file if multiple files were used.
+	Replaced occurence on each file (multifile usages):
+		True.					[if multiFile && fFlag || bFlag || lFlag || iFlag || multFlag]
+		False.
+
+	#Checking to see what king of replacement was done depending on all method headers being correct and the type of flag used.
+	Replaced String(s):
+		Replaced and back up file due to occurence.		[if toVal && fromVal && optFlag && bFlag]
+		Replaced first occurence.						[if toVal && fromVal && optFlag && fFlag]
+		Replaced last occurence.						[if toVal && fromVal && optFlag && lFlag]
+		Replaced all occurence (case insensitive).		[if toVal && fromVal && optFlag && iFlag]
+		Replaced first occurence and last occurence. 	[if toVal && fromVal && optFlag && multFlag]
+		Replaced first occurence and backed up file.	[if toVal && fromVal && optFlag && multFlag]
+		Replaced last occurence and backed up file.		[if toVal && fromVal && optFlag && multFlag]
+		Replaced first occurence insensitive.			[if toVal && fromVal && optFlag && multFlag]
+		Replaced last occurence insensitive.			[if toVal && fromVal && optFlag && multFlag]
+		Replaced insensitive and backed up.				[if toVal && fromVal && optFlag && multFlag]
+		Not replaced due to no occurence.				[if toVal && fromVal && optFlag]
+		Not replaced due to being the same string. 		[if toVal && fromVal && optFlag]
+		Not replaced due to invalid string input		[if toVal && fromVal && optFlag]
+		
+
+# Filename
+	#Checking whether or not the names exist of the files passed.
+	Presence of a file(s) corresponding to the name(s):
+		True, all valid.
+		True, some valid.		[error]
+		True, none valid.		[error]
+		Not present.			[error]
+	#Checking whether or not atleast one file is passed as required.
+	Presence of atleast one file:
+		Present.			
+		Not present.			[error]
+

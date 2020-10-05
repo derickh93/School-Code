@@ -1,0 +1,23 @@
+
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+
+
+public class Lab4App {
+	static String first;
+	static String last;
+	static String email;
+	LastName ls;
+	static Person p;
+	public static void main (String [] args) throws FileNotFoundException {
+		 Scanner scanner = new Scanner(new File("Mock_Data.csv"));
+	        scanner.nextLine();
+	        while(scanner.hasNext()){
+	        	System.out.println(scanner.nextLine());
+	        }
+	        scanner.close();
+	}
+}

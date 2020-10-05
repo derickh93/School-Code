@@ -1,0 +1,13 @@
+• How much time did you spend working on this project?
+I spent 1 hour in class on Thursday and roughly 2 hours over the weekend which results in a total of 3 hours.
+
+• Who, if anyone, helped you with this project?
+I did not get help from anyone with this project
+
+• What was the most difficult part of this project?
+The most difficult part of the project was doing the comments. The reason for this is because i corrected the code without commenting. This resulted in me having to trace the original code to find what i changed.
+
+• Is there anything about your submission that you’re unhappy with?
+I am pretty satisfied with my submission. I did not get stumped while doing this project.
+
+

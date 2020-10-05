@@ -1,0 +1,38 @@
+Derick Hansraj
+Kuldeep Singh
+
+ Please enter a URL: 
+https://www.google.com/index.html
+The URL is https://www.google.com/index.html.
+The colon is at position 5.
+The protocol is https.
+The rest of the URL is www.google.com/index.html.
+The domain name is www.google.com.
+The file name is index.html.
+The file name is 10 characters long.
+The first letter of the file name is i.
+The last letter of the file name is l.
+
+ Please enter a URL: 
+http://www.facbook.com/index.html
+The URL is http://www.facbook.com/index.html.
+The colon is at position 4.
+The protocol is http.
+The rest of the URL is www.facbook.com/index.html.
+The domain name is www.facbook.com.
+The file name is index.html.
+The file name is 10 characters long.
+The first letter of the file name is i.
+The last letter of the file name is l.
+
+ Please enter a URL: 
+ftp://www.amazon.com/index.html
+The URL is ftp://www.amazon.com/index.html.
+The colon is at position 3.
+The protocol is ftp.
+The rest of the URL is www.amazon.com/index.html.
+The domain name is www.amazon.com.
+The file name is index.html.
+The file name is 10 characters long.
+The first letter of the file name is i.
+The last letter of the file name is l.

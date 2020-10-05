@@ -1,0 +1,150 @@
+/**
+ * <p>Title: ArrayQueue Class</p>
+ *
+ * <p>Description: Provides basic Queue functionality, including the ability
+ * to enqueue and dequeue items to/from the queue, get the front-most item,
+ * get the rear most item, determine whether or not the queue is full, determine
+ * whether or not the queue is empty, determine the queue's size, make the queue empty
+ * and to get a String representation of the items in the queue.</p>
+ *
+ * @author Instructor & Derick Hansraj
+ */
+
+public class ArrayQueue<T> implements ArrayQueueADT<T> {
+	private T[] data;
+	private int front, rear, size;
+	final int CAPACITY = 100;
+
+	/**
+	 * default constructor -- creates an empty queue with a capacity of 100.
+	 */
+	public ArrayQueue() {
+		data = (T[]) (new Object[CAPACITY]);
+	}
+
+	/**
+	 * parameterized constructor --
+	 * creates an empty queue that is initially capable of storing 
+	 * s items.
+	 * @param s the initial size of the queue as specified by the user
+	 * @throws RuntimeException is thrown if an invalid size is entered
+	 */
+	public ArrayQueue(int s) throws RuntimeException {
+		if (s < 1)
+			throw new RuntimeException("Invalid queue size exception...");
+		data = (T[]) (new Object[s]);
+	}
+
+	/**
+	 * enqueue --
+	 * stores a new item at the rear of the queue; if the queue becomes
+	 * full, a QueueException is thrown.
+	 * @param d a reference to the item to be stored at the rear of the queue
+	 * @throws QueueException is thrown if the queue is full
+	 */
+	public synchronized void enqueue(T d) throws QueueException {
+		if (isFull())
+			throw new QueueException("Queue full exception...");
+		data[rear] = d;
+		rear = (rear + 1) % data.length;
+		size++;
+	}
+
+	/**
+	 * deQueue -- removes the front-most item from the queue.
+	 * @return a reference to the object which was stored at the front of the
+	 * queue
+	 * @throws QueueException if the queue is empty
+	 */
+	public synchronized T dequeue() throws QueueException {
+		if (isEmpty())
+			throw new QueueException("Queue empty exception...");
+		T d = data[front];
+		front = (front + 1) % data.length;
+		size--;
+		return d;
+	}
+
+	/**
+	 * front --
+	 * returns the item stored at the front of the queue; the queue 
+	 * is not modified.
+	 * @return a reference to the object which is stored at the front of the queue
+	 * @throws Queue Exception is thrown if the queue is empty
+	 */
+	public synchronized T front() throws RuntimeException {
+		if (isEmpty())
+			throw new QueueException("Queue empty exception...");
+		return data[front];
+	}
+
+	/**
+	 * rear --
+	 * returns the item stored at the rear of the queue; the queue 
+	 * is not modified.
+	 * @return a reference to the object which is stored at the rear of the queue
+	 * @throws QueueException is thrown if the queue is empty
+	 */
+	public synchronized T rear() throws RuntimeException {
+		if (isEmpty())
+			throw new QueueException("Queue empty exception...");
+		if (isFull())
+			return data[size-1];
+		else 
+			return data[rear-1];
+	}
+
+	/**
+	 * getSize -- returns the size of the number of items in the queue.
+	 * @return size
+	 */
+	public synchronized int getSize() {
+		return size;
+	}
+
+	/**
+	 * isEmpty -- determines whether or not the queue is empty.
+	 * @return true if the queue is empty; false otherwise
+	 */
+	public synchronized boolean isEmpty() {
+		return size == 0;
+	}
+
+	/**
+	 * isFull -- determines whether or not the queue is full.
+	 * @return true if the queue is full; false otherwise
+	 */
+	public synchronized boolean isFull() {
+		return size == data.length;
+	}
+
+	/**
+	 * makeEmpty -- makes the queue empty.
+	 */
+	public synchronized void makeEmpty() {
+		while(!isEmpty()) {
+			dequeue();
+		}
+	}
+
+	/**
+	 * toString method - returns a String representing the current state of the queue.
+	 * @return a String containing all items in the queue
+	 */
+	public synchronized String toString() {
+		String str = new String();
+		String s1 = new String();
+		int trav = front;
+		if(isEmpty())
+			s1 = "Queue is empty! Maximum number of items that can be stored is " + data.length;
+
+		for (int i = 0; i < size; i++) {{
+			str += data[trav] + ((i < size - 1) ? "," : "");
+			trav = (trav + 1) % data.length;
+		}
+		s1 = "The number of items in the queue is: " + getSize() + "\nThe queue "
+				+ "contains the following: \n" + str;
+		}
+		return  s1;
+	}
+}

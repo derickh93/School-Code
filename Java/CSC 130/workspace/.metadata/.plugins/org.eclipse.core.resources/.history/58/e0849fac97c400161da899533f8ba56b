@@ -1,0 +1,53 @@
+package practiceClass;
+
+public class practiceClass {
+	public static long factorial(int n) { 
+		
+	    if (n == 1) return 1; 
+	    return n * factorial(n-1); 
+	} 
+	public static int powerN(int base, int n) {
+		if(n < 0) {
+			return 00000000;
+		}
+		if(n == 0) {
+			return 1;
+		}
+		else {
+			int result = base * powerN(base, n-1);
+			System.out.println(result);
+			System.out.println(base + " " + n);
+			return result;
+		}
+	}
+	public static int multiply2(int num1, int num2) {
+		if(num1 == 0 || num2 == 0) {
+			return 0;
+		}
+		else if(num2 < 0) {
+			int result = - num1 + multiply2(num1, num2+1);
+			System.out.println(result);
+			return result;
+		}
+		else {
+			int result2 = num1 + multiply2(num1, num2-1);
+			System.out.println("numbers: " + num1 + "  " + num2);
+			System.out.println("results: " + result2);
+			return result2;
+		}
+	}
+
+	public static void main (String [] args) {
+		//System.out.println(powerN(2,5));
+		//System.out.println(multiply2(10, 5));
+		Object o1 = 5;
+		BinaryTree tree2 = new BinaryTree(10);
+		BinaryTree tree3 = new BinaryTree(15);
+		BinaryTree tree1 = new BinaryTree(o1, tree2, tree3);
+		System.out.println(tree1.toString());
+		tree1.setLeftChild(new BinaryTree(20));
+		System.out.println(tree1.toString());
+
+	}
+
+}

@@ -1,0 +1,49 @@
+import javax.swing.JOptionPane;
+
+public class Program3App {
+	private static long startTime;
+	private static long simulationTime;
+	private static Arrival arrival = new Arrival(5000);
+	private static Departure departure =  new Departure(4000);
+	private static Runway runway;
+
+	public static void startSimulation(long time) {
+		startTime = System.currentTimeMillis();
+		simulationTime = time * 1000;
+		arrival.start();
+		departure.start();
+		runway =  new Runway(arrival,departure);
+		runway.start();
+		while(System.currentTimeMillis() < startTime + simulationTime){
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		arrival.stopRunning();
+		departure.stopRunning();
+		runway.stopRunning();
+		try {
+			arrival.join();
+			departure.join();
+			runway.join();
+
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+	public static void main(String[] args) {
+		long simulationTime = Integer.parseInt(JOptionPane.showInputDialog("Enter Simulation Time: " ));
+		Program3App p3 = new Program3App();	
+		startSimulation(simulationTime);
+		while(arrival.isAlive()||departure.isAlive()){
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		runway.stopRunning();
+	}
+}

@@ -1,0 +1,54 @@
+package ht;
+// will need a hashcode method which gets called from put and get in hashtable
+public class lastPerson {
+	private String last;
+	
+	public lastPerson(String l) {
+		last = l;
+	}
+	
+	public String getLast() {
+		return last;
+	}
+
+	public void setLast(String last) {
+		this.last = last;
+	}
+
+
+
+	public int hashcode() {
+		int hashCode = 0;
+		int result = 0;
+		int c;
+		int power = 2;
+
+		for(int i = 0 ; i < last.length(); i++) {
+			c = last.charAt(i);
+			hashCode = (int) (c * Math.pow(31, power--));
+			System.out.println(c + "\t" + hashCode +"\t" + result);
+		}
+		
+		result += hashCode;
+		return result;
+	}
+}
+
+/**
+public int hashcode() {
+	int hashCode = 0;
+	int result = 0;
+	int c;
+	int power = 2;
+
+	for(int i = 0 ; i < last.length(); i++) {
+		c = last.charAt(i);
+		hashCode = (int) (c * Math.pow(31, power--));
+		result += hashCode;
+		System.out.println(c + "\t" + hashCode +"\t" + result);
+	}
+	
+	result += hashCode;
+	return result;
+}
+**/
