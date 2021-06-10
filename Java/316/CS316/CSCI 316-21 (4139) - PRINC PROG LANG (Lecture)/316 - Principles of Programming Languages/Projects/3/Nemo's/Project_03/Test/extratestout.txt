@@ -1,0 +1,8 @@
+push  21
+Pop a
+push  23.4e-7
+Pop b
+push  b
+Pop c
+: unexpected symbol where } expected
+: unexpected symbol where } expected

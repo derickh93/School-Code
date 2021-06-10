@@ -1,0 +1,135 @@
+0 <fun defs>
+ 1 <fun def>
+  2 <header>  <fun name>  square
+   3 <parameter list>  x
+  2 <body>
+   3 <Exp>
+    4 <expr>
+     5 <boolTerm>
+      6 <boolPrimary>
+       7 <E>
+        8 <term>
+         9 <primary> x
+         9 *
+         9 <primary> x
+ 1 <fun def>
+  2 <header>  <fun name>  pi
+   3 <parameter list>
+  2 <body>
+   3 <Exp>
+    4 <expr>
+     5 <boolTerm>
+      6 <boolPrimary>
+       7 <E>
+        8 <term>
+         9 <primary> 3.14159
+ 1 <fun def>
+  2 <header>  <fun name>  cylinderVolume
+   3 <parameter list>  length  radius
+  2 <body>
+   3 <Exp>
+    4 <expr>
+     5 <boolTerm>
+      6 <boolPrimary>
+       7 <E>
+        8 <term>
+         9 <primary> length
+         9 *
+         9 <primary>
+          10 <expr>
+           11 <boolTerm>
+            12 <boolPrimary>
+             13 <E>
+              14 <term>
+               15 <primary>
+                16 <fun E>  <fun name>  pi
+                 17 <E list>
+               15 *
+               15 <primary>
+                16 <fun E>  <fun name>  square
+                 17 <E list>
+                  18 <expr>
+                   19 <boolTerm>
+                    20 <boolPrimary>
+                     21 <E>
+                      22 <term>
+                       23 <primary> radius
+ 1 <fun def>
+  2 <header>  <fun name>  test
+   3 <parameter list>  x
+  2 <body>
+   3 <Exp>
+    4 if
+    4 <expr>
+     5 <boolTerm>
+      6 <boolPrimary>
+       7 <E>
+        8 <term>
+         9 <primary> x
+       7 >
+       7 <E>
+        8 <term>
+         9 <primary>
+          10 -
+          10 <primary> 0987
+    4 <Exp>
+     5 <expr>
+      6 <boolTerm>
+       7 <boolPrimary>
+        8 <E>
+         9 <term>
+          10 <primary> 6453
+    4 else
+    4 <Exp>
+     5 <expr>
+      6 <boolTerm>
+       7 <boolPrimary>
+        8 <E>
+         9 <term>
+          10 <primary>
+           11 -
+           11 <primary> 1540
+ 1 <fun def>
+  2 <header>  <fun name>  fact
+   3 <parameter list>  n
+  2 <body>
+   3 <Exp>
+    4 if
+    4 <expr>
+     5 <boolTerm>
+      6 <boolPrimary>
+       7 <E>
+        8 <term>
+         9 <primary> n
+       7 ==
+       7 <E>
+        8 <term>
+         9 <primary> 0
+    4 <Exp>
+     5 <expr>
+      6 <boolTerm>
+       7 <boolPrimary>
+        8 <E>
+         9 <term>
+          10 <primary> 1
+    4 else
+    4 <Exp>
+     5 <expr>
+      6 <boolTerm>
+       7 <boolPrimary>
+        8 <E>
+         9 <term>
+          10 <primary> n
+          10 *
+          10 <primary>
+           11 <fun E>  <fun name>  fact
+            12 <E list>
+             13 <expr>
+              14 <boolTerm>
+               15 <boolPrimary>
+                16 <E>
+                 17 <term>
+                  18 <primary> n
+                 17 -
+                 17 <term>
+                  18 <primary> 1

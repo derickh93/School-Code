@@ -1,0 +1,182 @@
+0 <fun defs>
+ 1 <fun def>
+  2 <header>  <fun name>  func1
+   3 <parameter list>  x1  x2  x3  x4  x5  x6  x7  b1
+  2 <body>
+   3 <Exp>
+    4 if
+    4 <expr>
+     5 <boolTerm>
+      6 <boolPrimary>
+       7 <E>
+        8 <term>
+         9 <primary> x1
+        8 +
+        8 <term>
+         9 <primary> x2
+       7 <
+       7 <E>
+        8 <term>
+         9 <primary> x1
+        8 -
+        8 <term>
+         9 <primary> x2
+      6 &&
+      6 <boolPrimary>
+       7 <E>
+        8 <term>
+         9 <primary> x3
+         9 *
+         9 <primary> x4
+       7 >=
+       7 <E>
+        8 <term>
+         9 <primary> x5
+         9 /
+         9 <primary> x6
+    4 <Exp>
+     5 <expr>
+      6 <boolTerm>
+       7 <boolPrimary>
+        8 <E>
+         9 <term>
+          10 <primary>
+           11 <fun E>  <fun name>  func2
+            12 <E list>
+             13 <expr>
+              14 <boolTerm>
+               15 <boolPrimary>
+                16 <E>
+                 17 <term>
+                  18 <primary>
+                   19 -
+                   19 <primary> 3.
+                  18 /
+                  18 <primary> x7
+         9 +
+         9 <term>
+          10 <primary>
+           11 <fun E>  <fun name>  func3
+            12 <E list>
+             13 <expr>
+              14 <boolTerm>
+               15 <boolPrimary>
+                16 <E>
+                 17 <term>
+                  18 <primary> 23.E-5
+                  18 *
+                  18 <primary> 3.0
+                 17 +
+                 17 <term>
+                  18 <primary> 2.4
+         9 -
+         9 <term>
+          10 <primary> 12.54e-2
+    4 else
+    4 <Exp>
+     5 if
+     5 <expr>
+      6 <boolTerm>
+       7 <boolPrimary>
+        8 <E>
+         9 <term>
+          10 <primary> x1
+        8 !=
+        8 <E>
+         9 <term>
+          10 <primary> x6
+      6 ||
+      6 <boolTerm>
+       7 <boolPrimary>
+        8 <E>
+         9 <term>
+          10 <primary>
+           11 !
+           11 <primary> b1
+       7 &&
+       7 <boolPrimary>
+        8 <E>
+         9 <term>
+          10 <primary> x2
+        8 <=
+        8 <E>
+         9 <term>
+          10 <primary>
+           11 <expr>
+            12 <boolTerm>
+             13 <boolPrimary>
+              14 <E>
+               15 <term>
+                16 <primary> x5
+               15 +
+               15 <term>
+                16 <primary> x6
+          10 *
+          10 <primary> x5
+     5 <Exp>
+      6 <expr>
+       7 <boolTerm>
+        8 <boolPrimary>
+         9 <E>
+          10 <term>
+           11 <primary> x1
+          10 +
+          10 <term>
+           11 <primary> x2
+           11 *
+           11 <primary> x3
+          10 +
+          10 <term>
+           11 <primary> x4
+           11 *
+           11 <primary> x5
+          10 +
+          10 <term>
+           11 <primary> x6
+           11 *
+           11 <primary> x7
+     5 else
+     5 <Exp>
+      6 <expr>
+       7 <boolTerm>
+        8 <boolPrimary>
+         9 <E>
+          10 <term>
+           11 <primary>
+            12 <expr>
+             13 <boolTerm>
+              14 <boolPrimary>
+               15 <E>
+                16 <term>
+                 17 <primary>
+                  18 !
+                  18 <primary>
+                   19 !
+                   19 <primary>
+                    20 !
+                    20 <primary> b1
+             13 ||
+             13 <boolTerm>
+              14 <boolPrimary>
+               15 <E>
+                16 <term>
+                 17 <primary>
+                  18 <expr>
+                   19 <boolTerm>
+                    20 <boolPrimary>
+                     21 <E>
+                      22 <term>
+                       23 <primary> x1
+                     21 <
+                     21 <E>
+                      22 <term>
+                       23 <primary> x2
+        8 &&
+        8 <boolPrimary>
+         9 <E>
+          10 <term>
+           11 <primary> x3
+         9 ==
+         9 <E>
+          10 <term>
+           11 <primary> x4

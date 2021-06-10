@@ -1,0 +1,5 @@
+0 <fun defs>
+{  -- Invalid Token
+ 1 <fun def>
+{: unexpected symbol where ( expected
+{  -- unexpected symbol

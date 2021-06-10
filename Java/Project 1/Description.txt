@@ -1,0 +1,11 @@
+The data structure that is maintaining the Obj objects is called ConObject. It is used along with ObjectNode 
+and ObjectNodeComp to maintain the data structure. ConObjects will be used to store each type of parent and child class 
+that is called through inheritance. As each type of parent/child classes constructor is called
+it will be inserted into the ConObjects instance as defined by collection. The object node is used to 
+store both the class name and the class count. The ObjectNodeComp class is used to compare 
+two ConObjects by their count and helps with sorting from greatest to least. In the Parser class a 
+ConObjects class is used to store a linked list of Strings. This linked list sorts the strings by their name. 
+First we define a linkedlist of type ObjectNode that holds strings. A for loop that will go through the linkedlist 
+and get the count of each class type and store it in the ConObjects defined in Obj. This will sort the collection of
+ObjectNodes by count. This will write the data such as the object class name and the count of the class occurences.
+

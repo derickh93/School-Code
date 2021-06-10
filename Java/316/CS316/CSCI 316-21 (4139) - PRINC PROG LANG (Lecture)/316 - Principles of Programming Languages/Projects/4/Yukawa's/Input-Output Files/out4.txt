@@ -1,0 +1,77 @@
+      goto 1
+2:
+      push  #1
+      push  1
+      add
+      return
+3:
+      push  #1
+      push  2
+      add
+      return
+4:
+      push  #1
+      push  3
+      add
+      return
+5:
+      push  #1
+      push  4
+      add
+      return
+6:
+      push  0
+      push  #1
+      le
+      push  #1
+      push  10
+      lt
+      and
+      if_f goto 7
+      push  #1
+      call 2, 1
+      goto 8
+7:
+      push  10
+      push  #1
+      le
+      push  #1
+      push  20
+      lt
+      and
+      if_f goto 9
+      push  #1
+      call 3, 1
+      goto 10
+9:
+      push  20
+      push  #1
+      le
+      push  #1
+      push  30
+      lt
+      and
+      if_f goto 11
+      push  #1
+      call 4, 1
+      goto 12
+11:
+      push  #1
+      call 5, 1
+12:
+10:
+8:
+      return
+1:
+      push  1
+      call 2, 1
+      push  2
+      call 3, 1
+      add
+      push  3
+      call 4, 1
+      add
+      push  4
+      call 5, 1
+      add
+      call 6, 1

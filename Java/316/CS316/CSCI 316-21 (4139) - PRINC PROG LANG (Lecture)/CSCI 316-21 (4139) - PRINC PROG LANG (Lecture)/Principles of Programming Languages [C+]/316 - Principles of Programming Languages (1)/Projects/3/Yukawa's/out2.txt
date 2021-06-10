@@ -1,0 +1,82 @@
+0 <fun defs>
+ 1 <fun def>
+  2 <header>  <fun name>  test
+   3 <parameter list>  iff  if1  aif  aif1  delse  els  else2
+  2 <body>
+   3 <Exp>
+    4 if
+    4 <expr>
+     5 <boolTerm>
+      6 <boolPrimary>
+       7 <E>
+        8 <term>
+         9 <primary> iff
+       7 !=
+       7 <E>
+        8 <term>
+         9 <primary> if1
+    4 <Exp>
+     5 <expr>
+      6 <boolTerm>
+       7 <boolPrimary>
+        8 <E>
+         9 <term>
+          10 <primary> aif
+         9 +
+         9 <term>
+          10 <primary> aif1
+    4 else
+    4 <Exp>
+     5 if
+     5 <expr>
+      6 <boolTerm>
+       7 <boolPrimary>
+        8 <E>
+         9 <term>
+          10 <primary> delse
+        8 <
+        8 <E>
+         9 <term>
+          10 <primary> els
+     5 <Exp>
+      6 <expr>
+       7 <boolTerm>
+        8 <boolPrimary>
+         9 <E>
+          10 <term>
+           11 <primary> else2
+          10 -
+          10 <term>
+           11 <primary> iff
+     5 else
+     5 <Exp>
+      6 if
+      6 <expr>
+       7 <boolTerm>
+        8 <boolPrimary>
+         9 <E>
+          10 <term>
+           11 <primary> else2
+         9 ==
+         9 <E>
+          10 <term>
+           11 <primary> aif
+      6 <Exp>
+       7 <expr>
+        8 <boolTerm>
+         9 <boolPrimary>
+          10 <E>
+           11 <term>
+            12 <primary> delse
+            12 *
+            12 <primary> if1
+      6 else
+      6 <Exp>
+       7 <expr>
+        8 <boolTerm>
+         9 <boolPrimary>
+          10 <E>
+           11 <term>
+            12 <primary> else2
+            12 /
+            12 <primary> iff

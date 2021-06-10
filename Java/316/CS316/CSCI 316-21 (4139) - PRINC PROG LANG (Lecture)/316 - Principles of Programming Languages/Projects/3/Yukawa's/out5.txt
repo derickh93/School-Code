@@ -1,0 +1,36 @@
+0 <fun defs>
+ 1 <fun def>
+  2 <header>  <fun name>  fact
+   3 <parameter list>  n
+  2 <body>
+   3 <Exp>
+    4 if
+    4 <expr>
+     5 <boolTerm>
+      6 <boolPrimary>
+       7 <E>
+        8 <term>
+         9 <primary> n
+       7 ==
+       7 <E>
+        8 <term>
+         9 <primary> 0
+    4 <Exp>
+     5 <expr>
+      6 <boolTerm>
+       7 <boolPrimary>
+        8 <E>
+         9 <term>
+          10 <primary> 1
+    4 else
+    4 <Exp>
+     5 <expr>
+      6 <boolTerm>
+       7 <boolPrimary>
+        8 <E>
+         9 <term>
+          10 <primary>
+else: unexpected symbol where id, int, float, (, -, or ! expected
+
+else: unexpected symbol where } expected
+else  -- unexpected symbol

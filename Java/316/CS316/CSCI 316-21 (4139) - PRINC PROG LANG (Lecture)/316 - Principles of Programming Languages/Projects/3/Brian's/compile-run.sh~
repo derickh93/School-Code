@@ -1,0 +1,10 @@
+#!/bin/bash
+javac
+java Parser in1.txt out1.txt
+bruslim@k20z:~/Dropbox/Class Work/316 - Principles of Programming Languages/Projects/3/Brian's$ java Parser in2.txt out2.txt
+bruslim@k20z:~/Dropbox/Class Work/316 - Principles of Programming Languages/Projects/3/Brian's$ java Parser in3.txt out3.txt
+bruslim@k20z:~/Dropbox/Class Work/316 - Principles of Programming Languages/Projects/3/Brian's$ java Parser in4.txt out4.txt
+bruslim@k20z:~/Dropbox/Class Work/316 - Principles of Programming Languages/Projects/3/Brian's$ java Parser in5.txt out5.txt
+bruslim@k20z:~/Dropbox/Class Work/316 - Principles of Programming Languages/Projects/3/Brian's$ java Parser in6.txt out6.txt
+bruslim@k20z:~/Dropbox/Class Work/316 - Principles of Programming Languages/Projects/3/Brian's$ java Parser in6.txt out6.txt
+

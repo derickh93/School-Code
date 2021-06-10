@@ -1,0 +1,16 @@
+		push  a
+		push  1
+		eq
+		if_f goto 1
+		push  b
+		push  2
+		eq
+		if_f goto 2
+		push  a
+		pop  c
+		goto 3
+2:
+		push  b
+		pop  c
+3:
+1:

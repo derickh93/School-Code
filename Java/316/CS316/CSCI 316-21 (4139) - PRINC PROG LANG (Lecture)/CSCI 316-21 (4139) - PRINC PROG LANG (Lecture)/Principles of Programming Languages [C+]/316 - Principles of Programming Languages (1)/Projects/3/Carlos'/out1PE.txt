@@ -1,0 +1,2 @@
+ id or = expected
+(  -- unexpected symbol

@@ -1,0 +1,22 @@
+import java.util.HashSet;
+import java.util.Set;
+
+class TwoSums {
+    public static int[] twoSum(int[] nums, int target) {
+        Set<Integer> hs = new HashSet<Integer>();
+        int [] soln = new int[2];
+        for(int num:nums){
+            if(!hs.contains(num))
+                hs.add(num);
+        }
+        for(int num:nums) {
+        	System.out.println(num);
+        }
+        return soln;
+    }
+    
+    public static void main (String[] args) {
+    	int [] nums = {2,7,11,15};
+		System.out.println(twoSum(nums,9));
+		}
+}

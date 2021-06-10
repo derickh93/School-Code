@@ -1,0 +1,76 @@
+0 <statement>
+ 1 <SList>
+  2 <statement>
+   3 <assignment>
+    4 x
+    4 =
+    4 <expr>
+     5 <boolTerm>
+      6 <boolPrimary>
+       7 <E>
+        8 <term>
+         9 <primary> 1.3
+  2 <statement>
+   3 <assignment>
+    4 y
+    4 =
+    4 <expr>
+     5 <boolTerm>
+      6 <boolPrimary>
+       7 <E>
+        8 <term>
+         9 <primary> 2.5e-3
+  2 <statement>
+   3 <assignment>
+    4 z
+    4 =
+    4 <expr>
+     5 <boolTerm>
+      6 <boolPrimary>
+       7 <E>
+        8 <term>
+         9 <primary> 29.4E+10
+  2 <statement>
+   3 while
+   3 <expr>
+    4 <boolTerm>
+     5 <boolPrimary>
+      6 <E>
+       7 <term>
+        8 <primary> x
+       7 -
+       7 <term>
+        8 <primary> y
+      6 <
+      6 <E>
+       7 <term>
+        8 <primary> z
+   3 <statement>
+    4 if
+    4 <expr>
+     5 <boolTerm>
+      6 <boolPrimary>
+       7 <E>
+        8 <term>
+         9 <primary> x
+       7 <=
+       7 <E>
+        8 <term>
+         9 <primary> y
+    4 <statement>
+     5 <assignment>
+      6 x
+      6 =
+      6 <expr>
+       7 <boolTerm>
+        8 <boolPrimary>
+         9 <E>
+          10 <term>
+           11 <primary> x
+y: unexpected symbol where ; expected
+  2 <statement>
+   3 <assignment>
+    4 y
+;: unexpected symbol where = expected
+;: unexpected symbol where } expected
+;  -- unexpected symbol

@@ -1,0 +1,71 @@
+0 <statement>
+ 1 <SList>
+  2 <statement>
+   3 <assignment>
+    4 n
+    4 =
+    4 <expr>
+     5 <boolTerm>
+      6 <boolPrimary>
+       7 <E>
+        8 <term>
+         9 <primary> 5
+  2 <statement>
+   3 <assignment>
+    4 i
+    4 =
+    4 <expr>
+     5 <boolTerm>
+      6 <boolPrimary>
+       7 <E>
+        8 <term>
+         9 <primary> 0
+  2 <statement>
+   3 <assignment>
+    4 fact
+    4 =
+    4 <expr>
+     5 <boolTerm>
+      6 <boolPrimary>
+       7 <E>
+        8 <term>
+         9 <primary> 1
+  2 <statement>
+   3 while
+   3 <expr>
+    4 <boolTerm>
+     5 <boolPrimary>
+      6 <E>
+       7 <term>
+        8 <primary> i
+      6 <
+      6 <E>
+       7 <term>
+        8 <primary> n
+   3 <statement>
+    4 <SList>
+     5 <statement>
+      6 <assignment>
+       7 i
+       7 =
+       7 <expr>
+        8 <boolTerm>
+         9 <boolPrimary>
+          10 <E>
+           11 <term>
+            12 <primary> i
+           11 +
+           11 <term>
+            12 <primary> 1
+     5 <statement>
+      6 <assignment>
+       7 fact
+       7 =
+       7 <expr>
+        8 <boolTerm>
+         9 <boolPrimary>
+          10 <E>
+           11 <term>
+            12 <primary> i
+            12 *
+            12 <primary> fact

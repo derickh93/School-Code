@@ -1,0 +1,19 @@
+		push  5
+		pop  n
+		push  0
+		pop  i
+		push  1
+		pop  fact
+1:
+		push  i
+		push  n
+		lt
+		push  i
+		push  1
+		add
+		pop  i
+		push  i
+		push  fact
+		mul
+		pop  fact
+2:

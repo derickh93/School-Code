@@ -1,0 +1,11 @@
+push  1.2
+pop  a
+push  3.79
+pop  b
+push  0.4e-6
+pop  c
+push  98.45
+neg
+pop  d
+ } expected
+e  -- unexpected symbol

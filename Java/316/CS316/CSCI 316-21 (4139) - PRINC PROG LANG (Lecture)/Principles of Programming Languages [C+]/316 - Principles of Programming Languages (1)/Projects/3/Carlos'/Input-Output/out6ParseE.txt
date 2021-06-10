@@ -1,0 +1,40 @@
+push  a1
+inv
+push  k1
+and
+push  kjh7hy6
+push  m1
+push  m2
+and
+push  B987
+inv
+or
+and
+or
+push  .876
+le
+push  j3
+or
+push  kjhg
+ge
+push  876.987
+push  pqr5
+lt
+push  plk987
+and
+or
+push  m1
+gt
+push  m2
+push  987
+eq
+push  876.8e-9
+and
+push  98765
+neq
+push  m1
+and
+or
+pop  b1
+push  345.1E5
+pop  a

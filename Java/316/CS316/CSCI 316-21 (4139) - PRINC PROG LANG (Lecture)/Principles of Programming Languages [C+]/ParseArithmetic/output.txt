@@ -1,0 +1,162 @@
+0 <statement>
+ 1 <Block>
+  2 <SList>
+   3 <statement>
+    4 <assignment>
+     5 a
+     5 =
+     5 <expr>
+      6 <boolTerm>
+       7 <boolPrimary>
+        8 <E>
+         9 <term>
+          10 <primary> 1
+        8 <
+        8 <E>
+         9 <term>
+          10 <primary> 2
+       7 &&
+       7 <boolPrimary>
+        8 <E>
+         9 <term>
+          10 <primary>
+           11 !
+           11 <primary>
+            12 !
+            12 <primary>
+             13 <expr>
+              14 <boolTerm>
+               15 <boolPrimary>
+                16 <E>
+                 17 <term>
+                  18 <primary> 3.0
+                16 ==
+                16 <E>
+                 17 <term>
+                  18 <primary> 3
+       7 &&
+       7 <boolPrimary>
+        8 <E>
+         9 <term>
+          10 <primary> 3.54
+        8 !=
+        8 <E>
+         9 <term>
+          10 <primary> 6.0
+       7 &&
+       7 <boolPrimary>
+        8 <E>
+         9 <term>
+          10 <primary> 9
+        8 >=
+        8 <E>
+         9 <term>
+          10 <primary> 3.4
+       7 &&
+       7 <boolPrimary>
+        8 <E>
+         9 <term>
+          10 <primary>
+
+           11<boolLiteral> true
+   3 <SList>
+    4 <statement>
+     5 <assignment>
+      6 b
+      6 =
+      6 <expr>
+       7 <boolTerm>
+        8 <boolPrimary>
+         9 <E>
+          10 <term>
+           11 <primary> 1
+         9 >
+         9 <E>
+          10 <term>
+           11 <primary> 2
+       7 ||
+       7 <boolTerm>
+        8 <boolPrimary>
+         9 <E>
+          10 <term>
+           11 <primary>
+            12 !
+            12 <primary>
+             13 <expr>
+              14 <boolTerm>
+               15 <boolPrimary>
+                16 <E>
+                 17 <term>
+                  18 <primary> 3.0
+                16 ==
+                16 <E>
+                 17 <term>
+                  18 <primary> 3
+       7 ||
+       7 <boolTerm>
+        8 <boolPrimary>
+         9 <E>
+          10 <term>
+           11 <primary> 3.54
+         9 ==
+         9 <E>
+          10 <term>
+           11 <primary> 6.0
+       7 ||
+       7 <boolTerm>
+        8 <boolPrimary>
+         9 <E>
+          10 <term>
+           11 <primary> 9
+         9 <=
+         9 <E>
+          10 <term>
+           11 <primary> 3.4
+       7 ||
+       7 <boolTerm>
+        8 <boolPrimary>
+         9 <E>
+          10 <term>
+           11 <primary>
+
+            12<boolLiteral> false
+    4 <SList>
+     5 <statement>
+      6 <assignment>
+       7 c
+       7 =
+       7 <expr>
+        8 <boolTerm>
+         9 <boolPrimary>
+          10 <E>
+           11 <term>
+            12 <primary>
+             13 <expr>
+              14 <boolTerm>
+               15 <boolPrimary>
+                16 <E>
+                 17 <term>
+                  18 <primary> a
+               15 &&
+               15 <boolPrimary>
+                16 <E>
+                 17 <term>
+                  18 <primary> b
+        8 ||
+        8 <boolTerm>
+         9 <boolPrimary>
+          10 <E>
+           11 <term>
+            12 <primary> a
+        8 ||
+        8 <boolTerm>
+         9 <boolPrimary>
+          10 <E>
+           11 <term>
+            12 <primary>
+             13 !
+             13 <primary>
+              14 !
+              14 <primary>
+
+               15<boolLiteral> false

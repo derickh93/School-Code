@@ -1,0 +1,162 @@
+0 <fun defs>
+ 1 <fun def> func1
+  2 <header> 
+ <funName> func1 
+   3 <parameter list> x1 , x2 , x3 , x4 , x5 , x6 , x7 , b1
+  2 <body> 
+   3 <Exp>
+    4 if
+    4 <expr> 
+     5 <bool term> 
+      6 <bool primary> 
+       7 <E> 
+        8 <term> x1
+         9 <primary> x1
+        8 <term> x2
+         9 <primary> x2
+       7 <rel op> <
+        8 <E> 
+         9 <term> x1
+          10 <primary> x1
+         9 <term> x2
+          10 <primary> x2
+      6 <bool primary> 
+       7 <E> 
+        8 <term> x3
+         9 <primary> x3
+         9 *
+         9 <primary> x4
+       7 <rel op> >=
+        8 <E> 
+         9 <term> x5
+          10 <primary> x5
+          10 /
+          10 <primary> x6
+    4 <Exp>
+     5 <expr> 
+      6 <bool term> 
+       7 <bool primary> 
+        8 <E> 
+         9 <term> func2
+          10 <primary>
+            12 <fun e> <funName> func2
+           11 <e list> -
+            12 <expr> 
+             13 <bool term> 
+              14 <bool primary> 
+               15 <E> 
+                16 <term> -
+                 17 <primary> -
+                  18 <primary> 3.
+                 17 /
+                 17 <primary> x7
+         9 <term> func3
+          10 <primary>
+            12 <fun e> <funName> func3
+           11 <e list> 23.E-5
+            12 <expr> 
+             13 <bool term> 
+              14 <bool primary> 
+               15 <E> 
+                16 <term> 23.E-5
+                 17 <primary> 23.E-5
+                 17 *
+                 17 <primary> 3.0
+                16 <term> 2.4
+                 17 <primary> 2.4
+         9 <term> 12.54e-2
+          10 <primary> 12.54e-2
+    4 <Exp>
+     5 if
+     5 <expr> 
+      6 <bool term> 
+       7 <bool primary> 
+        8 <E> 
+         9 <term> x1
+          10 <primary> x1
+        8 <rel op> !=
+         9 <E> 
+          10 <term> x6
+           11 <primary> x6
+      6 <bool term> 
+       7 <bool primary> 
+        8 <E> 
+         9 <term> !
+          10 <primary> !
+           11 <primary> b1
+       7 <bool primary> 
+        8 <E> 
+         9 <term> x2
+          10 <primary> x2
+        8 <rel op> <=
+         9 <E> 
+          10 <term> (
+           11 <primary> (
+            12 <expr> 
+             13 <bool term> 
+              14 <bool primary> 
+               15 <E> 
+                16 <term> x5
+                 17 <primary> x5
+                16 <term> x6
+                 17 <primary> x6
+           11 *
+           11 <primary> x5
+     5 <Exp>
+      6 <expr> 
+       7 <bool term> 
+        8 <bool primary> 
+         9 <E> 
+          10 <term> x1
+           11 <primary> x1
+          10 <term> x2
+           11 <primary> x2
+           11 *
+           11 <primary> x3
+          10 <term> x4
+           11 <primary> x4
+           11 *
+           11 <primary> x5
+          10 <term> x6
+           11 <primary> x6
+           11 *
+           11 <primary> x7
+     5 <Exp>
+      6 <expr> 
+       7 <bool term> 
+        8 <bool primary> 
+         9 <E> 
+          10 <term> (
+           11 <primary> (
+            12 <expr> 
+             13 <bool term> 
+              14 <bool primary> 
+               15 <E> 
+                16 <term> !
+                 17 <primary> !
+                  18 <primary> !
+                   19 <primary> !
+                    20 <primary> b1
+             13 <bool term> 
+              14 <bool primary> 
+               15 <E> 
+                16 <term> (
+                 17 <primary> (
+                  18 <expr> 
+                   19 <bool term> 
+                    20 <bool primary> 
+                     21 <E> 
+                      22 <term> x1
+                       23 <primary> x1
+                     21 <rel op> <
+                      22 <E> 
+                       23 <term> x2
+                        24 <primary> x2
+        8 <bool primary> 
+         9 <E> 
+          10 <term> x3
+           11 <primary> x3
+         9 <rel op> ==
+          10 <E> 
+           11 <term> x4
+            12 <primary> x4

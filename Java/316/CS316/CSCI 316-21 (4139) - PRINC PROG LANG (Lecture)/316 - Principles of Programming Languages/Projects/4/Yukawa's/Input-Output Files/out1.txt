@@ -1,0 +1,50 @@
+      goto 1
+2:
+      push  #1
+      push  #1
+      mul
+      return
+3:
+      push  3.14159
+      return
+4:
+      push  #1
+      call 3, 0
+      push  #2
+      call 2, 1
+      mul
+      mul
+      return
+5:
+      push  #1
+      push  0987
+      neg
+      gt
+      if_f goto 6
+      push  6453
+      goto 7
+6:
+      push  1540
+      neg
+7:
+      return
+8:
+      push  #1
+      push  0
+      eq
+      if_f goto 9
+      push  1
+      goto 10
+9:
+      push  #1
+      push  #1
+      push  1
+      sub
+      call 8, 1
+      mul
+10:
+      return
+1:
+      push  3
+      call 2, 1
+      call 8, 1

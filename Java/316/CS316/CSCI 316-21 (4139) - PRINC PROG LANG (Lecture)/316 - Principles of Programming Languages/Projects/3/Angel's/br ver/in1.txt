@@ -1,0 +1,18 @@
+square(x)
+{  x * x  }
+
+pi() { 3.14159 }
+
+cylinderVolume(length, radius)
+{  length * ( pi() * square(radius) )
+}
+
+test(x)
+{
+   if (x > -0987) 6453 else -1540
+}
+
+fact(n)
+{  if (n == 0) 1
+   else n * fact(n-1)
+}

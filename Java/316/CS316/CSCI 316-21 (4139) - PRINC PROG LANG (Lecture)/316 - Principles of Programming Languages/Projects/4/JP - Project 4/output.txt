@@ -1,0 +1,32 @@
+    push  0
+    pop  a
+    push  0
+    pop  i
+1:
+    push  i
+    push  100
+    lt
+    if_f goto 2
+    push  0
+    pop  j
+3:
+    push  j
+    push  100
+    lt
+    if_f goto 4
+    push  a
+    push  1
+    add
+    pop  a
+    push  j
+    push  1
+    add
+    pop  j
+    goto 3
+4:
+    push  i
+    push  1
+    add
+    pop  i
+    goto 1
+2:

@@ -1,0 +1,2 @@
+The data structure I used was the one provided in project 2 sample. The reason for this is because i used
+the sample project provided because my project 2 was incomplete.

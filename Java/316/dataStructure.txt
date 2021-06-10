@@ -1,0 +1,7 @@
+The data structure I used was a template based upon the sample program given. The reason for this is because my project 3 was incomplete.
+To implement the inherited functions in the symbol table I created a function called expandFunction. This function works similarly to the
+expand function for inherited fields. It checked the super class for functions and included them in the ClassDefEntry for the current class. This method was 
+called along with the expand method for fields. Then to map each function name to its parameter list and body expression I created the variable currentBodyListEntry to keep track
+of the body of the function. This variable was appended to each time a body object was called during a FunDefList object execution. Once the function definition was fully retrieved 
+it was then placed into a hashmap containing function name and body key/pair. I then included the function map hashmap object in the ClassObj so that a pointer to the function table 
+for a class existed. The eval method for variable identifier and this expression were implemented to specification. The DotExp eval function was not fully implemented.

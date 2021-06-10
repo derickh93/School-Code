@@ -1,0 +1,26 @@
+import java.util.Hashtable;
+
+class TwoSums {
+    public static int[] twoSum(int[] nums, int target) {
+        Hashtable<Integer,Integer> hs = new Hashtable<Integer,Integer>();
+        int [] soln = new int[2];
+        for(int i = 0; i < nums.length;i++){
+            if(hs.contains(target-nums[i])) {
+            	System.out.println((target-nums[i]) + " " + nums[i]);
+            	System.out.println(hs.toString());
+            	soln[0] = hs.get(target-nums[i]);
+            	soln[1] = i;
+            }
+            else {
+                hs.put(i,nums[i]);
+            }
+        }
+        System.out.println(soln[0] + " " + soln[1]);
+        return soln;
+    }
+    
+    public static void main (String[] args) {
+    	int [] nums = {2,7,11,15};
+		twoSum(nums,9);
+		}
+}

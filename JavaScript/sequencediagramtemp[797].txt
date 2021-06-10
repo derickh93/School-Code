@@ -1,0 +1,39 @@
+title TCP Sequence Diagram
+
+
+A->B:SYN
+A<-B:SYNACK
+A->B:ACK
+
+note over A,B:Connection Established
+
+note over A,B: A sends data to B
+A->B:[DATA]: SEQ , ACK , DATA
+B-xA:[ACK]: SEQ , ACK
+
+
+note over A,B:B sends data to A
+A<-B:[DATA]: SEQ , ACK , DATA
+Bx-A:[ACK]: SEQ , ACK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+note over A,B:Begin Closing Handshake
+
+A->B:FIN
+A<-B:ACK
+A->B:FIN
+A<-B:ACK
+note over A,B:Connection Closed
+

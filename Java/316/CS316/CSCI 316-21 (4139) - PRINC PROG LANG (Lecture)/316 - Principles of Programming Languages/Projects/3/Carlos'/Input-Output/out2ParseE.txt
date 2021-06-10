@@ -1,0 +1,33 @@
+push  3.3
+pop  a
+push  .98E-3
+pop  b
+push  5.987e+2
+pop  c
+push  a
+push  b
+push  c
+neg
+div
+add
+push  a
+push  b
+mul
+sub
+pop  n
+push  a
+le
+push  b
+push  b
+neq
+push  c
+push  n
+eq
+push  3.45
+and
+or
+push  c
+gt
+push  a
+or
+pop  m1

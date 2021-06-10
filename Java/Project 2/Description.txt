@@ -1,0 +1,6 @@
+I was not able to figure out how to use both the getDeclaredFields and get methods to my advantage. I created a DFS class and a Vertex class. 
+The DFS class was to manage and perform a depth first search on the objects. The Vertex class was not define the Vertex that each object would
+represent. I was not able to get this working and I got stuck in the process of doing that. I am able to print out some of the required output 
+but it is out of order and does have the values output along with it. I would fix this issue by having the getDeclaredFields and get method working
+the way i need them to be. I would take the output from that and incorporate in my DFS class to perform the search. I would modify the DFS class to 
+take into account the pointers between each class and superclass objects.

@@ -1,0 +1,110 @@
+0 <statement>
+ 1 <SList>
+  2 <statement>
+   3 for
+   3 <assignment>
+    4 i
+    4 =
+    4 <expr>
+     5 <boolTerm>
+      6 <boolPrimary>
+       7 <E>
+        8 <term>
+         9 <primary> 0
+   3 <expr>
+    4 <boolTerm>
+     5 <boolPrimary>
+      6 <E>
+       7 <term>
+        8 <primary> i
+      6 <=
+      6 <E>
+       7 <term>
+        8 <primary> 100
+   3 <statement>
+    4 <SList>
+     5 <statement>
+      6 <assignment>
+       7 i
+       7 =
+       7 <expr>
+        8 <boolTerm>
+         9 <boolPrimary>
+          10 <E>
+           11 <term>
+            12 <primary> i
+            12 *
+            12 <primary> 2
+           11 +
+           11 <term>
+            12 <primary> i
+     5 <statement>
+      6 <assignment>
+       7 i
+       7 =
+       7 <expr>
+        8 <boolTerm>
+         9 <boolPrimary>
+          10 <E>
+           11 <term>
+            12 <primary> i
+           11 +
+           11 <term>
+            12 <primary> 1
+  2 <statement>
+   3 <assignment>
+    4 awhile
+    4 =
+    4 <expr>
+     5 <boolTerm>
+      6 <boolPrimary>
+       7 <E>
+        8 <term>
+         9 <primary> 4.5
+  2 <statement>
+   3 <assignment>
+    4 iff
+    4 =
+    4 <expr>
+     5 <boolTerm>
+      6 <boolPrimary>
+       7 <E>
+        8 <term>
+         9 <primary> .6e-3
+        8 -
+        8 <term>
+         9 <primary> 4.5
+  2 <statement>
+   3 <assignment>
+    4 for4
+    4 =
+    4 <expr>
+     5 <boolTerm>
+      6 <boolPrimary>
+       7 <E>
+        8 <term>
+         9 <primary> 9876.3453E+12
+        8 +
+        8 <term>
+         9 <primary> 2.3e-19
+  2 <statement>
+   3 <assignment>
+    4 else6if
+    4 =
+    4 <expr>
+     5 <boolTerm>
+      6 <boolPrimary>
+       7 <E>
+        8 <term>
+         9 <primary>
+          10 <expr>
+           11 <boolTerm>
+            12 <boolPrimary>
+             13 <E>
+              14 <term>
+               15 <primary> awhile
+              14 +
+              14 <term>
+               15 <primary> for4
+         9 /
+         9 <primary> iff

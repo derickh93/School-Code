@@ -1,0 +1,3 @@
+The data structure I used to implement the symbol table was the one provided using Hashmap.
+I created a parameterized constructor that will be used to extract all of the relevant information.
+It will then be written to a file.

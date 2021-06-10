@@ -1,0 +1,4 @@
+best value: 13 best weight: 11
+Item Number: 1 Weight: 2 Value: 3
+Item Number: 2 Weight: 4 Value: 4
+Item Number: 5 Weight: 5 Value: 6

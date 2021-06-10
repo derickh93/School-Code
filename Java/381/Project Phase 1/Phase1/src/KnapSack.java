@@ -1,0 +1,171 @@
+
+/**
+ * Title: KnapSack Class
+ *
+ * Description: Defines a KnapSack class. This class simulates a KnapSack problem. The user can 
+ * pass an array size, knapsack capacity, an array of both weights and values. The solve method
+ * is then used to find a brute force solution.
+ *
+ * @author Derick Hansraj
+ */
+public class KnapSack {
+	//instance variables
+	private int arrSize,capacity;
+	private int[] weightArr,valueArr;
+	private int[] solutionArr;
+
+	/**
+	 * Default Constructor - creates an instance of the knapsack object with default values;
+	 */
+	KnapSack() {
+	}
+
+	/**
+	 * Parameterized Constructor - creates an instance of the knapsack object with user 
+	 * defined values;
+	 * @param arrSize- the size of the arrays of weight and value
+	 * @param capacity- the capacity of the knapsack
+	 * @param weightArr- the array of weights
+	 * @param valueArr- the array of values
+	 */
+	KnapSack(int arrSize,int capacity,int[] weightArr,int[] valueArr) {
+		this.arrSize = arrSize;
+		this.capacity = capacity;
+		this.weightArr = weightArr;
+		this.valueArr = valueArr;
+		this.solutionArr = new int[arrSize];
+	}
+
+
+	/**
+	 * getArrSize method - returns the value of arrSize
+	 */
+	public int getArrSize() {
+		return arrSize;
+	}
+
+	/**
+	 * setArrSize method - allows the user to set a value for arrSize
+	 * @param arrSize- a value to be stored in arrSize.
+	 */
+	public void setArrSize(int arrSize) {
+		this.arrSize = arrSize;
+	}
+
+
+	/**
+	 * getCapacity method - returns the value of capacity
+	 */
+	public int getCapacity() {
+		return capacity;
+	}
+
+	/**
+	 * setCapacity method - allows the user to set a value for capacity
+	 * @param capacity- a value to be stored in capacity.
+	 */
+	public void setCapacity(int capacity) {
+		this.capacity = capacity;
+	}
+
+
+	/**
+	 * getWeightArr method - returns weightArr object
+	 */
+	public int[] getWeightArr() {
+		return weightArr;
+	}
+
+	/**
+	 * setWeightArr method - allows the user to define weightArr array
+	 * @param weightArr- an array to be stored in weightArr
+	 */
+	public void setWeightArr(int[] weightArr) {
+		this.weightArr = weightArr;
+	}
+
+
+	/**
+	 * getValueArr method - returns the valueArr object
+	 */
+	public int[] getValueArr() {
+		return valueArr;
+	}
+
+	/**
+	 * setValueArr method - allows the user to define valueArr array
+	 * @param valueArr- an array to be stored in valueArr
+	 */
+	public void setValueArr(int[] valueArr) {
+		this.valueArr = valueArr;
+	}
+
+	/**
+	 * getSolutionArr method - returns the solutionArr object
+	 */
+	public int[] getSolutionArr() {
+		return solutionArr;
+	}
+
+	/**
+	 * setSolutionArr method - allows the user to define solution array
+	 * @param solutionArr- an array to be stored in solutionArr
+	 */
+	public void setSolutionArr(int[] solutionArr) {
+		this.solutionArr = solutionArr;
+	}
+
+	/**
+	 * solve method - Solves a knapsack problem posed using an instantiated
+	 * KnapSack object. The answer is stored in a solution array and then printed out 
+	 * as a string along with the weights,value and item numbers that are optimal.
+	 */
+	public String solve() {
+		//local variables to keep track of the best/optimal choices
+		StringBuilder str = new StringBuilder();
+		int[] bestChoice = new int[arrSize];
+		int bestValue = 0,bestWeight=0;
+
+		//for loop that will go through all possible combinations
+		for(int i = 1; i < Math.pow(2, arrSize);i++) {
+			int j = arrSize-1;
+			int tempWeight = 0;
+			int tempValue = 0;
+			//while loop that will 0 out the solutionArr
+			while(solutionArr[j] != 0 && j > 0) {
+				solutionArr[j] = 0;
+				j = j -1;
+			}
+			solutionArr[j] = 1;
+			//for loop that will add the next values to the current weights and values being compared
+			for(int k = 0; k < arrSize;k++) {
+				if(solutionArr[k] == 1) {
+					tempWeight = tempWeight + weightArr[k];
+					tempValue = tempValue + valueArr[k];
+				}
+			}
+			//if statement that will check whether or not the currently chosen knapsack combinations is the most optimal.
+			if((tempValue >= bestValue) && (tempWeight <= capacity)) {
+				bestValue = tempValue;
+				bestWeight = tempWeight;
+				//saves the bestChoice solutionArr as bestChoice
+				for(int m = 0; m < arrSize;m++) {
+					if(solutionArr[m] == 1)
+						bestChoice[m] = 1;
+					else
+						bestChoice[m] = 0;
+				}
+			}
+		}
+		//appends the bestValue and bestWeight to the StringBuilder object to be returned.
+		str.append("best value: " + bestValue + " best weight: " + bestWeight + "\n");
+		//for loop that will append the item number, weight, and value of the items that make up the solution.
+		for(int i = 0; i < arrSize;i++) {
+			if(bestChoice[i] == 1) {
+				str.append("Item Number: " + (i+1) + " Weight: " + weightArr[i] + " Value: " + valueArr[i] + "\n");
+			}
+		}
+		//returns the answer as a string
+		return str.toString();
+	}
+}

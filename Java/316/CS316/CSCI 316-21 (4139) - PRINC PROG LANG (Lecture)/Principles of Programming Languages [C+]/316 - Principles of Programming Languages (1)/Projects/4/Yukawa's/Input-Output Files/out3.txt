@@ -1,0 +1,66 @@
+      goto 1
+2:
+      push  #1
+      push  #2
+      neq
+      push  #3
+      push  #4
+      gt
+      or
+      if_f goto 3
+      push  #1
+      push  #3
+      le
+      inv
+      goto 4
+3:
+      push  #3
+      push  #4
+      lt
+      push  #1
+      push  #2
+      eq
+      and
+      push  #2
+      push  #1
+      ge
+      or
+      if_f goto 5
+      push  #2
+      push  #3
+      lt
+      push  #1
+      push  #3
+      gt
+      inv
+      and
+      goto 6
+5:
+      push  #1
+      push  #2
+      add
+      push  #4
+      push  #3
+      mul
+      push  5
+      add
+      le
+      if_f goto 7
+      push  #2
+      push  #1
+      eq
+      goto 8
+7:
+      push  #2
+      push  #4
+      neq
+8:
+6:
+4:
+      return
+1:
+      push  1
+      push  1
+      push  3
+      push  4
+      call 2, 4

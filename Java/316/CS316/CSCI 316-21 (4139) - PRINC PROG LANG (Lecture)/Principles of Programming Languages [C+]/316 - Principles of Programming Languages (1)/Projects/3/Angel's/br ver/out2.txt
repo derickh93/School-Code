@@ -1,0 +1,78 @@
+0 <fun defs>
+ 1 <fun def> test
+  2 <header> 
+ <funName> test 
+   3 <parameter list> iff , if1 , aif , aif1 , delse , els , else2
+  2 <body> 
+   3 <Exp>
+    4 if
+    4 <expr> 
+     5 <bool term> 
+      6 <bool primary> 
+       7 <E> 
+        8 <term> iff
+         9 <primary> iff
+       7 <rel op> !=
+        8 <E> 
+         9 <term> if1
+          10 <primary> if1
+    4 <Exp>
+     5 <expr> 
+      6 <bool term> 
+       7 <bool primary> 
+        8 <E> 
+         9 <term> aif
+          10 <primary> aif
+         9 <term> aif1
+          10 <primary> aif1
+    4 <Exp>
+     5 if
+     5 <expr> 
+      6 <bool term> 
+       7 <bool primary> 
+        8 <E> 
+         9 <term> delse
+          10 <primary> delse
+        8 <rel op> <
+         9 <E> 
+          10 <term> els
+           11 <primary> els
+     5 <Exp>
+      6 <expr> 
+       7 <bool term> 
+        8 <bool primary> 
+         9 <E> 
+          10 <term> else2
+           11 <primary> else2
+          10 <term> iff
+           11 <primary> iff
+     5 <Exp>
+      6 if
+      6 <expr> 
+       7 <bool term> 
+        8 <bool primary> 
+         9 <E> 
+          10 <term> else2
+           11 <primary> else2
+         9 <rel op> ==
+          10 <E> 
+           11 <term> aif
+            12 <primary> aif
+      6 <Exp>
+       7 <expr> 
+        8 <bool term> 
+         9 <bool primary> 
+          10 <E> 
+           11 <term> delse
+            12 <primary> delse
+            12 *
+            12 <primary> if1
+      6 <Exp>
+       7 <expr> 
+        8 <bool term> 
+         9 <bool primary> 
+          10 <E> 
+           11 <term> else2
+            12 <primary> else2
+            12 /
+            12 <primary> iff

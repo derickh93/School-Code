@@ -1,0 +1,8 @@
+cylinderVolume(@length, radius)
+{  length * ( pi() * square%(radius) )
+}
+
+test(=)
+{
+   if (x > 987) 6453.e : else^ 1540.6E-
+}

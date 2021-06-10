@@ -1,0 +1,73 @@
+push  1
+pop  a1
+push  2
+pop  a2
+push  3
+pop  a3
+push  4
+pop  a4
+push  1
+pop  b1
+push  2
+pop  b2
+push  3
+pop  b3
+push  4
+pop  b4
+push  a1
+lt
+push  a2
+pop  y1
+push  a3
+eq
+push  b3
+pop  y2
+push  a4
+gt
+push  b1
+pop  y3
+push  b2
+le
+push  b3
+pop  z1
+push  b3
+neq
+push  b4
+pop  z2
+push  a1
+ge
+push  b4
+pop  z3
+push  a1
+push  a2
+add
+push  a3
+sub
+push  a4
+sub
+push  b1
+push  b2
+sub
+push  b3
+add
+push  b4
+add
+mul
+pop  a
+push  y1
+push  y2
+and
+push  y3
+and
+push  z1
+push  z2
+and
+push  z3
+and
+or
+pop  x
+push  x
+inv
+inv
+inv
+pop  b

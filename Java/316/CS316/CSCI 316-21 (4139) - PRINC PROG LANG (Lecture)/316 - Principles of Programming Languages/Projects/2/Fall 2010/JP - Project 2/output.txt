@@ -1,0 +1,37 @@
+a1   : Id
+=   : Assign
+(   : LParen
+165   : Int
++   : Plus
+756465   : Int
+/   : Div
+a2   : Id
+%  -- Invalid Token
+)   : RParen
+;   : Semicolon
+y123   : Id
+=   : Assign
+1.   -- Invalid Token
++   : Plus
+23.8E   -- Invalid Token
+-   : Minus
+.65e+   -- Invalid Token
+;   : Semicolon
+bb   : Id
+=   : Assign
+(   : LParen
+x1   : Id
+||   : Or
+x2   : Id
+)   : RParen
+&8  -- Invalid Token
+&   -- Invalid Token
+!   : Inv
+x3   : Id
+;   : Semicolon
+kjh   : Id
+=   : Assign
+a3645   : Id
+|   -- Invalid Token
+8   : Int
+@  -- Invalid Token

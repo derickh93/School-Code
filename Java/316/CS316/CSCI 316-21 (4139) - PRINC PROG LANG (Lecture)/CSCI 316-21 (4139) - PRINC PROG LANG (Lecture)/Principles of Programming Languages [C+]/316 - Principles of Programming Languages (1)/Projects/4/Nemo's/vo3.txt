@@ -1,0 +1,21 @@
+		push  1.3
+		pop  x
+		push  2.5e-3
+		pop  y
+		push  x
+		push  y
+		le
+		if_f goto 1
+		push  x
+		push  y
+		add
+		pop  x
+		goto 2
+1:
+		push  x
+		push  y
+		add
+		pop  y
+2:
+		push  x
+		pop  y

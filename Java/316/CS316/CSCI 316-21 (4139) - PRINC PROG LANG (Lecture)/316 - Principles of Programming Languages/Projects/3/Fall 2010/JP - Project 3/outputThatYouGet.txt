@@ -1,0 +1,203 @@
+0 <statement>
+ 1 <SList>
+  2 <statement>
+   3 <assignment>
+    4 a1
+    4 =
+    4 <expr>
+     5 <boolTerm>
+      6 <boolPrimary>
+       7 <E>
+        8 <term>
+         9 <primary>
+          10 <expr>
+           11 <boolTerm>
+            12 <boolPrimary>
+             13 <E>
+              14 <term>
+               15 <primary> 165
+              14 +
+              14 <term>
+               15 <primary> 756465
+               15 /
+               15 <primary> a2
+  2 <statement>
+   3 <assignment>
+    4 while123
+    4 =
+    4 <expr>
+     5 <boolTerm>
+      6 <boolPrimary>
+       7 <E>
+        8 <term>
+         9 <primary>
+          10 <expr>
+           11 <boolTerm>
+            12 <boolPrimary>
+             13 <E>
+              14 <term>
+               15 <primary> .847
+              14 +
+              14 <term>
+               15 <primary> 74.76
+               15 /
+               15 <primary> 436.3e5
+              14 -
+              14 <term>
+               15 <primary> .87E12
+               15 *
+               15 <primary> 1.7e-4
+        8 +
+        8 <term>
+         9 <primary>
+          10 <expr>
+           11 <boolTerm>
+            12 <boolPrimary>
+             13 <E>
+              14 <term>
+               15 <primary> 7.4e+43
+               15 *
+               15 <primary> 7465.7465E-635
+               15 /
+               15 <primary> .7645E+5
+  2 <statement>
+   3 <assignment>
+    4 bb
+    4 =
+    4 <expr>
+     5 <boolTerm>
+      6 <boolPrimary>
+       7 <E>
+        8 <term>
+         9 <primary>
+          10 <expr>
+           11 <boolTerm>
+            12 <boolPrimary>
+             13 <E>
+              14 <term>
+               15 <primary> x1
+           11 ||
+           11 <boolTerm>
+            12 <boolPrimary>
+             13 <E>
+              14 <term>
+               15 <primary> x2
+      6 &&
+      6 <boolPrimary>
+       7 <E>
+        8 <term>
+         9 <primary>
+          10 !
+          10 <primary> x3
+  2 <statement>
+   3 while
+   3 <expr>
+    4 <boolTerm>
+     5 <boolPrimary>
+      6 <E>
+       7 <term>
+        8 <primary> a1
+      6 ==
+      6 <E>
+       7 <term>
+        8 <primary> a2
+    4 ||
+    4 <boolTerm>
+     5 <boolPrimary>
+      6 <E>
+       7 <term>
+        8 <primary> x1
+      6 <
+      6 <E>
+       7 <term>
+        8 <primary> x3
+     5 &&
+     5 <boolPrimary>
+      6 <E>
+       7 <term>
+        8 <primary> x4
+      6 >
+      6 <E>
+       7 <term>
+        8 <primary> x5
+   3 <statement>
+    4 if
+    4 <expr>
+     5 <boolTerm>
+      6 <boolPrimary>
+       7 <E>
+        8 <term>
+         9 <primary> cs316
+       7 !=
+       7 <E>
+        8 <term>
+         9 <primary> CS315
+     5 ||
+     5 <boolTerm>
+      6 <boolPrimary>
+       7 <E>
+        8 <term>
+         9 <primary> abc
+       7 <=
+       7 <E>
+        8 <term>
+         9 <primary> def
+      6 &&
+      6 <boolPrimary>
+       7 <E>
+        8 <term>
+         9 <primary> kb65tr
+       7 >=
+       7 <E>
+        8 <term>
+         9 <primary> kjh876tr5d
+    4 <statement>
+     5 <SList>
+      6 <statement>
+       7 <assignment>
+        8 cs316
+        8 =
+        8 <expr>
+         9 <boolTerm>
+          10 <boolPrimary>
+           11 <E>
+            12 <term>
+             13 <primary> CS315
+      6 <statement>
+       7 <assignment>
+        8 abc
+        8 =
+        8 <expr>
+         9 <boolTerm>
+          10 <boolPrimary>
+           11 <E>
+            12 <term>
+             13 <primary> def
+             13 *
+             13 <primary> jhnfg
+    4 else
+    4 <statement>
+     5 <SList>
+      6 <statement>
+       7 <assignment>
+        8 if1
+        8 =
+        8 <expr>
+         9 <boolTerm>
+          10 <boolPrimary>
+           11 <E>
+            12 <term>
+             13 <primary> mvnh876h
+      6 <statement>
+       7 <assignment>
+        8 elseT
+        8 =
+        8 <expr>
+         9 <boolTerm>
+          10 <boolPrimary>
+           11 <E>
+            12 <term>
+             13 <primary> 8756453
+            12 +
+            12 <term>
+             13 <primary> a1

@@ -1,0 +1,33 @@
+push  a1
+push  a2
+add
+push  a3
+sub
+push  a4
+sub
+push  b1
+push  b2
+sub
+push  b3
+add
+push  b4
+add
+mul
+pop  a
+push  y1
+push  y2
+and
+push  y3
+and
+push  z1
+push  z2
+and
+push  z3
+and
+or
+ ; expected
+push  x
+inv
+inv
+inv
+pop  b

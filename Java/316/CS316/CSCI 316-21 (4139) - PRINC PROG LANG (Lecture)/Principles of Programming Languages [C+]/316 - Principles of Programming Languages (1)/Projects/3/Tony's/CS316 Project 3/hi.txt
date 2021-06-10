@@ -1,0 +1,84 @@
+0 <fun defs>
+ 1 <fun def>
+  2 <fun header>
+   3 <fun name>square
+   3 <parameter list> x 
+  2 <exp> 
+   3 <list exp>
+    4 <list exp inside>
+     5 *
+     5 <exp> x
+     5 <exp> x
+ 1 <fun def>
+  2 <fun header>
+   3 <fun name>pi
+   3 <parameter list> 
+  2 <exp> 3.14159
+ 1 <fun def>
+  2 <fun header>
+   3 <fun name>cylinderVolume
+   3 <parameter list> length radius 
+  2 <exp> 
+   3 <list exp>
+    4 <list exp inside>
+     5 *
+     5 <exp> length
+     5 <exp> 
+      6 <list exp>
+       7 <list exp inside>
+        8 *
+        8 <exp> 
+         9 <list exp>
+          10 <list exp inside>
+           11 pi
+        8 <exp> 
+         9 <list exp>
+          10 <list exp inside>
+           11 square
+           11 <exp> radius
+ 1 <fun def>
+  2 <fun header>
+   3 <fun name>fact
+   3 <parameter list> n 
+  2 <exp> 
+   3 <list exp>
+    4 <list exp inside>
+     5 if
+     5 <exp> 
+      6 <list exp>
+       7 <list exp inside>
+        8 =
+        8 <exp> n
+        8 <exp> 0
+     5 <exp> 1
+     5 <exp> 
+      6 <list exp>
+       7 <list exp inside>
+        8 *
+        8 <exp> n
+        8 <exp> 
+         9 <list exp>
+          10 <list exp inside>
+           11 fact
+           11 <exp> 
+            12 <list exp>
+             13 <list exp inside>
+              14 -
+              14 <exp> n
+              14 <exp> 1
+ 1 <fun def>
+  2 <fun header>
+   3 <fun name>test
+   3 <parameter list> x y 
+  2 <exp> 
+   3 <list exp>
+    4 <list exp inside>
+     5 if
+     5 <exp> 
+      6 <list exp>
+       7 <list exp inside>
+        8 >
+        8 <exp> x
+        8 <exp> -0987
+     5 <exp> +6453
+     5 <exp> -1540

@@ -1,0 +1,4 @@
+fact(n)
+{  if (n == 0) 1
+   else else * fact(n-1)
+}

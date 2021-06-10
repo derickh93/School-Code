@@ -1,0 +1,84 @@
+0 <statement>
+ 1 <SList>
+  2 <statement>
+   3 <assignment>
+    4 n
+    4 =
+    4 <expr>
+     5 <boolTerm>
+      6 <boolPrimary>
+ 5
+       7 <E>
+        8 <term>
+         9 <primary> 5
+       7 <relop>
+  2 <statement>
+   3 <assignment>
+    4 i
+    4 =
+    4 <expr>
+     5 <boolTerm>
+      6 <boolPrimary>
+ 0
+       7 <E>
+        8 <term>
+         9 <primary> 0
+       7 <relop>
+  2 <statement>
+   3 <assignment>
+    4 fact
+    4 =
+    4 <expr>
+     5 <boolTerm>
+      6 <boolPrimary>
+ 1
+       7 <E>
+        8 <term>
+         9 <primary> 1
+       7 <relop>
+  2 <statement>
+   3 <expr>
+    4 <boolTerm>
+     5 <boolPrimary>
+ i
+      6 <E>
+       7 <term>
+        8 <primary> i
+      6 <relop>
+      6 <relop>
+ <
+       7 <E>
+        8 <term>
+         9 <primary> n
+   3 <SList>
+    4 <statement>
+     5 <assignment>
+      6 i
+      6 =
+      6 <expr>
+       7 <boolTerm>
+        8 <boolPrimary>
+ i
+         9 <E>
+          10 <term>
+           11 <primary> i
+          10 +
+          10 <term>
+           11 <primary> 1
+         9 <relop>
+  2 <statement>
+   3 <assignment>
+    4 fact
+    4 =
+    4 <expr>
+     5 <boolTerm>
+      6 <boolPrimary>
+ i
+       7 <E>
+        8 <term>
+         9 <primary> i
+         9 *
+         9 <primary> fact
+       7 <relop>
+  2 <statement>
+}  -- unexpected symbol

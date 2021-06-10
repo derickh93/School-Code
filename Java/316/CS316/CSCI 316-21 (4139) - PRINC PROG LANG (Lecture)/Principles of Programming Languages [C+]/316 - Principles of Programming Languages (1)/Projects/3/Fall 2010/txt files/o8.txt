@@ -1,0 +1,41 @@
+0 <statement>
+ 1 <SList>
+  2 <statement>
+   3 <assignment>
+    4 n
+    4 =
+    4 <expr>
+     5 <boolTerm>
+      6 <boolPrimary>
+       7 <E>
+        8 <term>
+         9 <primary> 5
+  2 <statement>
+   3 <assignment>
+    4 i
+    4 =
+    4 <expr>
+     5 <boolTerm>
+      6 <boolPrimary>
+       7 <E>
+        8 <term>
+         9 <primary> 0
+  2 <statement>
+   3 <assignment>
+    4 fact
+    4 =
+    4 <expr>
+     5 <boolTerm>
+      6 <boolPrimary>
+       7 <E>
+        8 <term>
+         9 <primary> 1
+  2 <statement>
+   3 while
+i: unexpected symbol where ( expected
+  2 <statement>
+   3 <assignment>
+    4 i
+<: unexpected symbol where = expected
+<: unexpected symbol where } expected
+<  -- unexpected symbol

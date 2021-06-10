@@ -1,0 +1,12 @@
+{
+for ( i = 0; i <= 100 )
+{
+	i = i * 2 + i;
+	i = i+1;
+}
+
+awhile = 4.5;
+iff = .6e-3-4.5;
+for4 = 9876.3453E+12+2.3e-19;
+else6if = (awhile+for4)/iff;
+}

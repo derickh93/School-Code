@@ -1,0 +1,33 @@
+0 <fun defs>
+ 1 <fun def> fact
+  2 <header> 
+ <funName> fact 
+   3 <parameter list> n
+  2 <body> 
+   3 <Exp>
+    4 if
+    4 <expr> 
+     5 <bool term> 
+      6 <bool primary> 
+       7 <E> 
+        8 <term> n
+         9 <primary> n
+       7 <rel op> ==
+        8 <E> 
+         9 <term> 0
+          10 <primary> 0
+    4 <Exp>
+     5 <expr> 
+      6 <bool term> 
+       7 <bool primary> 
+        8 <E> 
+         9 <term> 1
+          10 <primary> 1
+    4 <Exp>
+     5 <expr> 
+      6 <bool term> 
+       7 <bool primary> 
+        8 <E> 
+         9 <term> else
+          10 <primary>ERROR in <body>: "else" found, but "}" was expected.	State: Else
+else  -- unexpected symbol

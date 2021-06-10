@@ -1,0 +1,27 @@
+import java.util.LinkedList;
+
+/**
+	 * Definition for singly-linked list.
+	 * public class ListNode {
+	 *     int val;
+	 *     ListNode next;
+	 *     ListNode() {}
+	 *     ListNode(int val) { this.val = val; }
+	 *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+	 * }
+	 */
+
+class AddTwoNums {
+	    public static LinkedList<Integer> addTwoNumbers(LinkedList<Integer> l1, LinkedList<Integer> l2) {
+			return l2;
+	        
+	    }
+    
+    public static void main (String[] args) {
+    	LinkedList<Integer> l1 = new LinkedList<Integer>();
+    	l1.add(3);
+    	l1.add(4);
+    	l1.add(2);
+    	System.out.println(l1.toString());
+		}
+}

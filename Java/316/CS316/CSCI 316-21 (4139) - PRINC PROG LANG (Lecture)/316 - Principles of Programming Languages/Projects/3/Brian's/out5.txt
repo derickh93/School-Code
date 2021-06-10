@@ -1,0 +1,64 @@
+<0:FunctionDefinitions>
+  <1:FunctionDefinition>
+    <2:Header>
+      <3:FunctionName>fact</3:FunctionName>
+      <3:ParamterList>n</3:ParameterList>
+    </2:Header>
+    <2:Body>
+      <3:Exp>
+        <4:IfStatement>
+          <5:Conditional>
+            <6:expr>
+              <7:BooleanTerm>
+                <8:BooleanPrimary>
+                  <9:E>
+                    <10:Term>
+                      <11:Primary>n</11:Primary>
+                    </10:Term>
+                  </9:E>
+                  <9:RelationOperator> == </9:RelationOperator>
+                  <9:E>
+                    <10:Term>
+                      <11:Primary>0</11:Primary>
+                    </10:Term>
+                  </9:E>
+                </8:BooleanPrimary>
+              </7:BooleanTerm>
+            </6:expr>
+          </5:Conditional>
+          <5:TRUE_Block>
+            <6:Exp>
+              <7:expr>
+                <8:BooleanTerm>
+                  <9:BooleanPrimary>
+                    <10:E>
+                      <11:Term>
+                        <12:Primary>1</12:Primary>
+                      </11:Term>
+                    </10:E>
+                  </9:BooleanPrimary>
+                </8:BooleanTerm>
+              </7:expr>
+            </6:Exp>
+          </5:TRUE_Block>
+          <5:ELSE_Block>
+            <6:Exp>
+              <7:expr>
+                <8:BooleanTerm>
+                  <9:BooleanPrimary>
+                    <10:E>
+                      <11:Term>
+                        <12:Primary>!!== ERROR: else is a reserved symbol ==!!</12:Primary>
+                      </11:Term>
+                    </10:E>
+                  </9:BooleanPrimary>
+                </8:BooleanTerm>
+              </7:expr>
+            </6:Exp>
+          </5:ELSE_Block>
+        </4:IfStatement>
+      </3:Exp>
+      !!== ERROR: else is a reserved symbol, where } expected ==!!
+    </2:Body>
+  </1:FunctionDefinition>
+</0:FunctionDefinitions>

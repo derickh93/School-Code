@@ -1,0 +1,9 @@
+test(iff, if1, aif, aif1, delse, els, else2)
+{
+    if ( iff != if1 ) aif + aif1
+    else if ( delse < els ) else2 - iff
+    else if ( else2 == aif ) delse * if1
+    else else2 / iff
+}
+
+/test(1, 2, 3, 4, 5, 6, 7)

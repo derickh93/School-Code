@@ -1,0 +1,9 @@
+best value: 117 best weight: 34
+Item Number: 2 Weight: 4 Value: 16
+Item Number: 4 Weight: 3 Value: 12
+Item Number: 5 Weight: 5 Value: 15
+Item Number: 11 Weight: 4 Value: 12
+Item Number: 20 Weight: 2 Value: 13
+Item Number: 21 Weight: 3 Value: 11
+Item Number: 28 Weight: 8 Value: 18
+Item Number: 29 Weight: 5 Value: 20

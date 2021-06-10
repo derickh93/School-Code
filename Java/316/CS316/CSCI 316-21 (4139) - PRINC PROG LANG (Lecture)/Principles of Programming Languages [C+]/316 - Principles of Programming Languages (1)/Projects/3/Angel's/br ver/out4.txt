@@ -1,0 +1,45 @@
+0 <fun defs>
+ 1 <fun def> fact
+  2 <header> 
+ <funName> fact 
+   3 <parameter list> n
+  2 <body> 
+   3 <Exp>
+    4 if
+    4 <expr> 
+     5 <bool term> 
+      6 <bool primary> 
+       7 <E> 
+        8 <term> n
+         9 <primary> n
+       7 <rel op> ==
+        8 <E> 
+         9 <term> 0
+          10 <primary> 0
+    4 <Exp>
+     5 <expr> 
+      6 <bool term> 
+       7 <bool primary> 
+        8 <E> 
+         9 <term> 1
+          10 <primary> 1
+    4 <Exp>
+     5 <expr> 
+      6 <bool term> 
+       7 <bool primary> 
+        8 <E> 
+         9 <term> n
+          10 <primary> n
+          10 *
+          10 <primary>
+            12 <fun e> <funName> fact
+           11 <e list> n
+            12 <expr> 
+             13 <bool term> 
+              14 <bool primary> 
+               15 <E> 
+                16 <term> n
+                 17 <primary> n
+                16 <term> 1
+                 17 <primary> 1
+ERROR in <body>: "" found, but "}" was expected.	State: Start
